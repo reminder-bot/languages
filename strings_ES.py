@@ -104,7 +104,7 @@ Por favor utiliza este comando como `mbprefix <prefijo>`
 Prefijo cambiado a {prefix}
 ''',
 
-        'too_long' : '''Please select a prefix under 5 characters'''
+        'too_long' : '''Por favor selecciona un prefijo menor a 5 caracteres.'''
     },
 
     'timezone' : {
