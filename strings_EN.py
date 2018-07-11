@@ -146,7 +146,9 @@ Example:
 
         'invalid_tag' : '''Couldn't find a location by your tag present.''',
 
-        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`. Make sure the time provided is less than 50 years in the future.''',
+        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.
+
+Make sure the time provided is less than 50 years in the future.''',
 
         'invalid_count' : '''Too many reminders in specified channel! Use `{prefix}del` to delete some of them, or use `{prefix}donate` to increase your maximum ($5 tier).''',
 
@@ -167,7 +169,9 @@ Example:
     ```{prefix}interval #general 9:30 1d Good morning!```
     ```{prefix}interval 0s 10s This will be really irritating```''',
 
-        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.''',
+        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.
+
+Make sure the interval provided is less than 50 years''',
 
         '8_seconds' : '''Please make sure your interval timer is longer than 8 seconds.''',
 
