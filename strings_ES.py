@@ -1,6 +1,8 @@
 #: español
 
 {
+    '__maintainer__' : '@Giuh',
+
     'blacklisted' : ''':x: Este canal está en la blacklist :x:''',
 
     'admin_required' : 'Necesitas permisos de administrador para usar este comando.',

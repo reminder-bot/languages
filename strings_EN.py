@@ -1,6 +1,8 @@
 #: english
 
 {
+    '__maintainer__' : '@JellyWX',
+
     'blacklisted' : ''':x: This channel is blacklisted :x:''',
 
     'admin_required' : 'You need to be an admin to run this command.',
