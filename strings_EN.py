@@ -129,7 +129,9 @@ Current timezone: {timezone}''',
 
         'enabled' : '''Enabled channel reminder permissions for roles.''',
 
-        'allowed' : '''Allowed roles: {}'''
+        'allowed' : '''Allowed roles: {}''',
+
+        'help' : '''Please mention roles you wish to change the reminder permissions for.'''
     },
 
     'clear' : {
