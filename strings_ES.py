@@ -130,7 +130,9 @@ Zona horaria actual: {timezone}''',
 
         'enabled' : '''Activados los permisos de recordatorios para el rol.''',
 
-        'allowed' : '''Roles permitidos: {}'''
+        'allowed' : '''Roles permitidos: {}''',
+
+        'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.'''
     },
 
     'clear' : {
@@ -150,7 +152,7 @@ Ejemplo:
         'invalid_tag' : '''No es posible encontrar la localización de tu tag.''',
 
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
-        
+
         Asegúrate de que el tiempo colocado es menor a 50 años''',
 
         'invalid_count' : '''¡Demasiados recordatorios en el canal especificado! Utiliza `{prefix}del` para eliminar algunos, o utiliza `{prefix}donate` para aumentar el límite (tier de $5).''',
@@ -173,7 +175,7 @@ Ejemplo:
     ```{prefix}interval 0s 10s Esto será muy irritante```''',
 
         'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.
-        
+
         Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
 
         '8_seconds' : '''Por favor asegúrate que tu intervalo es mayor a 8 segundos.''',
