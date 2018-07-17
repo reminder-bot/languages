@@ -131,6 +131,8 @@ Zona horaria actual: {timezone}''',
         'enabled' : '''Activados los permisos de recordatorios para el rol.''',
 
         'allowed' : '''Roles permitidos: {}'''
+        
+        'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.'''
     },
 
     'clear' : {
