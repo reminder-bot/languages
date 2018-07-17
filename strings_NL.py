@@ -133,52 +133,56 @@ Huidige tijdszone: {timezone}''',
 
     'clear' : {
 
-        'no_argument' : '''Please mention users you wish to remove messages of.'''
+        'no_argument' : '''Vermeld alstublieft de gebruikers van wie je de berichten wilt verwijderen.'''
 
     },
 
     'remind' : {
         'no_argument' : '''
-Usage:
-    ```{prefix}remind [channel mention or user mention] <time to or time at> <message>```
-Example:
+Gebruik:
+    ```{prefix}remind [kanaal/gebruiker] <tijd tot of tijd wanneer> <bericht>```
+Voorbeeld:
     ```{prefix}remind #general 10s Hello world```
-    ```{prefix}remind 10:30 It\'s now 10:30```''',
+    ```{prefix}remind 10:30 It`s now 10:30```''',
 
-        'invalid_tag' : '''Couldn't find a location by your tag present.''',
+        'invalid_tag' : '''De locatie van de tag is niet gevonden.''',
 
-        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.
-Make sure the time provided is less than 50 years in the future.''',
+        'invalid_time' : '''Zorg dat de tijd in het bericht als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. danwel `dag/maand/jaar-uur:minuut:seconde`.
 
-        'invalid_count' : '''Too many reminders in specified channel! Use `{prefix}del` to delete some of them, or use `{prefix}donate` to increase your maximum ($5 tier).''',
+        Zorg dat de tijd niet verder dan 50 jaar in de toekomst is!''',
 
-        'invalid_chars' : '''Reminder message too long! (max 150, you used {}). Use `{prefix}donate` to increase your character limit to 1900 ($5 tier).''',
+        'invalid_count' : '''Te veel herinneringen in het specifieke kanaal! Gebruik  `{prefix}del` om een aantal te verwijderen, of gebruik `{prefix}donate` om de maximale herinneringen te verhogen ($5 tier).''',
 
-        'invalid_chars_2000' : '''Discord restrictions mean we can\'t send reminders 2000+ characters. Sorry.''',
+        'invalid_chars' : '''Herinnering bericht is te lang! (max 150, jij hebt er  {} gebruikt). Gebruik `{prefix}donate` om je karakter limiet te verhogen naar 1900 ($5 tier).''',
 
-        'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and tell her/him to use the `{prefix}restrict` command to specify allowed roles.''',
+        'invalid_chars_2000' : '''Discord staat geen berichten toe die langer dan 2000 karakters zijn. Sorry.''',
 
-        'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del`.'''
+        'no_perms' : '''Je moet de `Manage Messages`/`Berichten Beheren` hebben, ofwel een rol die reminders naar dat kanaal kan zenden. Bespreek dit met je server admin, en overleg met hem/haar om het `{prefix}restrict` commando te gebruiken om bepaalde rollen toe te staan.''',
+
+        'success' : '''Nieuwe herinnering geregistreerd voor <{}{}> in {} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },
 
     'interval' : {
         'no_argument' : '''
-Usage:
-    ```{prefix}interval [channel mention or user mention] <time to or time at> <interval> <message>```
-Example:
-    ```{prefix}interval #general 9:30 1d Good morning!```
-    ```{prefix}interval 0s 10s This will be really irritating```''',
+Gebruik:
+    ```{prefix}interval [kanaal/gebruiker] <tijd tot of tijd wanneer> <interval> <bericht>```
+Voorbeeld:
+    ```{prefix}interval #general 9:30 1d Goede morgen!```
+    ```{prefix}interval 0s 10s Dit zal aardig vervelend worden!```''',
 
-        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.
-Make sure the interval provided is less than 50 years''',
+        'invalid_interval' : '''Zorg dat het interval wat je gegeven hebt als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. met geen spaties, bijvoorbeeld 10s voor 10 seconden of 10s12m15h1d voor 10 seconden, 12 minuten, 15 uur en 1 dag.
 
-        '8_seconds' : '''Please make sure your interval timer is longer than 8 seconds.''',
+        Zorg dat het interval gegeven niet langer is dan 50 jaar!''',
 
-        'donor' : '''You need to be a Patron (donating 2$ or more) to access this command! Type `{prefix}donate` to find out more.''',
+        '8_seconds' : '''Zorg dat je interval tijd langer is dan 8 seconden.''',
 
-        'success' : '''New interval registered for <{}{}> in {} seconds . You can\'t edit the reminder now, so you are free to delete the message.''',
+        'donor' : '''Je moet een Patron zijn (donating 2$ of meer) om toegang tot dit commando te krijgen! Typ `{prefix}donate` om meer informatie te krijgen.''',
 
-        'removed' : '''There appears to be no patrons on your server, so the interval has been removed.'''
+        'success' : '''Nieuw interval geregistreerd voor <{}{}> in {} seconden. Je kan het interval nu niet meer veranderen, dus je kan dit bericht nu verwijderen.''',
+
+        'success_new' : '''Nieuw interval geregistreerd voor {} in {} seconden. Als je dit interval wilt verwijderen, typ `$del`.'''
+        
+        'removed' : '''Het lijkt dat er geen patrons in je server zitten, dus het interval is gestopt.'''
 
     },
 
