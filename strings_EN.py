@@ -162,7 +162,9 @@ Make sure the time provided is less than 50 years in the future.''',
 
         'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and tell her/him to use the `{prefix}restrict` command to specify allowed roles.''',
 
-        'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del`.'''
+        'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del`.''',
+
+        'success_new' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del`.'''
     },
 
     'interval' : {
