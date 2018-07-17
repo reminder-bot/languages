@@ -7,7 +7,7 @@
 
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
-    'help' : '''Please visit https://jellywx.co.uk/help?lang=EN''', #:<------------ WIP
+    'help' : '''Ga voor meer informatie naar https://jellywx.co.uk/help?lang=EN''', #:<------------ WIP
 
     'help_raw' : [
         ['''Herinnering Commando`s''', {
@@ -21,108 +21,114 @@
 
             '$todos' : 'hetzelfde als `$todo` maar voor server breed taakbeheer.',
 
-            '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere  data-based reminders.' }],
+            '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere setup in de database.' }],
 
         ['''Management Commando`s''', {
-            '$autoclear [tijd/s] [kanaal]' : 'enables/disables autoclearing, where messages sent to the channel (default your channel) will be automatically deleted after time (default 10 seconds).',
+            '$autoclear [tijd/s] [kanaal]' : 'Schakelt automatisch verwijderein in/uit, elk bericht in het kanaal (Standaard het kanaal waar het commando wordt geplaatst) wordt automatisch verwijderd na een tijd (standaard 10 seconden).',
 
-            '$clear <gebruiker>' : 'clears messages made by a user/s.',
+            '$clear <gebruiker>' : 'Verwijdert berichten verstuurt door gebruiker(s).',
 
-            '$restrict [roles]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
+            '$restrict [roles]' : 'toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
 
-            '$tag' : 'Aliasing commands. Use `$tag help` for more information.',
+            '$tag' : 'Aliasing commando`s. Gebruik `$tag help` voor meer informatie.',
 
-            '$blacklist [channel-name]' : 'block or unblock a channel from sending commands.' }],
+            '$blacklist [kanaal-naam]' : 'Blokkeer of deblokkeer de mogelijkheid voor commando`s in een specifiek kanaal.' }],
 
-        ['''Other Commands''', {
-            '$donate' : 'view information about donations.',
+        ['''Andere Commando`s''', {
+            '$donate' : 'toon informatie voor donaties.',
 
-            'mbprefix <string>' : 'change the prefix from $. This command does not use a prefix!',
+            'mbprefix <string>' : 'verander de prefix van de bot, standaard is dit $. Dit commando gebruikt geen prefix!!',
 
-            '$info' : 'get info on the bot.',
+            '$info' : 'krijg informatie over de bot.',
 
-            '$lang <name>' : 'change the language.',
+            '$lang <name>' : 'verander de taal.',
 
-            '$clock [12]' : 'get the current time, optionally as 12 hour clock.' }
+            '$clock [12]' : 'krijg de tijd op dit moment, optioneel als een 12-uurs klok.' }
         ]
     ],
 
-    'web_foot_title' : 'Extra Information',
-    'web_foot' : 'Do not type the brackets when you type out the command! For example, mbprefix !, not mbprefix <!>',
-    'web_foot2' : 'Please join our Discord Support Server if you need more help:',
+    'web_foot_title' : 'Extra informatie',
+    'web_foot' : 'Typ de brackets niet wanneer je een commando typt!Bijvoorbeeld: mbprefix !, niet mbprefix <!>',
+    'web_foot2' : 'Je benkt welkom in onze Discord Suppot Server (Engels) als je meer hulp nodig hebt!',
 
-    'about' : {'About' : ['Bot Created By: Jude Southworth', 'Github: <a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', 'Want a bot making? Please contact me on Discord.', 'Hosting provider: OVH']},
+    'about' : {'Ovef de bot' : ['Bot gemaakt door: Jude Southworth', 'Github: <a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', 'Zou je graag een bot willen? Neem contact met JellyWX op via Discord, in het Engels.', 'Hosting provider: OVH']},
 
-    'join' : 'Join our Discord Server',
-    'invite' : 'Invite the Bot',
+    'join' : 'Word lid van de Discord server',
+    'invite' : 'nodig de Bot uit in jouw server',
 
     'info' : '''
-Default prefix: `$`
+Standaard prefix: `$`
 Reset prefix: `@{user} prefix $`
 Help: `{prefix}help`
-**Welcome to RemindMe!**
+
+**Welkom bij RemindMe!**
 Developer: <@203532103185465344>
-Cool guy who knows what he's on about: <@174243954487853056>
+Coole gast die weet waar hij het over heeft: <@174243954487853056>
 Icon: <@253202252821430272>
-Find me on https://discord.gg/WQVaYmT and on https://github.com/JellyWX :)
+Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
 Framework: `discord.py`
 Hosting provider: OVH
-My other bot (Patron only):
+Mijn andere bot (alleen voor Patreons):
 https://discordapp.com/oauth2/authorize?client_id=411224415863570434&scope=bot&permissions=35840
-*If you have enquiries about new features, please send to the discord server*
-*If you have enquiries about bot development for you or your server, please DM me*
+*Als je vragen hebt over nieuwe functies, graag een bericht in de discord server!r*
+*Als je een vraag hebt over de ontwikkeling van de bot voor jou op je server, stuur mij een privé bericht!*
 ''',
 
     'donate' : '''
-Thinking of adding a monthly contribution? Press below for my patreon and official bot server :D
+Zit je er over te denken om een maandelijkse bijdrage te doen? Klik op het adres hierbeneden voor mijn patreon en voor mijn discord server :D
 https://www.patreon.com/jellywx
+
 https://discord.gg/WQVaYmT
-Here's some more information:
-When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
-With your new rank, you'll be able to:
-: use Patron-only commands like `interval`
-: set more reminders (unlimited)
-: set longer reminders (2000 chars)
-: set more/longer tags
-Anyone who is a Patron, thank you :D You make this bot sustainable
-Please note, you must be connected to the Discord server to receive Patreon rewards.
+
+Hier is wat meer informatie:
+
+Wanneer je een donatie doet zal Patreon jou automatisch een rankup geven in onze Discord server, als je je Discord en Patreon account al met elkaar gelinkt hebt.
+Met je nieuwe rank kan je:
+: Patreon-exclusieve commando`s gebruiken zoals `interval`
+: Mogelijkheid om meer reminders in te stellen (ongelimiteerd)
+: Mogelijkheid om langere reminders in te stellen (2000 chars)
+: Mogelijkheid om meer & langere tags in te stellen
+
+Aan iedereen die een Patron is: Bedankt :D Jullie zorgen er voor dat deze bot kan blijven voortbestaan.
+
+Let er op dat je met de Discord server verbonden moet zijn om de Patreon rewards te krijgen.
 ''',
 
     'prefix' : {
         'no_argument' : '''
-Please use this command as `mbprefix <prefix>`
+Gebruik dit commando als `mbprefix <prefix>`
 ''',
         'success' : '''
-Prefix changed to {prefix}
+Prefix veranderd naar {prefix}
 ''',
 
-        'too_long' : '''Please select a prefix under 5 characters'''
+        'too_long' : '''Kies alstublieft een prefix uit die korter is dan 5 karakters.'''
     },
 
     'timezone' : {
 
         'no_argument' : '''
-Usage:
-    ```{prefix}timezone <Name>```
+Gebruik:
+    ```{prefix}timezone <naam>```
 Example:
     ```{prefix}timezone Europe/London```
-All timezones: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
-Current timezone: {timezone}''',
+Alle ondersteunde tijdszones: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+Huidige tijdszone: {timezone}''',
 
-        'no_timezone' : '''Timezone not recognized. A list is available at https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
+        'no_timezone' : '''Tijdszone is niet herkend. Een volledige lijst is beschikbaar op https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
 
-        'success' : '''Timezone has been set to {timezone}. Your current time should be {time}'''
+        'success' : '''Tijdszone is veranderd naar {timezone}. De huidige tijd zou {time} moeten zijn.'''
     },
 
     'restrict' : {
 
-        'disabled' : '''Disabled channel reminder permissions for roles.''',
+        'disabled' : ''''De herinnering toestemmingen voor de rollen zijn verwijderd.'''',
 
-        'enabled' : '''Enabled channel reminder permissions for roles.''',
+        'enabled' : ''''De herinnering toestemmingen voor de rollen zijn toegevoegd.''',
 
-        'allowed' : '''Allowed roles: {}''',
+        'allowed' : '''Toegestane rollen: {}''',
 
-        'help' : '''Please mention roles you wish to change the reminder permissions for.'''
+        'help' : '''Vermeld alstublieft de rollen waaarvan je de toestemmingen aan wil passen.'''
     },
 
     'clear' : {
