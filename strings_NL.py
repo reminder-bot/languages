@@ -7,7 +7,7 @@
 
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
-    'help' : '''Please visit https://jellywx.co.uk/help?lang=EN''', <------------ WIP
+    'help' : '''Please visit https://jellywx.co.uk/help?lang=EN''', #:<------------ WIP
 
     'help_raw' : [
         ['''Herinnering Commando`s''', {
