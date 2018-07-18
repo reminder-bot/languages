@@ -148,6 +148,19 @@ Example:
     ```{prefix}remind #general 10s Hello world```
     ```{prefix}remind 10:30 It\'s now 10:30```''',
 
+        'no_argument_new' : '''
+**New** Natural language processing
+Examples:
+    ```{prefix}natural in 10 minutes send Hello World! to #general```
+    ```{prefix}natural at 18:00 send The big event has started!```
+    ```{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs```
+Keywords:
+    `send` : define the message
+    `to` : define the location to send to
+Usage:
+    ```{prefix}natural <time statement> send <message> [to #channel/@user]```
+    ''',
+
         'invalid_tag' : '''Couldn't find a location by your tag present.''',
 
         'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.
