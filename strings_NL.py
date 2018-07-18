@@ -122,9 +122,9 @@ Huidige tijdszone: {timezone}''',
 
     'restrict' : {
 
-        'disabled' : ''''De herinnering toestemmingen voor de rollen zijn verwijderd.'''',
+        'disabled' : '''De herinnering toestemmingen voor de rollen zijn verwijderd.''',
 
-        'enabled' : ''''De herinnering toestemmingen voor de rollen zijn toegevoegd.''',
+        'enabled' : '''De herinnering toestemmingen voor de rollen zijn toegevoegd.''',
 
         'allowed' : '''Toegestane rollen: {}''',
 
@@ -180,8 +180,8 @@ Voorbeeld:
 
         'success' : '''Nieuw interval geregistreerd voor <{}{}> in {} seconden. Je kan het interval nu niet meer veranderen, dus je kan dit bericht nu verwijderen.''',
 
-        'success_new' : '''Nieuw interval geregistreerd voor {} in {} seconden. Als je dit interval wilt verwijderen, typ `$del`.'''
-        
+        'success_new' : '''Nieuw interval geregistreerd voor {} in {} seconden. Als je dit interval wilt verwijderen, typ `$del`.''',
+
         'removed' : '''Het lijkt dat er geen patrons in je server zitten, dus het interval is gestopt.'''
 
     },
