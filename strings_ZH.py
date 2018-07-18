@@ -7,7 +7,7 @@
 
     'admin_required' : '你需要管理员权限才能使用此指令。',
 
-    'help' : '''请查看 https://jellywx.co.uk/help?lang=CN''',
+    'help' : '''请查看 https://jellywx.co.uk/help?lang=ZH''',
 
     'help_raw' : [
         ['''提醒事项指令''', {
@@ -43,7 +43,7 @@
 
             '$lang <语言名称>' : '更改语言。',
 
-            '$clock [12]' : '显示现在的时间，附加选项显示十二小时制的时间。' }
+            '$clock [12]' : '显示现在的时间，附加选项则显示十二小时制的时间。' }
         ]
     ],
 
