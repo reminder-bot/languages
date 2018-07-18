@@ -187,58 +187,58 @@ Voorbeeld:
     },
 
     'autoclear' : {
-        'disable' : '''Autoclearing disabled on {}''',
+        'disable' : '''Automatisch verwijderen is gestopt op {}''',
 
-        'enable' : '''{} second autoclearing enabled.''',
+        'enable' : '''{} seconden automatisch verwijderen is gestart.''',
     },
 
     'del' : {
-        'listing' : '''Listing reminders on this server... (there may be a small delay, please wait for the "List (1,2,3...)" message).''',
+        'listing' : '''De lijst met herinneringen wordt weergegeven... (Het kan even duren, wacht alstublieft op het  "List (1,2,3...)" bericht).''',
 
-        'listed' : '''List (1,2,3...) the reminders you wish to delete, or type anything else to cancel.''',
+        'listed' : '''List (1,2,3...) de herinneringen die je wilt verwijderen, of typ iets anders om te stoppen.''',
 
-        'count' : '''Deleted {} reminders!'''
+        'count' : '''{} herinneringen zijn verwijderd!'''
     },
 
     'todo' : {
-        'server_only' : '''Please use `{prefix}todo` for your personal TODO list. `{prefix}todos` is only for server use.''',
+        'server_only' : '''Gebruik alstublieft `{prefix}todo` voor je persoonlijke TODO lijst. `{prefix}todos` is alleen voor server gebruik.''',
 
-        'add' : '''*Do `{prefix}{command} add <message>` to add an item to your TODO, or type `{prefix}{command} help` for more commands!*''',
+        'add' : '''*Gebruik `{prefix}{command} add <message>` om een item toe te voegen op je TODO lijst, of gebruik  `{prefix}{command} help` voor meer commando`s!*''',
 
-        'too_long' : '''Sorry, but TODO message sizes are limited to 80 characters. Keep it concise :)''',
+        'too_long' : '''Sorry, maar TODO berichten zijn gelimiteerd tot 80 karakters. Houd het kort :)''',
 
-        'too_long2' : '''Sorry, but TODO lists are capped at 800 characters. Maybe, get some things done?''',
+        'too_long2' : '''Sorry, maar TODO lijsten zijn gelimiteerd tot 800 karakters. Misschien wordt het tijd om wat te doen? ;)''',
 
-        'added' : '''Added \'{name}\' to todo!''',
+        'added' : ''' \'{name}\' is toegevoegd tot de TODO!''',
 
-        'removed' : '''Removed \'{}\' from todo!''',
+        'removed' : ''' \'{}\' is verwijderd van de TODO!''',
 
-        'error_value' : '''Removal item must be a number. View the numbered TODOs using `{prefix}{command}`''',
+        'error_value' : '''Het item om te verwijderen moet een nummer zijn. Je kan de genummerde TODO`s vinden door `{prefix}{command}` te gebruiken''',
 
-        'error_index' : '''Couldn\'t find item by that number. Are you in the correct todo list?''',
+        'error_index' : '''Het nummer om te verwijderen is niet gevonden. Zit je in de goede TODO lijst?''',
 
-        'help' : '''To use the TODO commands, do `{prefix}{command} add <message>`, `{prefix}{command} remove <number>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
-
-        'cleared' : '''Cleared todo list!'''
+        'help' : '''Om de TODO commando`s te gebruiken, gebruik `{prefix}{command} add <bericht>`, `{prefix}{command} remove <bericht>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
+##WIP
+        'cleared' : '''De TODO lijst is geleegd!'''
     },
 
     'tags' : {
 
-        'deleted' : '''Deleted tag {}''',
+        'deleted' : '''De tag {} is verwijderd''',
 
-        'added' : '''Added tag {}''',
+        'added' : '''De tag {} is toegevoegd''',
 
-        'invalid_count' : '''Sorry, but for normal users tags are capped at 6 tags. Please remove some or consider donating with `{prefix}donate` ($5 tier).''',
+        'invalid_count' : '''Sorry, maar voor normale gebruikers het limiet voor het aantal tags is 6. Verwijder er alstublieft een paar of overweeg om een donatie te geven, meer informatie via `{prefix}donate` ($5 tier).''',
 
-        'invalid_chars' : '''Tags are capped at 80 characters. Keep it concise!''',
+        'invalid_chars' : '''Tags zijn gelimiteerd tot 80 karakters. Houd het kort!''',
 
-        'colon' : '''Please add a colon to split the name of the tag from the body.''',
+        'colon' : '''Voeg alstublieft een colon toe om  de naam van de tag en de body te scheiden.''',
 
-        'illegal' : '''Please don\'t use keywords `add, new, remove, del` in the names of your tags.''',
+        'illegal' : '''Gebruik alstublieft geen keywords zoals `add, new, remove, del` in de namen van je tags.''',
 
-        'unfound' : '''Couldn\'t find the tag by the name you specified.''',
+        'unfound' : '''Het is niet gelukt om de tag te vinden die bij de naam die je genoemt hebt.''',
 
-        'help' : '''Use `{prefix}tag add <name>: <message>` to add new tags. Use `{prefix}tag remove <name>` to delete a tag. Use `{prefix}tag <name>` to view a tag. Use `{prefix}tag` to list all tags'''
+        'help' : '''Gebruik `{prefix}tag add <naam>: <bericht>` om nieuwe tags toe te voegen. Gebruik `{prefix}tag remove <naam>` om een tag te verwijderen. Gebruik `{prefix}tag <naam>` om een tag te zien. Gebruik `{prefix}tag` om alle tags te zien.'''
     },
 
     'blacklist' : {
