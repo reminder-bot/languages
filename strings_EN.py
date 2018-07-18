@@ -179,7 +179,11 @@ Usage:
     ```{prefix}natural <time statement> send <message> [to #channel/@user]```
     ''',
 
-        'success' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del`.'''
+        'success' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del`.''',
+
+        'bad_time' : '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
+
+        'long_time' : '''That's a long time! Please ensure your reminder is younger than 50 years'''
 
     },
 
