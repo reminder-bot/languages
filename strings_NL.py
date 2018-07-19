@@ -172,8 +172,8 @@ Voorbeelden:
     ```{prefix}natural verstuur nu 10 minuten zijn voorbij! elke 10 minuten naar #timer```
 Trefwoorden:
     `verstuur` : Definieer het bericht
-    `every` : Definieer het interval van het bericht
-    `to` : Definieer de locatie waar het bericht naar toe verzonden moet worden
+    `iedere` : Definieer het interval van het bericht, bijvoorbeeld iedere 10 minuten
+    `naar` : Definieer de locatie waar het bericht naar toe verzonden moet worden
 Gebruik:
     ```{prefix}natural <tijdsverklaring> verstuur <bericht> [interval definitie] naar [#kanaal/@gebruiker]```
     ''',
@@ -184,11 +184,11 @@ Gebruik:
 
         'long_time' : '''Dat is een lange tijd! Zorg dat je reminder binnen 50 jaar is.''',
 
-        'send' : ''' send ''',
+        'send' : ''' verstuur ''',
 
-        'to' : ''' to ''',
+        'to' : ''' naar ''',
 
-        'every' : ''' every '''
+        'every' : ''' iedere '''
 
     },
 
