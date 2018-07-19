@@ -183,7 +183,13 @@ Usage:
 
         'bad_time' : '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
 
-        'long_time' : '''That's a long time! Please ensure your reminder is younger than 50 years'''
+        'long_time' : '''That's a long time! Please ensure your reminder is younger than 50 years''',
+
+        'send' : ''' send ''',
+
+        'to' : ''' to ''',
+
+        'every' : ''' every '''
 
     },
 
