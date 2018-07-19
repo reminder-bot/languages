@@ -51,10 +51,10 @@
     'web_foot' : 'Typ de brackets niet wanneer je een commando typt!Bijvoorbeeld: mbprefix !, niet mbprefix <!>',
     'web_foot2' : 'Je benkt welkom in onze Discord Suppot Server (Engels) als je meer hulp nodig hebt!',
 
-    'about' : {'Ovef de bot' : ['Bot gemaakt door: Jude Southworth', 'Github: <a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', 'Zou je graag een bot willen? Neem contact met JellyWX op via Discord, in het Engels.', 'Hosting provider: OVH']},
+    'about' : {'Over de bot' : ['Bot gemaakt door:       Jude Southworth', 'Github: <a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', 'Zou je graag een bot willen? Neem contact met JellyWX op via Discord, in het Engels.', 'Hosting provider: OVH']},
 
     'join' : 'Word lid van de Discord server',
-    'invite' : 'nodig de Bot uit in jouw server',
+    'invite' : 'Nodig de Bot uit in jouw server',
 
     'info' : '''
 Standaard prefix: `$`
