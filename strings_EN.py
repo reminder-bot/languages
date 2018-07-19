@@ -172,11 +172,13 @@ Examples:
     ```{prefix}natural in 10 minutes send Hello World! to #general```
     ```{prefix}natural at 18:00 send The big event has started!```
     ```{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs```
+    ```{prefix}natural now send 10 minutes has passed! every 10 minutes to #timer```
 Keywords:
     `send` : define the message
+    `every` : define an interval
     `to` : define the location to send to
 Usage:
-    ```{prefix}natural <time statement> send <message> [to #channel/@user]```
+    ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
     ''',
 
         'success' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del`.''',
