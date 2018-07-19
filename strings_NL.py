@@ -161,6 +161,37 @@ Voorbeeld:
 
         'success' : '''Nieuwe herinnering geregistreerd voor <{}{}> in {} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },
+    
+    'natural' : {
+        'no_argument' : '''
+**Nieuw** De optie om natuurlijke tekst te typen!
+Voorbeelden:
+    ```{prefix}natural in 10 minuten verstuur Hello World! naar #general```
+    ```{prefix}natural om 18:00 verstuur Het grote evenement is begonnen!```
+    ```{prefix}natural op 16 juli om 14:00 verstuur Subs De reset is vandaag! naar #subs```
+    ```{prefix}natural verstuur nu 10 minuten zijn voorbij! elke 10 minuten naar #timer```
+Trefwoorden:
+    `verstuur` : Definieer het bericht
+    `every` : Definieer het interval van het bericht
+    `to` : Definieer de locatie waar het bericht naar toe verzonden moet worden
+Gebruik:
+    ```{prefix}natural <tijdsverklaring> verstuur <bericht> [interval definitie] naar [#kanaal/@gebruiker]```
+    ''',
+
+        'success' : '''Nieuwe reminder geregistreert voor {} in {} seconden. Als je deze herinnering wilt verwijderen, typ `$del`.''',
+
+        'bad_time' : '''Het is niet gelukt om een correcte tijd te vinden. Probeer om het zo duidelijk mogelijk te maken, bijvoorbeeld `16 juli` of `in 20 minuten`''',
+
+        'long_time' : '''Dat is een lange tijd! Zorg dat je reminder binnen 50 jaar is.''',
+
+        'send' : ''' send ''',
+
+        'to' : ''' to ''',
+
+        'every' : ''' every '''
+
+    },
+
 
     'interval' : {
         'no_argument' : '''
@@ -242,26 +273,26 @@ Voorbeeld:
     },
 
     'blacklist' : {
-        'removed_from' : '''Removed blacklists from specified channels.''',
+        'removed_from' : '''De gegeven kanalen zijn verwijderd van de balcklist.''',
 
-        'added_from' : '''Added specified channels to blacklist.''',
+        'added_from' : '''De gegeven kanalen zijn toegevoegd aan de blacklist.''',
 
-        'removed' : '''Removed current channel from blacklist.''',
+        'removed' : '''Het huidige kanaal is verwijderd van de blacklist.''',
 
-        'added' : '''Added current channel to blacklist.'''
+        'added' : '''Het huidige kanaal is toegevoegd aan de blacklist.'''
 
     },
 
     'lang' : {
 
-        'invalid' : '''Languages:
+        'invalid' : '''Talen:
 {}''',
 
-        'set' : '''Language set to English.''',
+        'set' : '''Taal is nu Nederlands.''',
     },
 
     'clock' : {
-        'time' : '''Current time is {}.''',
+        'time' : '''De huidge tijd is {}.''',
     }
 
 }
