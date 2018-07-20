@@ -1,13 +1,13 @@
-#: Dutch | STILL A WORK IN PROGRESS!
+#: Dutch
 
 {
     '__maintainer__' : '@Mr Pleasant',
 
-    'blacklisted' : ''':x: Dit kanaal is op de zwarte lijst :x:''',
+    'blacklisted' : ''':x: Dit kanaal is op de zwarte lijst :x''',
 
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
-    'help' : '''Ga voor meer informatie naar https://jellywx.co.uk/help?lang=EN''', #:<------------ WIP
+    'help' : '''Ga voor meer informatie naar https://jellywx.co.uk/help?lang=NL''',
 
     'help_raw' : [
         ['''Herinnering Commando`s''', {
@@ -62,15 +62,19 @@ Reset prefix: `@{user} prefix $`
 Help: `{prefix}help`
 
 **Welkom bij RemindMe!**
+
 Developer: <@203532103185465344>
 Coole gast die weet waar hij het over heeft: <@174243954487853056>
 Icon: <@253202252821430272>
+Nederlandse vertaling, foutjes kunnen hier worden verteld: <@393139822044119051>
+
 Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
 Framework: `discord.py`
 Hosting provider: OVH
 Mijn andere bot (alleen voor Patreons):
 https://discordapp.com/oauth2/authorize?client_id=411224415863570434&scope=bot&permissions=35840
-*Als je vragen hebt over nieuwe functies, graag een bericht in de discord server!r*
+
+*Als je vragen hebt over nieuwe functies, graag een bericht in de discord server!*
 *Als je een vraag hebt over de ontwikkeling van de bot voor jou op je server, stuur mij een privé bericht!*
 ''',
 
@@ -142,8 +146,8 @@ Huidige tijdszone: {timezone}''',
 Gebruik:
     ```{prefix}remind [kanaal/gebruiker] <tijd tot of tijd wanneer> <bericht>```
 Voorbeeld:
-    ```{prefix}remind #general 10s Hello world```
-    ```{prefix}remind 10:30 It`s now 10:30```''',
+    ```{prefix}remind #general 10s Hello world!```
+    ```{prefix}remind 10:30 Het is n 10:30.```''',
 
         'invalid_tag' : '''De locatie van de tag is niet gevonden.''',
 
