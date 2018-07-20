@@ -165,6 +165,36 @@ Ejemplo:
 
         'success' : '''Nuevo recordatorio registrado para <{}{}> en {} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
+    
+    'natural' : {
+        'no_argument' : '''
+**Nuevo** Procesamiento en lenguaje natural
+Ejemplos:
+    ```{prefix}natural in 10 minutos enviar ¡Hola Mundo! para #general```
+    ```{prefix}natural at 18:00 enviar ¡El gran evento ha comenzado!```
+    ```{prefix}natural on 16/07 at 14:00 enviar ¡Hoy se reinician las subs! para #subs```
+    ```{prefix}natural now enviar ¡Han pasado 10 minutos! cada 10 minutes para #timer```
+Keywords:
+    `enviar` : define el mensaje
+    `cada` : define el intervalo
+    `para` : define el destino del mensaje  
+Uso:
+    ```{prefix}natural <tiempo para> enviar <mensaje> [cada intervalo] [para #canal/@usuario]```
+    ''',
+
+        'success' : '''Nuevo recordatorio registrado para {} en {} segundos. Si quieres eliminar este recordatorio, escribe `$del`.''',
+
+        'bad_time' : '''Has fallado en colocar correctamente el tiempo. Por favor, colócalo claro, por ejemplo `16th of july` o `in 20 minutes`''',
+
+        'long_time' : '''¡Eso es un tiempo muy grande! Por favor, asegúrate que tu recordatorio es menor a 50 años.''',
+
+        'enviar' : ''' enviar''',
+
+        'para' : ''' para ''',
+
+        'cada' : ''' cada '''
+
+    },
 
     'interval' : {
         'no_argument' : '''
