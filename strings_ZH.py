@@ -1,4 +1,4 @@
-#: chinese simplified
+#: simplified chinese
 
 {
     '__maintainer__' : '@Gourdyu',
@@ -13,7 +13,7 @@
         ['''提醒事项指令''', {
             '$del' : '删除服务器上的提醒事项或周期重复提醒。如果是私信提醒，请给bot私信发送这个指令。',
 
-            '$remind [用户/频道] <提醒时间> <内容>' : '设置一个提醒。将时间设置成[数字][s/m/h/d]的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用 `日`/`月`/`年`-`时`:`分`:`秒` 的格式设置精确时间。',
+            '$remind [用户/频道] <提醒时间> <内容>' : '设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用 `日`/`月`/`年`-`时`:`分`:`秒` 的格式设置精确时间。',
 
             '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '设置一个周期重复提醒，给出的`内容`将从`提醒时间`开始，每隔`重复周期`被重复提醒一次。将时间设置成上述格式。例如`$interval 0s 20m Hello World!`就会每20分钟向该频道发送一次`Hello World!`。',
 
@@ -94,7 +94,7 @@ https://discord.gg/WQVaYmT
 
 感谢所有已经成为Patron的人 :D 是你们让这个bot得以维护。
 
-请注意，务必将你的Patreon和Discord账号连接，这样才能得到Patreon给出的权限。
+请注意，务必将你的Patreon和Discord账号连接，这样才能得到Patreon提供的权限。
 ''',
 
     'prefix' : {
@@ -118,7 +118,7 @@ https://discord.gg/WQVaYmT
 时区列表： https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
 当前时区：{timezone}''',
 
-        'no_timezone' : '''未知时区。可用的时区列表在 https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
+        'no_timezone' : '''未知时区。可用的时区列表： https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
 
         'success' : '''时区已被设置为{timezone}。您当前的时间应为{time}'''
     },
@@ -144,11 +144,11 @@ https://discord.gg/WQVaYmT
         'no_argument' : '''
 用法:
     ```{prefix}remind [发往的频道或用户] <剩余时间或时间点> <内容>```
-例子:
+举例:
     ```{prefix}remind #general 10s Hello world```
     ```{prefix}remind 10:30 现在是10:30```''',
 
-        'invalid_tag' : '''无法找到你给出的发送对象。''',
+        'invalid_tag' : '''无法定位你给出的发送对象。''',
 
         'invalid_time' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式，或 `日/月/年-时:分:秒` 的格式给出时间。
 
@@ -156,13 +156,13 @@ https://discord.gg/WQVaYmT
 
         'invalid_count' : '''这个频道里的待提醒事项太多了！用`{prefix}del`来删掉一些，或者用`{prefix}donate`来扩大最大量（5美元档）''',
 
-        'invalid_chars' : '''提醒内容太长了！（最大150字符，你输入了{}字符）。用`{prefix}donate`来把最大长度扩大到1900字符（5美元档）。''',
+        'invalid_chars' : '''提醒内容太长了！（最大150字符，你输入了{}字符。）用`{prefix}donate`来把最大长度扩大到1900字符（5美元档）。''',
 
         'invalid_chars_2000' : '''Discord限制一条信息不能超过2000字符。抱歉。''',
 
         'no_perms' : '''你必须拥有`管理信息`权限或可以向该频道发送提醒的身份组。请联系服务器的管理员，让他使用`{prefix}restrict`指令来指定允许设置提醒的身份组。''',
 
-        'success' : '''发往<{}{}>的提醒将在{}秒后发出。如果你想删除这条提醒，输入`$del`。''',
+        'success' : '''发往 <{}{}> 的提醒将在{}秒后发出。如果你想删除这条提醒，输入`$del`。''',
     },
 
     'natural' : {
@@ -181,7 +181,7 @@ https://discord.gg/WQVaYmT
     ```{prefix}natural <时间短语> send <内容> [every 重复周期短语] [to #频道/@用户]```
     ''',
 
-        'success' : '''发给 {} 的提醒将在{}秒后发出。如果你想删除这条提醒，输入`$del`。''',
+        'success' : '''发往 {} 的提醒将在{}秒后发出。如果你想删除这条提醒，输入`$del`。''',
 
         'bad_time' : '''未能成功处理给出的时间。请尽可能清楚地表述，比如`16th of july`或是`in 20 minutes`''',
 
@@ -203,7 +203,7 @@ https://discord.gg/WQVaYmT
     ```{prefix}interval #general 9:30 1d 早上好！```
     ```{prefix}interval 0s 10s 这能烦死人```''',
 
-        'invalid_interval' : '''请以[num][s/m/h/d][num][s/m/h/d]...的格式给出重复周期，不要空格，比如 10s 即10秒，或 10s12m15h1d 即1天15小时12分钟10秒。
+        'invalid_interval' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式给出重复周期，不要空格，比如 10s 即10秒，或 10s12m15h1d 即1天15小时12分钟10秒。
 
 给出的时间不能超过未来50年。''',
 
@@ -211,16 +211,16 @@ https://discord.gg/WQVaYmT
 
         'donor' : '''你必须成为Patron（捐赠2美元或更多）才能使用这个指令！输入`{prefix}donate`来了解更多。''',
 
-        'success' : '''发给<{}{}>的周期重复提醒将在{}秒后开始。你还不能编辑提醒的内容，但你可以删除它。''',
+        'success' : '''发往 <{}{}> 的周期重复提醒将在{}秒后开始。你还不能编辑提醒的内容，但你可以删除它。''',
 
-        'removed' : '''这个服务器上现在没有Patron了，所以设置的周期重复提醒已被删除。'''
+        'removed' : '''这个服务器上没有Patron，所以设置的周期重复提醒已被删除。'''
 
     },
 
     'autoclear' : {
-        'disable' : '''关闭自动清除 {} 的信息。''',
+        'disable' : '''不再自动清除 {} 内的信息。''',
 
-        'enable' : '''开启自动清除 {} 的信息。''',
+        'enable' : '''该频道内发出的信息将在{}秒后被自动清除。''',
     },
 
     'del' : {
@@ -246,28 +246,28 @@ https://discord.gg/WQVaYmT
 
         'error_value' : '''输入待移除事项的编号。用`{prefix}{command}`来查看待办事项列表。''',
 
-        'error_index' : '''无法找到该数字对应的事项。你不会是迷路了吧？''',
+        'error_index' : '''没有找到该数字对应的事项。你不会是迷路了吧？''',
 
-        'help' : '''使用待办事项列表，用`{prefix}{command} add <内容>`来增加待办事项，用`{prefix}{command} remove <编号>`来移除待办事项，用`{prefix}{command} clear`来清空待办事项列表，用`{prefix}{command}`来查看待办事项列表。''',
+        'help' : '''待办事项列表指令有：用`{prefix}{command} add <内容>`来增加待办事项，用`{prefix}{command} remove <编号>`来移除待办事项，用`{prefix}{command} clear`来清空待办事项列表，用`{prefix}{command}`来查看待办事项列表。''',
 
-        'cleared' : '''已清空待办事项列表！'''
+        'cleared' : '''待办事项列表已被清空！'''
     },
 
     'tags' : {
 
-        'deleted' : '''已删除标签 {}''',
+        'deleted' : '''删除了标签 {}''',
 
-        'added' : '''已添加标签 {}''',
+        'added' : '''添加了标签 {}''',
 
         'invalid_count' : '''抱歉，普通用户至多可设置6条标签。请删除一些标签，或者考虑使用`{prefix}donate`捐赠（5美元档）。''',
 
         'invalid_chars' : '''标签至多可容纳80字符。简短些！''',
 
-        'colon' : '''请用冒号将标签的名称和内容分开。''',
+        'colon' : '''请用冒号将标签的名称和内容分隔开。''',
 
         'illegal' : '''标签名称中请不要出现`add`、`new`、`remove`或`del`。''',
 
-        'unfound' : '''无法找到你给出的名称的标签。''',
+        'unfound' : '''没有找到该名称的标签。''',
 
         'help' : '''使用`{prefix}tag add <名称>: <内容>` 来创建一个新标签。使用`{prefix}tag remove <名称>`来删除一个标签。使用`{prefix}tag <名称>`来查看标签内容。使用`{prefix}tag`来查看所有标签的列表。'''
     },
@@ -288,11 +288,11 @@ https://discord.gg/WQVaYmT
         'invalid' : '''语言：
 {}''',
 
-        'set' : '''语言已被设为中文。''',
+        'set' : '''语言已设置为中文。''',
     },
 
     'clock' : {
-        'clock' : '''当前时间为 {}。''',
+        'time' : '''当前时间为 {}。''',
     }
 
 }
