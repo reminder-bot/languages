@@ -1,6 +1,8 @@
 #: english
 
 {
+    '__maintainer__' : '@JellyWX',
+
     'blacklisted' : ''':x: This channel is blacklisted :x:''',
 
     'admin_required' : 'You need to be an admin to run this command.',
@@ -129,7 +131,9 @@ Current timezone: {timezone}''',
 
         'enabled' : '''Enabled channel reminder permissions for roles.''',
 
-        'allowed' : '''Allowed roles: {}'''
+        'allowed' : '''Allowed roles: {}''',
+
+        'help' : '''Please mention roles you wish to change the reminder permissions for.'''
     },
 
     'clear' : {
@@ -148,7 +152,9 @@ Example:
 
         'invalid_tag' : '''Couldn't find a location by your tag present.''',
 
-        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.''',
+        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.
+
+Make sure the time provided is less than 50 years in the future.''',
 
         'invalid_count' : '''Too many reminders in specified channel! Use `{prefix}del` to delete some of them, or use `{prefix}donate` to increase your maximum ($5 tier).''',
 
@@ -158,7 +164,37 @@ Example:
 
         'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and tell her/him to use the `{prefix}restrict` command to specify allowed roles.''',
 
-        'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del`.'''
+        'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del`.''',
+    },
+
+    'natural' : {
+        'no_argument' : '''
+**New** Natural language processing
+Examples:
+    ```{prefix}natural in 10 minutes send Hello World! to #general```
+    ```{prefix}natural at 18:00 send The big event has started!```
+    ```{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs```
+    ```{prefix}natural now send 10 minutes has passed! every 10 minutes to #timer```
+Keywords:
+    `send` : define the message
+    `every` : define an interval
+    `to` : define the location to send to
+Usage:
+    ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
+    ''',
+
+        'success' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del`.''',
+
+        'bad_time' : '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
+
+        'long_time' : '''That's a long time! Please ensure your reminder is younger than 50 years''',
+
+        'send' : ''' send ''',
+
+        'to' : ''' to ''',
+
+        'every' : ''' every '''
+
     },
 
     'interval' : {
@@ -169,7 +205,9 @@ Example:
     ```{prefix}interval #general 9:30 1d Good morning!```
     ```{prefix}interval 0s 10s This will be really irritating```''',
 
-        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.''',
+        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.
+
+Make sure the interval provided is less than 50 years''',
 
         '8_seconds' : '''Please make sure your interval timer is longer than 8 seconds.''',
 

@@ -1,6 +1,8 @@
 #: español
 
 {
+    '__maintainer__' : '@Giuh',
+
     'blacklisted' : ''':x: Este canal está en la blacklist :x:''',
 
     'admin_required' : 'Necesitas permisos de administrador para usar este comando.',
@@ -43,7 +45,7 @@
 
 '$lang <nombre>' : 'cambia el idioma.',
 
-'$clock' : 'obtén la hora actual.'}]
+'$clock [12]' : 'obtén la hora actual, opcionalmente en formato 12 horas.'}]
 ],
 
     'web_foot_title' : 'Información extra',
@@ -104,7 +106,7 @@ Por favor utiliza este comando como `mbprefix <prefijo>`
 Prefijo cambiado a {prefix}
 ''',
 
-        'too_long' : '''Please select a prefix under 5 characters'''
+        'too_long' : '''Por favor selecciona un prefijo menor a 5 caracteres.'''
     },
 
     'timezone' : {
@@ -128,7 +130,9 @@ Zona horaria actual: {timezone}''',
 
         'enabled' : '''Activados los permisos de recordatorios para el rol.''',
 
-        'allowed' : '''Roles permitidos: {}'''
+        'allowed' : '''Roles permitidos: {}''',
+
+        'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.'''
     },
 
     'clear' : {
@@ -147,7 +151,9 @@ Ejemplo:
 
         'invalid_tag' : '''No es posible encontrar la localización de tu tag.''',
 
-        'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.''',
+        'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
+
+        Asegúrate de que el tiempo colocado es menor a 50 años''',
 
         'invalid_count' : '''¡Demasiados recordatorios en el canal especificado! Utiliza `{prefix}del` para eliminar algunos, o utiliza `{prefix}donate` para aumentar el límite (tier de $5).''',
 
@@ -159,6 +165,36 @@ Ejemplo:
 
         'success' : '''Nuevo recordatorio registrado para <{}{}> en {} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
+    
+    'natural' : {
+        'no_argument' : '''
+**Nuevo** Procesamiento en lenguaje natural
+Ejemplos:
+    ```{prefix}natural en 10 minutos enviar ¡Hola Mundo! para #general```
+    ```{prefix}natural a las 18:00 enviar ¡El gran evento ha comenzado!```
+    ```{prefix}natural el 16 de julio a las 14:00 enviar ¡Hoy se reinician las subs! para #subs```
+    ```{prefix}natural ahora enviar ¡Han pasado 10 minutos! cada 10 minutos para #timer```
+Keywords:
+    `enviar` : define el mensaje
+    `cada` : define el intervalo
+    `para` : define el destino del mensaje  
+Uso:
+    ```{prefix}natural <tiempo para> enviar <mensaje> [cada intervalo] [para #canal/@usuario]```
+    ''',
+
+        'success' : '''Nuevo recordatorio registrado para {} en {} segundos. Si quieres eliminar este recordatorio, escribe `$del`.''',
+
+        'bad_time' : '''Has fallado en colocar correctamente el tiempo. Por favor, colócalo claro, por ejemplo `16 de julio` o `en 20 minutos`''',
+
+        'long_time' : '''¡Eso es un tiempo muy grande! Por favor, asegúrate que tu recordatorio es menor a 50 años.''',
+
+        'send' : ''' enviar''',
+
+        'to' : ''' para ''',
+
+        'every' : ''' cada '''
+
+    },
 
     'interval' : {
         'no_argument' : '''
@@ -168,7 +204,9 @@ Ejemplo:
     ```{prefix}interval #general 9:30 1d ¡Buen día!```
     ```{prefix}interval 0s 10s Esto será muy irritante```''',
 
-        'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.''',
+        'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.
+
+        Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
 
         '8_seconds' : '''Por favor asegúrate que tu intervalo es mayor a 8 segundos.''',
 

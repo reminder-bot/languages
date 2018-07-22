@@ -1,6 +1,8 @@
 #: romanian
 
 {
+    '__maintainer__' : '@Keleop',
+
     'blacklisted' : ''':x: Acest canal este pe lista neagra. :x:''',
 
     'admin_required' : 'Trebuie sa fi Administrator pentru a folosii aceasta comanda.',
