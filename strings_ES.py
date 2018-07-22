@@ -188,11 +188,11 @@ Uso:
 
         'long_time' : '''¡Eso es un tiempo muy grande! Por favor, asegúrate que tu recordatorio es menor a 50 años.''',
 
-        'enviar' : ''' enviar''',
+        'send' : ''' enviar''',
 
-        'para' : ''' para ''',
+        'to' : ''' para ''',
 
-        'cada' : ''' cada '''
+        'every' : ''' cada '''
 
     },
 
