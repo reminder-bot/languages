@@ -9,11 +9,13 @@
 
     'help_raw' : [
         ['''Reminder Commands''', {
+            '$natural' : 'easier method to set reminders. Please type `$natural` for more information.'
+
             '$del' : 'delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
 
-            '$remind [user/channel] <time-to-reminder> <message>' : 'set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as `day`/`month`/`year`-`hour`:`minute`:`second`.',
+            '$remind [user/channel] <time-to-reminder> <message>' : 'please consider `$natural` rather than using this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as `day`/`month`/`year`-`hour`:`minute`:`second`.',
 
-            '$interval [user/channel] <time-to-reminder> <interval> <message>' : 'set up an interval, where the given `message` will be sent every `interval` starting in the given `time-to-reminder`. Takes times in the formats above. Ex. `$interval 0s 20m Hello World!` will send `Hello World!` to your channel every 20 minutes.',
+            '$interval [user/channel] <time-to-reminder> <interval> <message>' : 'please consider `$natural` rather than using this command. Set up an interval, where the given `message` will be sent every `interval` starting in the given `time-to-reminder`. Takes times in the formats above. Ex. `$interval 0s 20m Hello World!` will send `Hello World!` to your channel every 20 minutes.',
 
             '$todo' : 'TODO list related commands. Use `$todo help` for more information.',
 
