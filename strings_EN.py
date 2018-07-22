@@ -11,7 +11,7 @@
 
     'help_raw' : [
         ['''Reminder Commands''', {
-            '$natural' : 'easier method to set reminders. Please type `$natural` for more information.'
+            '$natural' : 'easier method to set reminders. Please type `$natural` for more information.',
 
             '$del' : 'delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
 
