@@ -1,4 +1,4 @@
-#: Dutch
+#: dutch
 
 {
     '__maintainer__' : '@Mr Pleasant',
@@ -165,7 +165,7 @@ Voorbeeld:
 
         'success' : '''Nieuwe herinnering geregistreerd voor <{}{}> in {} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },
-    
+
     'natural' : {
         'no_argument' : '''
 **Nieuw** De optie om natuurlijke tekst te typen!
