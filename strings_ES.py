@@ -45,8 +45,11 @@
 
 '$lang <nombre>' : 'cambia el idioma.',
 
-'$clock [12]' : 'obtén la hora actual, opcionalmente en formato 12 horas.'}]
-],
+'$clock' : 'habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.'}
+ 
+            '$clock show' : 'obtén la hora actual.' }
+        ]
+    ],
 
     'web_foot_title' : 'Información extra',
     'web_foot' : '¡No coloques los paréntesis al escribir un comando! Por ejemplo, `mbprefix !`, no `mbprefix <!>`',
@@ -295,6 +298,9 @@ Ejemplo:
     'clock' : {
 
         'time' : '''La hora actual es {}.''',
+        
+        'disabled' : '''El reloj ha sido deshabilitado''',
+        
+        'enabled' : '''El reloj ha sido habilitado''',
     }
-
-}
+ }
