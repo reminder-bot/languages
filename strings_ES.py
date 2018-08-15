@@ -297,9 +297,10 @@ Ejemplo:
 
     'clock' : {
         'time' : '''La hora actual es {}.''',
-        
-        'disabled' : '''El reloj ha sido deshabilitado''',
-        
-        'enabled' : '''El reloj ha sido habilitado''',
+
+        'disabled' : '''El reloj ha sido deshabilitado.''',
+
+        'enabled' : '''El reloj ha sido habilitado.''',
     }
- }
+
+}
