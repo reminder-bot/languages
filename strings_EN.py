@@ -45,7 +45,9 @@
 
             '$lang <name>' : 'change the language.',
 
-            '$clock [12]' : 'get the current time, optionally as 12 hour clock.' }
+            '$clock' : 'enable a live-update time in the channels bar. Moderator only command.',
+
+            '$clock show' : 'get the current time.' }
         ]
     ],
 
@@ -295,6 +297,10 @@ Make sure the interval provided is less than 50 years''',
 
     'clock' : {
         'time' : '''Current time is {}.''',
+
+        'disabled' : '''Clock has been disabled''',
+
+        'enabled' : '''Clock has been enabled''',
     }
 
 }
