@@ -47,9 +47,9 @@
 
 '$lang <nombre>' : 'cambia el idioma.',
 
-'$clock' : 'habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.'}
+'$clock' : 'habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.',
  
-            '$clock show' : 'obtén la hora actual.' }
+'$clock show' : 'obtén la hora actual.' }
         ]
     ],
 
