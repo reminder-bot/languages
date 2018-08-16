@@ -11,6 +11,8 @@
 
     'help_raw' : [
 ['Comandos de recordatorios', {
+'$natural' : 'método más facil para colocar recordatorios. Escribe `$natural` para más información.',
+    
 '$del' : 'Elimina recordatorios e intervalos en tu servidor.',
 
 '$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como `día`/`mes`/`año`-`hora`:`minuto`:`segundo`.',
@@ -117,7 +119,7 @@ Prefijo cambiado a {prefix}
         'no_argument' : '''
 Uso:
     ```{prefix}timezone <nombre>```
-Example:
+Ejemplo:
     ```{prefix}timezone Europe/London```
 Todas las zonas horarias: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
 Zona horaria actual: {timezone}''',
@@ -177,7 +179,7 @@ Ejemplos:
     ```{prefix}natural a las 18:00 enviar ¡El gran evento ha comenzado!```
     ```{prefix}natural el 16 de julio a las 14:00 enviar ¡Hoy se reinician las subs! para #subs```
     ```{prefix}natural ahora enviar ¡Han pasado 10 minutos! cada 10 minutos para #timer```
-Keywords:
+Palabras clave:
     `enviar` : define el mensaje
     `cada` : define el intervalo
     `para` : define el destino del mensaje  
