@@ -43,7 +43,9 @@
 
             '$lang <name>' : 'verander de taal.',
 
-            '$clock [12]' : 'krijg de tijd op dit moment, optioneel als een 12-uurs klok.' }
+            '$clock' : 'Stel een live tijd in bij het kanalenoverzicht. Moderator-specifiek commando.',
+             
+            '$clock show' : 'krijg de huidige tijd.' }
         ]
     ],
 
@@ -66,7 +68,7 @@ Help: `{prefix}help`
 Developer: <@203532103185465344>
 Coole gast die weet waar hij het over heeft: <@174243954487853056>
 Icon: <@253202252821430272>
-Nederlandse vertaling, foutjes kunnen hier worden gemeld: <@393139822044119051>
+Nederlandse vertaling door: <@393139822044119051>
 
 Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
 Framework: `discord.py`
@@ -296,7 +298,11 @@ Voorbeeld:
     },
 
     'clock' : {
-        'time' : '''De huidge tijd is {}.''',
+        'time' : '''De huidge tijd is''', 
+        
+        'disabled' : '''De klok is verwijderd''',
+        
+        'enabled' : '''De klok is toegevoegd''',
     }
 
 }
