@@ -298,7 +298,7 @@ Voorbeeld:
     },
 
     'clock' : {
-        'time' : '''De huidge tijd is''', 
+        'time' : '''De huidge tijd is {}.''', 
         
         'disabled' : '''De klok is verwijderd''',
         
