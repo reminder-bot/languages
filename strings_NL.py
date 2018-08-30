@@ -11,15 +11,17 @@
 
     'help_raw' : [
         ['''Herinnering Commando`s''', {
-            '$del' : 'verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
+            '$natural' : 'Makkelijkere manier om reminders in te stellen. Gebruik het commando voor meer informatie.',
+            
+            '$del' : 'Verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
 
-            '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als `dag`/`maand`/`jaar`-`uur`:`minuut`:`seconden`.',
+            '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als `dag`/`maand`/`jaar`-`uur`:`minuut`:`seconden`.',
 
-            '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : 'stel een interval in, waar het gegeven `bericht` elk `interval` verzonden wordt in elk gegeven `tijd-tot-herinnering` tijd. Neemt de tijd in het formaat hierboven. Voorbeeld: `$interval 0s 20m Hello World!` verstuurt `Hello World!` elke 20 minuten naar het kanaal.',
+            '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een interval in, waar het gegeven `bericht` elk `interval` verzonden wordt in elk gegeven <code>tijd-tot-herinnering</code> tijd. Neemt de tijd in een normale manier. Voorbeeld: <code>$interval 0s 20m Hello World!</code> verstuurt \`Hello World!\` elke 20 minuten naar het kanaal.',
 
-            '$todo' : 'commando voor het stellen van een to do lijst. Gebruik `$todo help` voor meer informatie.',
+            '$todo' : 'Commando voor het stellen van een to-do lijst. Gebruik <code>$todo help</code> voor meer informatie.',
 
-            '$todos' : 'hetzelfde als `$todo` maar voor server breed taakbeheer.',
+            '$todos' : 'Identiek aan <code>$todo</code> maar voor server breed taakbeheer.',
 
             '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere setup in de database.' }],
 
@@ -28,24 +30,24 @@
 
             '$clear <gebruiker>' : 'Verwijdert berichten verstuurt door gebruiker(s).',
 
-            '$restrict [roles]' : 'toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
+            '$restrict [roles]' : 'Toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
 
-            '$tag' : 'Aliasing commando`s. Gebruik `$tag help` voor meer informatie.',
+            #'$tag' : 'Aliasing commando`s. Gebruik <code>$tag help</code> voor meer informatie.',
 
             '$blacklist [kanaal-naam]' : 'Blokkeer of deblokkeer de mogelijkheid voor commando`s in een specifiek kanaal.' }],
 
         ['''Andere Commando`s''', {
-            '$donate' : 'toon informatie voor donaties.',
+            '$donate' : 'Toon informatie voor donaties.',
 
-            'mbprefix <string>' : 'verander de prefix van de bot, standaard is dit $. Dit commando gebruikt geen prefix!!',
+            'mbprefix <string>' : 'Verander de prefix van de bot, standaard is dit $. Dit commando gebruikt geen prefix!!',
 
-            '$info' : 'krijg informatie over de bot.',
+            '$info' : 'Krijg informatie over de bot.',
 
-            '$lang <name>' : 'verander de taal.',
+            '$lang <name>' : 'Verander de taal.',
 
             '$clock' : 'Stel een live tijd in bij het kanalenoverzicht. Moderator-specifiek commando.',
              
-            '$clock show' : 'krijg de huidige tijd.' }
+            '$clock show' : 'Krijg de huidige tijd.' }
         ]
     ],
 
