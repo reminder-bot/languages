@@ -11,45 +11,45 @@
 
     'help_raw' : [
 ['Comandos de recordatorios', {
-'$natural' : 'método más facil para colocar recordatorios. Escribe `$natural` para más información.',
+'$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
     
-'$del' : 'Elimina recordatorios e intervalos en tu servidor.',
+'$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
 
-'$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como `día`/`mes`/`año`-`hora`:`minuto`:`segundo`.',
+'$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
 
-'$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : 'coloca un intervalo, donde el `mensaje` se enviará cada cierto `intervalo` iniciando desde el `tiempo-para-recordatorio` dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará `¡Hola Mundo!` a tu canal cada 20 minutos.',
+'$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio periódico iniciando desde el <code>tiempo-para-recordatorio</code> dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará `¡Hola Mundo!` a tu canal cada 20 minutos.',
 
-'$todo' : 'comandos relacionado a la lista TO-DO (lista de tareas). Utiliza `$todo help` para más información.',
+'$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
 
-'$todos' : 'lo mismo que `$todo` pero para tareas a nivel de servidor.',
+'$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
 
-'$timezone' : 'configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.'
+'$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.'
 }],
 
 ['Comandos de administración', {
-'$autoclear [veces] [canales]' : 'activa/desactiva la limpieza automática de mensajes, donde los mensajes enviados al canal (por defecto el canal en el que estás) serán eliminados automáticamente luego de un tiempo (por defecto 10 segundos).',
+'$autoclear [veces] [canales]' : 'Activa/desactiva la limpieza automática de mensajes, donde los mensajes enviados al canal (por defecto el canal en el que estás) serán eliminados automáticamente luego de un tiempo (por defecto 10 segundos).',
 
-'$clear <usuarios>' : 'elimina mensajes enviados por los usuarios mencionados.',
+'$clear <usuarios>' : 'Elimina mensajes enviados por los usuarios mencionados.',
 
-'$restrict [roles]' : 'añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
+'$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
-'$tag' : 'comando para alias. Utiliza `$tag help` para más información.',
+#'$tag' : 'Comando para alias. Utiliza <code>$tag help</code> para más información.',
 
-'$blacklist [canal]' : 'bloquea o desbloquea un canal de enviar comandos.'
+'$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
 }],
 
 ['Otros comandos', {
-'$donate' : 'muestra información sobre donaciones.',
+'$donate' : 'Muestra información sobre donaciones.',
 
-'mbprefix <prefijo>' : 'cambia el prefijo "$". ¡Este comando no utiliza un prefijo!',
+'mbprefix <prefijo>' : 'Cambia el prefijo "$". ¡Este comando no utiliza un prefijo!',
 
-'$info' : 'obtén información sobre el bot.',
+'$info' : 'Obtén información sobre el bot.',
 
-'$lang <nombre>' : 'cambia el idioma.',
+'$lang <nombre>' : 'Cambia el idioma.',
 
-'$clock' : 'habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.',
+'$clock' : 'Habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.',
  
-'$clock show' : 'obtén la hora actual.' }
+'$clock show' : 'Obtén la hora actual.' }
         ]
     ],
 
