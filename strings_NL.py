@@ -12,12 +12,12 @@
     'help_raw' : [
         ['''Herinnering Commando`s''', {
             '$natural' : 'Makkelijkere manier om reminders in te stellen. Gebruik het commando voor meer informatie.',
-            
+
             '$del' : 'Verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
 
-            '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als `dag`/`maand`/`jaar`-`uur`:`minuut`:`seconden`.',
+            '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als <code>dag/maand/jaar-uur:minuut:seconden</code>.',
 
-            '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een interval in, waar het gegeven `bericht` elk `interval` verzonden wordt in elk gegeven <code>tijd-tot-herinnering</code> tijd. Neemt de tijd in een normale manier. Voorbeeld: <code>$interval 0s 20m Hello World!</code> verstuurt \`Hello World!\` elke 20 minuten naar het kanaal.',
+            '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een interval in, waar het gegeven <code>bericht</code> elk <code>interval</code> verzonden wordt in elk gegeven <code>tijd-tot-herinnering</code> tijd. Neemt de tijd in een normale manier. Voorbeeld: <code>$interval 0s 20m Hello World!</code> verstuurt `Hello World!` elke 20 minuten naar het kanaal.',
 
             '$todo' : 'Commando voor het stellen van een to-do lijst. Gebruik <code>$todo help</code> voor meer informatie.',
 
@@ -46,7 +46,7 @@
             '$lang <name>' : 'Verander de taal.',
 
             '$clock' : 'Stel een live tijd in bij het kanalenoverzicht. Moderator-specifiek commando.',
-             
+
             '$clock show' : 'Krijg de huidige tijd.' }
         ]
     ],
@@ -300,10 +300,10 @@ Voorbeeld:
     },
 
     'clock' : {
-        'time' : '''De huidge tijd is {}.''', 
-        
+        'time' : '''De huidge tijd is {}.''',
+
         'disabled' : '''De klok is verwijderd''',
-        
+
         'enabled' : '''De klok is toegevoegd''',
     }
 
