@@ -65,9 +65,6 @@
 程序架构：`discord.py`
 主机提供：OVH
 
-我的其他bot（仅限Patron）:
-https://discordapp.com/oauth2/authorize?client_id=411224415863570434&scope=bot&permissions=35840
-
 *如果你需要询问有关新功能的问题，请发往Discord服务器*
 *如果你需要为你或你的服务器询问有关bot开发的问题，请私信我*
 ''',

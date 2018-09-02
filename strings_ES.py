@@ -68,9 +68,6 @@ Encuéntrame en https://discord.gg/WQVaYmT y en https://github.com/JellyWX :)
 Framework: `discord.py`
 Proveedor de host: OVH
 
-Mi otro bot (solo Patreon):
-https://discordapp.com/oauth2/authorize?client_id=411224415863570434&scope=bot&permissions=35840
-
 *Si tienes consultas sobre nuevas caracterísicas, por favor envíalas a nuestro servidor de Discord*
 *Si tienes consultas sobre desarrollo de bot para tí y tu servidor, por favor envíame un mensaje directo*
 ''',

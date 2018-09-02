@@ -67,8 +67,6 @@ Nederlandse vertaling door: <@393139822044119051>
 Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
 Framework: `discord.py`
 Hosting provider: OVH
-Mijn andere bot (alleen voor Patreons):
-https://discordapp.com/oauth2/authorize?client_id=411224415863570434&scope=bot&permissions=35840
 
 *Als je vragen hebt over nieuwe functies, graag een bericht in de discord server!*
 *Als je een vraag hebt over de ontwikkeling van de bot voor jou op je server, stuur mij een privé bericht!*

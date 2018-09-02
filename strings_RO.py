@@ -50,8 +50,6 @@ Ma gasiti si pe https://discord.gg/WQVaYmT cat si pe https://github.com/JellyWX 
 Framework: `discord.py`
 Hosting : OVH
 
-Alti boti de ai mei (Patreon doar,):
-https://discordapp.com/oauth2/authorize?client_id=411224415863570434&scope=bot&permissions=35840
 * Dacă aveți întrebări despre noi caracteristici, vă rugăm să trimiteți la serverul de discordanță *
 * Dacă aveți întrebări despre dezvoltarea bot pentru tine sau serverul dvs., vă rugăm sa mi dati un mesaj in privat *''',
 
