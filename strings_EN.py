@@ -32,8 +32,6 @@
 
             '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
 
-            #'$tag' : 'Aliasing commands. Use <code>$tag help</code> for more information.',
-
             '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.' }],
 
         ['''Other Commands''', {
@@ -45,7 +43,7 @@
 
             '$lang <name>' : 'Change the language.',
 
-            '$clock' : 'Enable a live-update time in the channels bar. Moderator only command.',
+            '$clock' : 'Get current time in guild\'s timezone',
 
             '$clock show' : 'Get the current time.' }
         ]

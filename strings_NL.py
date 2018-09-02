@@ -32,8 +32,6 @@
 
             '$restrict [roles]' : 'Toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
 
-            #'$tag' : 'Aliasing commando`s. Gebruik <code>$tag help</code> voor meer informatie.',
-
             '$blacklist [kanaal-naam]' : 'Blokkeer of deblokkeer de mogelijkheid voor commando`s in een specifiek kanaal.' }],
 
         ['''Andere Commando`s''', {

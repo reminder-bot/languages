@@ -23,7 +23,6 @@
 '$autoclear [time/s] [channels]' : 'Activează / dezactivează autoștergerea, unde mesajele trimise canalului (canalul tău implicit) vor fi șterse automat după timp (implicit 10 secunde).',
 '$clear <user mentions>' : 'Șterge mesajele făcute de un utilizator / utilizatori.',
 '$restrict [role mentions]' : 'Adăugați / eliminați rolurile de la a li se permite să trimită mementouri și intervale de canale.',
-'$tag' : 'Comenzi de aliniere. Folositi `$tag help` pentru mai multe informatii.',
 '$blacklist [channel-name]' : 'Blocați sau deblocați un canal din trimiterea comenzilor.',
 }],
 

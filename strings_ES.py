@@ -33,8 +33,6 @@
 
 '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
-#'$tag' : 'Comando para alias. Utiliza <code>$tag help</code> para más información.',
-
 '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
 }],
 
