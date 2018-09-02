@@ -51,14 +51,6 @@
         ]
     ],
 
-    'web_foot_title' : 'Extra Information',
-    'web_foot' : 'Do not type the brackets when you type out the command! For example, mbprefix !, not mbprefix <!>',
-    'web_foot2' : 'Please join our Discord Support Server if you need more help:',
-
-    'about' : {'About' : ['Bot Created By: Jude Southworth', 'Github: <a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', 'Want a bot making? Please contact me on Discord.', 'Hosting provider: OVH']},
-
-    'join' : 'Join our Discord Server',
-    'invite' : 'Invite the Bot',
 
     'info' : '''
 Default prefix: `$`
@@ -297,10 +289,6 @@ Make sure the interval provided is less than 50 years''',
 
     'clock' : {
         'time' : '''Current time is {}.''',
-
-        'disabled' : '''Clock has been disabled''',
-
-        'enabled' : '''Clock has been enabled''',
     }
 
 }

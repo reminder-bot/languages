@@ -47,15 +47,6 @@
         ]
     ],
 
-    'web_foot_title' : '更多信息',
-    'web_foot' : '在输入指令时不要输入括号！比如，要输入 mbprefix ! ，而不是 mbprefix <!>',
-    'web_foot2' : '如果你需要更多帮助，请加入我们的Discord服务器：',
-
-    'about' : {'关于' : ['bot制作者：Jude Southworth', 'Github：<a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', '想要制作bot？请在Discord上联系我。', '程序架构：OVH']},
-
-    'join' : '加入我们的Discord服务器',
-    'invite' : '邀请此bot到你的服务器',
-
     'info' : '''
 默认前缀：`$`
 重设前缀：`@{user} prefix $`

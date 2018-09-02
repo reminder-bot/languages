@@ -48,14 +48,6 @@
 '$clock [12]' : 'obtén la hora actual, opcionalmente en formato 12 horas.'}]
 ],
 
-    'web_foot_title' : 'Información extra',
-    'web_foot' : '¡No coloques los paréntesis al escribir un comando! Por ejemplo, `mbprefix !`, no `mbprefix <!>`',
-    'web_foot2' : 'Por favor dirígete a nuestro servidor de Discord si necesitas más ayuda',
-
-    'about' : {'Sobre el bot' : ['Creado por: Jude Southworth', 'Github: <a href=https://github.com/JellyWX>https://github.com/JellyWX</a>', 'Want a bot making? Please contact me on Discord.', 'Hosting provider: OVH']},
-
-    'join' : 'Ingresa a nuestro servidor de Discord',
-    'invite' : 'Invita el bot a tu servidor',
 
     'info' : '''
 Prefijo por defecto: `$`
@@ -165,7 +157,7 @@ Ejemplo:
 
         'success' : '''Nuevo recordatorio registrado para <{}{}> en {} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
-    
+
     'natural' : {
         'no_argument' : '''
 **Nuevo** Procesamiento en lenguaje natural
@@ -177,7 +169,7 @@ Ejemplos:
 Keywords:
     `enviar` : define el mensaje
     `cada` : define el intervalo
-    `para` : define el destino del mensaje  
+    `para` : define el destino del mensaje
 Uso:
     ```{prefix}natural <tiempo para> enviar <mensaje> [cada intervalo] [para #canal/@usuario]```
     ''',
@@ -293,7 +285,6 @@ Ejemplo:
     },
 
     'clock' : {
-
         'time' : '''La hora actual es {}.''',
     }
 
