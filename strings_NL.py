@@ -293,10 +293,6 @@ Voorbeeld:
 
     'clock' : {
         'time' : '''De huidge tijd is {}.''',
-
-        'disabled' : '''De klok is verwijderd''',
-
-        'enabled' : '''De klok is toegevoegd''',
     }
 
 }

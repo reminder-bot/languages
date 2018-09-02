@@ -12,7 +12,7 @@
     'help_raw' : [
 ['Comandos de recordatorios', {
 '$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
-    
+
 '$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
 
 '$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
@@ -48,7 +48,7 @@
 '$lang <nombre>' : 'Cambia el idioma.',
 
 '$clock' : 'Habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.',
- 
+
 '$clock show' : 'Obtén la hora actual.' }
         ]
     ],
@@ -291,10 +291,6 @@ Ejemplo:
 
     'clock' : {
         'time' : '''La hora actual es {}.''',
-
-        'disabled' : '''El reloj ha sido deshabilitado.''',
-
-        'enabled' : '''El reloj ha sido habilitado.''',
     }
 
 }

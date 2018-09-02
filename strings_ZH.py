@@ -288,10 +288,6 @@ https://discord.gg/WQVaYmT
 
     'clock' : {
         'time' : '''当前时间为{}。''',
-
-        'disabled' : '''时钟已关闭。''',
-
-        'enabled' : '''时钟已开启。''',
     }
 
 }
