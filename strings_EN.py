@@ -11,43 +11,43 @@
 
     'help_raw' : [
         ['''Reminder Commands''', {
-            '$natural' : 'easier method to set reminders. Please type `$natural` for more information.',
+            '$natural' : 'Easier method to set reminders. Please run this command for more information.',
 
-            '$del' : 'delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
+            '$del' : 'Delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
 
-            '$remind [user/channel] <time-to-reminder> <message>' : 'please consider `$natural` rather than using this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as `day`/`month`/`year`-`hour`:`minute`:`second`.',
+            '$remind [user/channel] <time-to-reminder> <message>' : 'Please consider <code>$natural</code> rather than using this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as <code>day/month/year-hour:minute:second</code>.',
 
-            '$interval [user/channel] <time-to-reminder> <interval> <message>' : 'please consider `$natural` rather than using this command. Set up an interval, where the given `message` will be sent every `interval` starting in the given `time-to-reminder`. Takes times in the formats above. Ex. `$interval 0s 20m Hello World!` will send `Hello World!` to your channel every 20 minutes.',
+            '$interval [user/channel] <time-to-reminder> <interval> <message>' : 'Please consider <code>$natural</code> rather than using this command. Set a recurring reminder starting in the given <code>time-to-reminder</code>. Takes times in the normal formats, ex. <code>$interval 0s 20m Hello World!</code> will send \'Hello World!\' to your channel every 20 minutes.',
 
-            '$todo' : 'TODO list related commands. Use `$todo help` for more information.',
+            '$todo' : 'TODO list related commands. Use <code>$todo help</code> for more information.',
 
-            '$todos' : 'same as `$todo` but for server-wide task management.',
+            '$todos' : 'Identical to <code>$todo</code> but for server-wide task management.',
 
-            '$timezone' : 'set your server\'s timezone, for easier date-based reminders.' }],
+            '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.' }],
 
         ['''Management Commands''', {
-            '$autoclear [time/s] [channels]' : 'enables/disables autoclearing, where messages sent to the channel (default your channel) will be automatically deleted after time (default 10 seconds).',
+            '$autoclear [time/s] [channels]' : 'Enables/disables autoclearing, where messages sent to the channel (default your channel) will be automatically deleted after time (default 10 seconds).',
 
-            '$clear <user mentions>' : 'clears messages made by a user/s.',
+            '$clear <user mentions>' : 'Clears messages made by a user/s.',
 
             '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
 
-            '$tag' : 'Aliasing commands. Use `$tag help` for more information.',
+            #'$tag' : 'Aliasing commands. Use <code>$tag help</code> for more information.',
 
-            '$blacklist [channel-name]' : 'block or unblock a channel from sending commands.' }],
+            '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.' }],
 
         ['''Other Commands''', {
-            '$donate' : 'view information about donations.',
+            '$donate' : 'View information about donations.',
 
-            'mbprefix <string>' : 'change the prefix from $. This command does not use a prefix!',
+            'mbprefix <string>' : 'Change the prefix from $. This command does not use a prefix!',
 
-            '$info' : 'get info on the bot.',
+            '$info' : 'Get info on the bot.',
 
-            '$lang <name>' : 'change the language.',
+            '$lang <name>' : 'Change the language.',
 
-            '$clock' : 'enable a live-update time in the channels bar. Moderator only command.',
+            '$clock' : 'Enable a live-update time in the channels bar. Moderator only command.',
 
-            '$clock show' : 'get the current time.' }
+            '$clock show' : 'Get the current time.' }
         ]
     ],
 

@@ -11,42 +11,47 @@
 
     'help_raw' : [
 ['Comandos de recordatorios', {
-'$del' : 'Elimina recordatorios e intervalos en tu servidor.',
+'$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
+    
+'$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
 
-'$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como `día`/`mes`/`año`-`hora`:`minuto`:`segundo`.',
+'$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
 
-'$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : 'coloca un intervalo, donde el `mensaje` se enviará cada cierto `intervalo` iniciando desde el `tiempo-para-recordatorio` dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará `¡Hola Mundo!` a tu canal cada 20 minutos.',
+'$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio periódico iniciando desde el <code>tiempo-para-recordatorio</code> dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará `¡Hola Mundo!` a tu canal cada 20 minutos.',
 
-'$todo' : 'comandos relacionado a la lista TO-DO (lista de tareas). Utiliza `$todo help` para más información.',
+'$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
 
-'$todos' : 'lo mismo que `$todo` pero para tareas a nivel de servidor.',
+'$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
 
-'$timezone' : 'configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.'
+'$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.'
 }],
 
 ['Comandos de administración', {
-'$autoclear [veces] [canales]' : 'activa/desactiva la limpieza automática de mensajes, donde los mensajes enviados al canal (por defecto el canal en el que estás) serán eliminados automáticamente luego de un tiempo (por defecto 10 segundos).',
+'$autoclear [veces] [canales]' : 'Activa/desactiva la limpieza automática de mensajes, donde los mensajes enviados al canal (por defecto el canal en el que estás) serán eliminados automáticamente luego de un tiempo (por defecto 10 segundos).',
 
-'$clear <usuarios>' : 'elimina mensajes enviados por los usuarios mencionados.',
+'$clear <usuarios>' : 'Elimina mensajes enviados por los usuarios mencionados.',
 
-'$restrict [roles]' : 'añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
+'$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
-'$tag' : 'comando para alias. Utiliza `$tag help` para más información.',
+#'$tag' : 'Comando para alias. Utiliza <code>$tag help</code> para más información.',
 
-'$blacklist [canal]' : 'bloquea o desbloquea un canal de enviar comandos.'
+'$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
 }],
 
 ['Otros comandos', {
-'$donate' : 'muestra información sobre donaciones.',
+'$donate' : 'Muestra información sobre donaciones.',
 
-'mbprefix <prefijo>' : 'cambia el prefijo "$". ¡Este comando no utiliza un prefijo!',
+'mbprefix <prefijo>' : 'Cambia el prefijo "$". ¡Este comando no utiliza un prefijo!',
 
-'$info' : 'obtén información sobre el bot.',
+'$info' : 'Obtén información sobre el bot.',
 
-'$lang <nombre>' : 'cambia el idioma.',
+'$lang <nombre>' : 'Cambia el idioma.',
 
-'$clock [12]' : 'obtén la hora actual, opcionalmente en formato 12 horas.'}]
-],
+'$clock' : 'Habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.',
+ 
+'$clock show' : 'Obtén la hora actual.' }
+        ]
+    ],
 
 
     'info' : '''
@@ -106,7 +111,7 @@ Prefijo cambiado a {prefix}
         'no_argument' : '''
 Uso:
     ```{prefix}timezone <nombre>```
-Example:
+Ejemplo:
     ```{prefix}timezone Europe/London```
 Todas las zonas horarias: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
 Zona horaria actual: {timezone}''',
@@ -166,7 +171,7 @@ Ejemplos:
     ```{prefix}natural a las 18:00 enviar ¡El gran evento ha comenzado!```
     ```{prefix}natural el 16 de julio a las 14:00 enviar ¡Hoy se reinician las subs! para #subs```
     ```{prefix}natural ahora enviar ¡Han pasado 10 minutos! cada 10 minutos para #timer```
-Keywords:
+Palabras clave:
     `enviar` : define el mensaje
     `cada` : define el intervalo
     `para` : define el destino del mensaje
@@ -286,6 +291,10 @@ Ejemplo:
 
     'clock' : {
         'time' : '''La hora actual es {}.''',
+
+        'disabled' : '''El reloj ha sido deshabilitado.''',
+
+        'enabled' : '''El reloj ha sido habilitado.''',
     }
 
 }

@@ -11,15 +11,17 @@
 
     'help_raw' : [
         ['''Herinnering Commando`s''', {
-            '$del' : 'verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
+            '$natural' : 'Makkelijkere manier om reminders in te stellen. Gebruik het commando voor meer informatie.',
 
-            '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als `dag`/`maand`/`jaar`-`uur`:`minuut`:`seconden`.',
+            '$del' : 'Verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
 
-            '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : 'stel een interval in, waar het gegeven `bericht` elk `interval` verzonden wordt in elk gegeven `tijd-tot-herinnering` tijd. Neemt de tijd in het formaat hierboven. Voorbeeld: `$interval 0s 20m Hello World!` verstuurt `Hello World!` elke 20 minuten naar het kanaal.',
+            '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als <code>dag/maand/jaar-uur:minuut:seconden</code>.',
 
-            '$todo' : 'commando voor het stellen van een to do lijst. Gebruik `$todo help` voor meer informatie.',
+            '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een interval in, waar het gegeven <code>bericht</code> elk <code>interval</code> verzonden wordt in elk gegeven <code>tijd-tot-herinnering</code> tijd. Neemt de tijd in een normale manier. Voorbeeld: <code>$interval 0s 20m Hello World!</code> verstuurt `Hello World!` elke 20 minuten naar het kanaal.',
 
-            '$todos' : 'hetzelfde als `$todo` maar voor server breed taakbeheer.',
+            '$todo' : 'Commando voor het stellen van een to-do lijst. Gebruik <code>$todo help</code> voor meer informatie.',
+
+            '$todos' : 'Identiek aan <code>$todo</code> maar voor server breed taakbeheer.',
 
             '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere setup in de database.' }],
 
@@ -28,22 +30,24 @@
 
             '$clear <gebruiker>' : 'Verwijdert berichten verstuurt door gebruiker(s).',
 
-            '$restrict [roles]' : 'toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
+            '$restrict [roles]' : 'Toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
 
-            '$tag' : 'Aliasing commando`s. Gebruik `$tag help` voor meer informatie.',
+            #'$tag' : 'Aliasing commando`s. Gebruik <code>$tag help</code> voor meer informatie.',
 
             '$blacklist [kanaal-naam]' : 'Blokkeer of deblokkeer de mogelijkheid voor commando`s in een specifiek kanaal.' }],
 
         ['''Andere Commando`s''', {
-            '$donate' : 'toon informatie voor donaties.',
+            '$donate' : 'Toon informatie voor donaties.',
 
-            'mbprefix <string>' : 'verander de prefix van de bot, standaard is dit $. Dit commando gebruikt geen prefix!!',
+            'mbprefix <string>' : 'Verander de prefix van de bot, standaard is dit $. Dit commando gebruikt geen prefix!!',
 
-            '$info' : 'krijg informatie over de bot.',
+            '$info' : 'Krijg informatie over de bot.',
 
-            '$lang <name>' : 'verander de taal.',
+            '$lang <name>' : 'Verander de taal.',
 
-            '$clock [12]' : 'krijg de tijd op dit moment, optioneel als een 12-uurs klok.' }
+            '$clock' : 'Stel een live tijd in bij het kanalenoverzicht. Moderator-specifiek commando.',
+
+            '$clock show' : 'Krijg de huidige tijd.' }
         ]
     ],
 
@@ -58,7 +62,7 @@ Help: `{prefix}help`
 Developer: <@203532103185465344>
 Coole gast die weet waar hij het over heeft: <@174243954487853056>
 Icon: <@253202252821430272>
-Nederlandse vertaling, foutjes kunnen hier worden gemeld: <@393139822044119051>
+Nederlandse vertaling door: <@393139822044119051>
 
 Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
 Framework: `discord.py`
@@ -289,6 +293,10 @@ Voorbeeld:
 
     'clock' : {
         'time' : '''De huidge tijd is {}.''',
+
+        'disabled' : '''De klok is verwijderd''',
+
+        'enabled' : '''De klok is toegevoegd''',
     }
 
 }
