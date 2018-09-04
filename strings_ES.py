@@ -45,7 +45,7 @@
 
 '$lang <nombre>' : 'Cambia el idioma.',
 
-'$clock' : 'Habilita un reloj en tiempo real en la lista de canales. Comando solo para moderadores.',
+'$clock' : 'Obtén la hora actual acorde a la zona horaria del servidor.',
 
 '$clock show' : 'Obtén la hora actual.' }
         ]
