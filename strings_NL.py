@@ -43,7 +43,7 @@
 
             '$lang <name>' : 'Verander de taal.',
 
-            '$clock' : 'Stel een live tijd in bij het kanalenoverzicht. Moderator-specifiek commando.',
+            '$clock' : 'Krijg de tijd in de server\'s huidige tijdzone.',
 
             '$clock show' : 'Krijg de huidige tijd.' }
         ]
