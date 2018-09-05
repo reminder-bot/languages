@@ -9,6 +9,10 @@
 
     'help' : '''请查看 https://jellywx.co.uk/help?lang=ZH''',
 
+    'no_perms_webhook' : '''**警告**：我需要`管理Webhooks`权限才能设置提醒事项。''',
+
+    'no_perms_general' : '''指令被拒绝执行。请确保已正确设置我的权限。''',
+
     'help_raw' : [
         ['''提醒事项指令''', {
             '$natural' : '一种设置提醒的更简单的方式。请运行这个指令来获取更多信息。',
