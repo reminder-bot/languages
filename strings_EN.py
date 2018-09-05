@@ -9,6 +9,10 @@
 
     'help' : '''Please visit https://jellywx.co.uk/help?lang=EN''',
 
+    'no_perms_webhook' : '''**WARNING**: To set reminders I need the `Manage Webhooks` permission.''',
+
+    'no_perms_general' : '''Action forbidden. Please ensure I have the correct permissions.''',
+
     'help_raw' : [
         ['''Reminder Commands''', {
             '$natural' : 'Easier method to set reminders. Please run this command for more information.',
