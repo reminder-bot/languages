@@ -27,10 +27,6 @@
 }],
 
 ['Comandos de administración', {
-'$autoclear [veces] [canales]' : 'Activa/desactiva la limpieza automática de mensajes, donde los mensajes enviados al canal (por defecto el canal en el que estás) serán eliminados automáticamente luego de un tiempo (por defecto 10 segundos).',
-
-'$clear <usuarios>' : 'Elimina mensajes enviados por los usuarios mencionados.',
-
 '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
 '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
@@ -39,15 +35,14 @@
 ['Otros comandos', {
 '$donate' : 'Muestra información sobre donaciones.',
 
-'mbprefix <prefijo>' : 'Cambia el prefijo "$". ¡Este comando no utiliza un prefijo!',
+'$prefix <prefijo>' : 'Cambia el prefijo "$".',
 
 '$info' : 'Obtén información sobre el bot.',
 
 '$lang <nombre>' : 'Cambia el idioma.',
 
 '$clock' : 'Obtén la hora actual acorde a la zona horaria del servidor.',
-
-'$clock show' : 'Obtén la hora actual.' }
+    }
         ]
     ],
 

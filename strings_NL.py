@@ -26,9 +26,6 @@
             '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere setup in de database.' }],
 
         ['''Management Commando`s''', {
-            '$autoclear [tijd/s] [kanaal]' : 'Schakelt automatisch verwijderein in/uit, elk bericht in het kanaal (Standaard het kanaal waar het commando wordt geplaatst) wordt automatisch verwijderd na een tijd (standaard 10 seconden).',
-
-            '$clear <gebruiker>' : 'Verwijdert berichten verstuurt door gebruiker(s).',
 
             '$restrict [roles]' : 'Toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
 
@@ -37,15 +34,14 @@
         ['''Andere Commando`s''', {
             '$donate' : 'Toon informatie voor donaties.',
 
-            'mbprefix <string>' : 'Verander de prefix van de bot, standaard is dit $. Dit commando gebruikt geen prefix!!',
+            '$prefix <string>' : 'Verander de prefix van de bot, standaard is dit $.',
 
             '$info' : 'Krijg informatie over de bot.',
 
             '$lang <name>' : 'Verander de taal.',
 
             '$clock' : 'Krijg de tijd in de server\'s huidige tijdzone.',
-
-            '$clock show' : 'Krijg de huidige tijd.' }
+        }
         ]
     ],
 
@@ -83,7 +79,6 @@ Met je nieuwe rank kan je:
 : Patreon-exclusieve commando`s gebruiken zoals `interval`
 : Mogelijkheid om meer reminders in te stellen (ongelimiteerd)
 : Mogelijkheid om langere reminders in te stellen (2000 chars)
-: Mogelijkheid om meer & langere tags in te stellen
 
 Aan iedereen die een Patron is: Bedankt :D Jullie zorgen er voor dat deze bot kan blijven voortbestaan.
 
@@ -213,12 +208,6 @@ Voorbeeld:
 
     },
 
-    'autoclear' : {
-        'disable' : '''Automatisch verwijderen is gestopt op {}''',
-
-        'enable' : '''{} seconden automatisch verwijderen is gestart.''',
-    },
-
     'del' : {
         'listing' : '''De lijst met herinneringen wordt weergegeven... (Het kan even duren, wacht alstublieft op het  "List (1,2,3...)" bericht).''',
 
@@ -247,25 +236,6 @@ Voorbeeld:
         'help' : '''Om de TODO commando`s te gebruiken, gebruik `{prefix}{command} add <bericht>`, `{prefix}{command} remove <bericht>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
 ##WIP
         'cleared' : '''De TODO lijst is geleegd!'''
-    },
-
-    'tags' : {
-
-        'deleted' : '''De tag {} is verwijderd''',
-
-        'added' : '''De tag {} is toegevoegd''',
-
-        'invalid_count' : '''Sorry, maar voor normale gebruikers het limiet voor het aantal tags is 6. Verwijder er alstublieft een paar of overweeg om een donatie te geven, meer informatie via `{prefix}donate` ($5 tier).''',
-
-        'invalid_chars' : '''Tags zijn gelimiteerd tot 80 karakters. Houd het kort!''',
-
-        'colon' : '''Voeg alstublieft een colon toe om  de naam van de tag en de body te scheiden.''',
-
-        'illegal' : '''Gebruik alstublieft geen keywords zoals `add, new, remove, del` in de namen van je tags.''',
-
-        'unfound' : '''Het is niet gelukt om de tag te vinden die bij de naam die je genoemt hebt.''',
-
-        'help' : '''Gebruik `{prefix}tag add <naam>: <bericht>` om nieuwe tags toe te voegen. Gebruik `{prefix}tag remove <naam>` om een tag te verwijderen. Gebruik `{prefix}tag <naam>` om een tag te zien. Gebruik `{prefix}tag` om alle tags te zien.'''
     },
 
     'blacklist' : {

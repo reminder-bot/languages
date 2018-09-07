@@ -30,10 +30,6 @@
             '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.' }],
 
         ['''Management Commands''', {
-            '$autoclear [time/s] [channels]' : 'Enables/disables autoclearing, where messages sent to the channel (default your channel) will be automatically deleted after time (default 10 seconds).',
-
-            '$clear <user mentions>' : 'Clears messages made by a user/s.',
-
             '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
 
             '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.' }],
@@ -41,7 +37,7 @@
         ['''Other Commands''', {
             '$donate' : 'View information about donations.',
 
-            'mbprefix <string>' : 'Change the prefix from $. This command does not use a prefix!',
+            '$prefix <string>' : 'Change the prefix from $.',
 
             '$info' : 'Get info on the bot.',
 
@@ -49,7 +45,7 @@
 
             '$clock' : 'Get current time in guild\'s timezone',
 
-            '$clock show' : 'Get the current time.' }
+            }
         ]
     ],
 
@@ -85,7 +81,6 @@ With your new rank, you'll be able to:
 : use Patron-only commands like `interval`
 : set more reminders (unlimited)
 : set longer reminders (2000 chars)
-: set more/longer tags
 
 Anyone who is a Patron, thank you :D You make this bot sustainable
 
@@ -127,12 +122,6 @@ Current timezone: {timezone}''',
         'allowed' : '''Allowed roles: {}''',
 
         'help' : '''Please mention roles you wish to change the reminder permissions for.'''
-    },
-
-    'clear' : {
-
-        'no_argument' : '''Please mention users you wish to remove messages of.'''
-
     },
 
     'remind' : {
@@ -212,12 +201,6 @@ Make sure the interval provided is less than 50 years''',
 
     },
 
-    'autoclear' : {
-        'disable' : '''Autoclearing disabled on {}''',
-
-        'enable' : '''{} second autoclearing enabled.''',
-    },
-
     'del' : {
         'listing' : '''Listing reminders on this server... (there may be a small delay, please wait for the "List (1,2,3...)" message).''',
 
@@ -246,25 +229,6 @@ Make sure the interval provided is less than 50 years''',
         'help' : '''To use the TODO commands, do `{prefix}{command} add <message>`, `{prefix}{command} remove <number>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
 
         'cleared' : '''Cleared todo list!'''
-    },
-
-    'tags' : {
-
-        'deleted' : '''Deleted tag {}''',
-
-        'added' : '''Added tag {}''',
-
-        'invalid_count' : '''Sorry, but for normal users tags are capped at 6 tags. Please remove some or consider donating with `{prefix}donate` ($5 tier).''',
-
-        'invalid_chars' : '''Tags are capped at 80 characters. Keep it concise!''',
-
-        'colon' : '''Please add a colon to split the name of the tag from the body.''',
-
-        'illegal' : '''Please don\'t use keywords `add, new, remove, del` in the names of your tags.''',
-
-        'unfound' : '''Couldn\'t find the tag by the name you specified.''',
-
-        'help' : '''Use `{prefix}tag add <name>: <message>` to add new tags. Use `{prefix}tag remove <name>` to delete a tag. Use `{prefix}tag <name>` to view a tag. Use `{prefix}tag` to list all tags'''
     },
 
     'blacklist' : {
