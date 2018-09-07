@@ -8,6 +8,10 @@
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
     'help' : '''Ga voor meer informatie naar https://jellywx.co.uk/help?lang=NL''',
+    
+    'no_perms_webhook' : '''**Waarschuwing!**: Om reminders in te stellen heb ik de `Manage Webhooks` toestemming nodig.''',
+     
+    'no_perms_general' : '''Actie verboden. Zorg er alstublieft voor dat ik de juiste toestemmingen heb.''',
 
     'help_raw' : [
         ['''Herinnering Commando`s''', {
