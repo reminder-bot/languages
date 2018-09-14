@@ -8,9 +8,9 @@
     'admin_required' : 'Necesitas permisos de administrador para usar este comando.',
 
     'help' : '''Por favor visita https://jellywx.co.uk/help?lang=ES''',
-    
+
     'no_perms_webhook' : '''**AVISO**: Para colocar recordatorios necesito el permiso de `Administrar Webhooks`.''',
-    
+
     'no_perms_general' : '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
 
     'help_raw' : [
@@ -80,9 +80,7 @@ Aquí hay un poco más información:
 Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tu Patreon con Discord.
 Con tu nuevo rango, podrás:
 : usar comandos exclusivos como `interval`
-: colocar más recordatorios (ilimitados)
 : colocar recordatorios más largos (2000 caracteres)
-: seleccionar más/largos tags
 
 Para quienes estén en Patreon, muchas gracias :D Haces que este bot pueda sostenerse.
 

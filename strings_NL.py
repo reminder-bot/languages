@@ -8,9 +8,9 @@
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
     'help' : '''Ga voor meer informatie naar https://jellywx.co.uk/help?lang=NL''',
-    
+
     'no_perms_webhook' : '''**Waarschuwing!**: Om reminders in te stellen heb ik de `Manage Webhooks` toestemming nodig.''',
-     
+
     'no_perms_general' : '''Actie verboden. Zorg er alstublieft voor dat ik de juiste toestemmingen heb.''',
 
     'help_raw' : [
@@ -81,7 +81,6 @@ Hier is wat meer informatie:
 Wanneer je een donatie doet zal Patreon jou automatisch een rankup geven in onze Discord server, als je je Discord en Patreon account al met elkaar gelinkt hebt.
 Met je nieuwe rank kan je:
 : Patreon-exclusieve commando`s gebruiken zoals `interval`
-: Mogelijkheid om meer reminders in te stellen (ongelimiteerd)
 : Mogelijkheid om langere reminders in te stellen (2000 chars)
 
 Aan iedereen die een Patron is: Bedankt :D Jullie zorgen er voor dat deze bot kan blijven voortbestaan.

@@ -78,9 +78,7 @@ https://discord.gg/WQVaYmT
 如果你将你的Patreon和Discord账号连接，当你捐赠的时候，Patreon会自动将你从我们的Discord服务器上标识出来！
 当你被标识出来后，你就可以：
 : 使用仅限Patron的指令，如`interval`
-: 设置更多提醒事项（无限制）
 : 设置更长的提醒事项（2000字符）
-: 设置更多/更长的标签
 
 感谢所有已经成为Patron的人 :D 是你们让这个bot得以维护。
 
