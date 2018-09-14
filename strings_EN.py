@@ -79,7 +79,6 @@ Here's some more information:
 When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
 With your new rank, you'll be able to:
 : use Patron-only commands like `interval`
-: set more reminders (unlimited)
 : set longer reminders (2000 chars)
 
 Anyone who is a Patron, thank you :D You make this bot sustainable
@@ -137,8 +136,6 @@ Example:
         'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.
 
 Make sure the time provided is less than 50 years in the future.''',
-
-        'invalid_count' : '''Too many reminders in specified channel! Use `{prefix}del` to delete some of them, or use `{prefix}donate` to increase your maximum ($5 tier).''',
 
         'invalid_chars' : '''Reminder message too long! (max 150, you used {}). Use `{prefix}donate` to increase your character limit to 1900 ($5 tier).''',
 
