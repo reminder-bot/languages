@@ -106,10 +106,10 @@ Gebruik:
     ```{prefix}timezone <naam>```
 Example:
     ```{prefix}timezone Europe/London```
-Alle ondersteunde tijdszones: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+Alle ondersteunde tijdszones: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
 Huidige tijdszone: {timezone}''',
 
-        'no_timezone' : '''Tijdszone is niet herkend. Een volledige lijst is beschikbaar op https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
+        'no_timezone' : '''Tijdszone is niet herkend. Een volledige lijst is beschikbaar op https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'success' : '''Tijdszone is veranderd naar {timezone}. De huidige tijd zou {time} moeten zijn.'''
     },

@@ -105,10 +105,10 @@ Uso:
     ```{prefix}timezone <nombre>```
 Ejemplo:
     ```{prefix}timezone Europe/London```
-Todas las zonas horarias: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+Todas las zonas horarias: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
 Zona horaria actual: {timezone}''',
 
-        'no_timezone' : '''Zona horaria no reconocida. Una lista está disponible en https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
+        'no_timezone' : '''Zona horaria no reconocida. Una lista está disponible en https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'success' : '''La zona horaria ha sido cambiada a {timezone}. Tu hora actual debería ser {time}'''
     },

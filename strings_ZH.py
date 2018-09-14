@@ -103,10 +103,10 @@ https://discord.gg/WQVaYmT
     ```{prefix}timezone <时区名>```
 举例：
     ```{prefix}timezone Europe/London```
-时区列表： https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
 当前时区：{timezone}''',
 
-        'no_timezone' : '''未知时区。可用的时区列表： https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
+        'no_timezone' : '''未知时区。可用的时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'success' : '''时区已被设置为{timezone}。您当前的时间应为{time}'''
     },
