@@ -21,7 +21,7 @@
 
             '$remind [user/channel] <time-to-reminder> <message>' : 'Please consider <code>$natural</code> rather than using this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as <code>day/month/year-hour:minute:second</code>.',
 
-            '$interval [user/channel] <time-to-reminder> <interval> <message>' : 'Please consider <code>$natural</code> rather than using this command. Set a recurring reminder starting in the given <code>time-to-reminder</code>. Takes times in the normal formats, ex. <code>$interval 0s 20m Hello World!</code> will send \'Hello World!\' to your channel every 20 minutes.',
+            '$interval [user/channel] <time-to-reminder> <interval> <message>' : '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> Please consider <code>$natural</code> rather than using this command. Set a recurring reminder starting in the given <code>time-to-reminder</code>. Takes times in the normal formats, ex. <code>$interval 0s 20m Hello World!</code> will send \'Hello World!\' to your channel every 20 minutes.',
 
             '$todo' : 'TODO list related commands. Use <code>$todo help</code> for more information.',
 
