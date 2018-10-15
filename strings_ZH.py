@@ -19,9 +19,11 @@
 
             '$del' : '删除服务器上的提醒事项或周期重复提醒。如果是私信提醒，请给bot私信发送这个指令。',
 
+            '$look' : '查看频道中的提醒事项',
+
             '$remind [用户/频道] <提醒时间> <内容>' : '请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用<code>日/月/年-时:分:秒</code>的格式设置精确时间。',
 
-            '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> 请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个从<code>提醒时间</code>开始的周期重复提醒。将时间设置成普通的格式，例如<code>$interval 0s 20m Hello World!</code>就会每20分钟向该频道发送一次\'Hello World!\'。',
+            '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '<strong><a href="https://patreon.com/jellywx/">仅Patron。</a></strong> 请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个从<code>提醒时间</code>开始的周期重复提醒。将时间设置成普通的格式，例如<code>$interval 0s 20m Hello World!</code>就会每20分钟向该频道发送一次\'Hello World!\'。',
 
             '$todo' : '与待办事项列表有关的指令。使用<code>$todo help</code>来获取更多信息。',
 
@@ -44,6 +46,7 @@
             '$lang <语言名称>' : '更改语言。',
 
             '$clock' : '显示集体所在的时区当前的时间。',
+
             }
         ]
     ],
@@ -122,12 +125,6 @@ https://discord.gg/WQVaYmT
         'help' : '''请指定身份组来更改其使用提醒指令的权限。'''
     },
 
-    'clear' : {
-
-        'no_argument' : '''请指定用户来清除他发送的信息。'''
-
-    },
-
     'remind' : {
         'no_argument' : '''
 用法:
@@ -141,8 +138,6 @@ https://discord.gg/WQVaYmT
         'invalid_time' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式，或 `日/月/年-时:分:秒` 的格式给出时间。
 
 给出的时间不能超过未来50年。''',
-
-        'invalid_count' : '''这个频道里的待提醒事项太多了！用`{prefix}del`来删掉一些，或者用`{prefix}donate`来扩大最大量（5美元档）''',
 
         'invalid_chars' : '''提醒内容太长了！（最大150字符，你输入了{}字符。）用`{prefix}donate`来把最大长度扩大到1900字符（5美元档）。''',
 
@@ -205,18 +200,16 @@ https://discord.gg/WQVaYmT
 
     },
 
-    'autoclear' : {
-        'disable' : '''不再自动清除 {} 内的信息。''',
-
-        'enable' : '''该频道内发出的信息将在{}秒后被自动清除。''',
-    },
-
     'del' : {
         'listing' : '''正在列出此服务器上的待提醒事项。（可能会有延迟，请等待"列出 (1,2,3...)"这条信息被发出。）''',
 
         'listed' : '''列出事项的编号(1,2,3...)来删除提醒，或者发送任意其他内容来取消。''',
 
         'count' : '''删除了{}条提醒！'''
+    },
+
+    'look' : {
+        'listing' : '''正在列出此频道上的提醒事项……''',
     },
 
     'todo' : {
@@ -239,25 +232,6 @@ https://discord.gg/WQVaYmT
         'help' : '''待办事项列表指令有：用`{prefix}{command} add <内容>`来增加待办事项，用`{prefix}{command} remove <编号>`来移除待办事项，用`{prefix}{command} clear`来清空待办事项列表，用`{prefix}{command}`来查看待办事项列表。''',
 
         'cleared' : '''待办事项列表已被清空！'''
-    },
-
-    'tags' : {
-
-        'deleted' : '''删除了标签 {}。''',
-
-        'added' : '''添加了标签 {}。''',
-
-        'invalid_count' : '''抱歉，普通用户至多可设置6条标签。请删除一些标签，或者考虑使用`{prefix}donate`捐赠（5美元档）。''',
-
-        'invalid_chars' : '''标签至多可容纳80字符。简短些！''',
-
-        'colon' : '''请用冒号将标签的名称和内容分隔开。''',
-
-        'illegal' : '''标签名称中请不要出现`add`、`new`、`remove`或`del`。''',
-
-        'unfound' : '''没有找到该名称的标签。''',
-
-        'help' : '''使用`{prefix}tag add <名称>: <内容>` 来创建一个新标签。使用`{prefix}tag remove <名称>`来删除一个标签。使用`{prefix}tag <名称>`来查看标签内容。使用`{prefix}tag`来查看所有标签的列表。'''
     },
 
     'blacklist' : {
