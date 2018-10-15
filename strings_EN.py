@@ -206,6 +206,10 @@ Make sure the interval provided is less than 50 years''',
         'count' : '''Deleted {} reminders!'''
     },
 
+    'look' : {
+        'listing' : '''Listing reminders on this channel...''',
+    },
+
     'todo' : {
         'server_only' : '''Please use `{prefix}todo` for your personal TODO list. `{prefix}todos` is only for server use.''',
 
