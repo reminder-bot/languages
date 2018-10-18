@@ -14,41 +14,40 @@
     'no_perms_general' : '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
 
     'help_raw' : [
-['Comandos de recordatorios', {
-'$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
+        ['Comandos de recordatorios', {
+            '$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
 
-'$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
+            '$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
     
-'$look' : 'Ver los recordatorios de un canal.'
+            '$look' : 'Ver los recordatorios de un canal.'
 
-'$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
+            '$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
 
-'$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio periódico iniciando desde el <code>tiempo-para-recordatorio</code> dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará `¡Hola Mundo!` a tu canal cada 20 minutos.',
+            '$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio periódico iniciando desde el <code>tiempo-para-recordatorio</code> dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará `¡Hola Mundo!` a tu canal cada 20 minutos.',
 
-'$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
+            '$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
 
-'$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
+            '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
 
-'$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.'
-}],
+            '$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.' }],
 
-['Comandos de administración', {
-'$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
+        ['Comandos de administración', {
+            '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
-'$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
-}],
+            '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.' }],
 
-['Otros comandos', {
-'$donate' : 'Muestra información sobre donaciones.',
+        ['Otros comandos', {
+            '$donate' : 'Muestra información sobre donaciones.',
 
-'$prefix <prefijo>' : 'Cambia el prefijo "$".',
+            '$prefix <prefijo>' : 'Cambia el prefijo "$".',
 
-'$info' : 'Obtén información sobre el bot.',
+            '$info' : 'Obtén información sobre el bot.',
 
-'$lang <nombre>' : 'Cambia el idioma.',
+            '$lang <nombre>' : 'Cambia el idioma.',
 
-'$clock' : 'Obtén la hora actual acorde a la zona horaria del servidor.',
-    }
+            '$clock' : 'Obtén la hora actual acorde a la zona horaria del servidor.',
+            
+            }
         ]
     ],
 
@@ -223,7 +222,7 @@ Ejemplo:
         'count' : '''¡Se han eliminado {} recordatorios!'''
     },
     
-        'look' : {
+    'look' : {
         'listing' : '''Listando los recordatorios del canal...''',
     },
 
