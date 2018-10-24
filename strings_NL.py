@@ -7,7 +7,7 @@
 
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
-    'help' : '''Ga voor meer informatie naar https://jellywx.co.uk/help?lang=NL''',
+    'help' : '''Ga voor meer informatie naar https://reminders.jellywx.co.uk/help?lang=NL''',
 
     'no_perms_webhook' : '''**Waarschuwing!**: Om reminders in te stellen heb ik de `Manage Webhooks` toestemming nodig.''',
 
@@ -20,7 +20,7 @@
             '$del' : 'Verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
 
             '$look' : 'Bekijk de herinneringen in een kanaal.',
-            
+
             '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als <code>dag/maand/jaar-uur:minuut:seconden</code>.',
 
             '$interval [gebruiker/kanaal] <tijd-tot-herinnering> <interval> <bericht>' : '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een interval in, waar het gegeven <code>bericht</code> elk <code>interval</code> verzonden wordt in elk gegeven <code>tijd-tot-herinnering</code> tijd. Neemt de tijd in een normale manier. Voorbeeld: <code>$interval 0s 20m Hello World!</code> verstuurt `Hello World!` elke 20 minuten naar het kanaal.',
@@ -220,11 +220,11 @@ Voorbeeld:
 
         'count' : '''{} herinneringen zijn verwijderd!'''
     },
-    
+
         'look' : {
         'listing' : '''De lijst met herinneringen voor dit kanaal wordt weergegeven...''',
     },
-    
+
     'todo' : {
         'server_only' : '''Gebruik alstublieft `{prefix}todo` voor je persoonlijke TODO lijst. `{prefix}todos` is alleen voor server gebruik.''',
 

@@ -7,7 +7,7 @@
 
     'admin_required' : 'You need to be an admin to run this command.',
 
-    'help' : '''Please visit https://jellywx.co.uk/help?lang=EN''',
+    'help' : '''Please visit https://reminders.jellywx.co.uk/help?lang=EN''',
 
     'no_perms_webhook' : '''**WARNING**: To set reminders I need the `Manage Webhooks` permission.''',
 

@@ -7,7 +7,7 @@
 
     'admin_required' : '你需要管理员权限才能使用此指令。',
 
-    'help' : '''请查看 https://jellywx.co.uk/help?lang=ZH''',
+    'help' : '''请查看 https://reminders.jellywx.co.uk/help?lang=ZH''',
 
     'no_perms_webhook' : '''**警告**：我需要`管理Webhooks`权限才能设置提醒事项。''',
 
