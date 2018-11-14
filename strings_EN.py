@@ -29,7 +29,9 @@
 
             '$todos' : 'Identical to <code>$todo</code> but for server-wide task management.',
 
-            '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.' }],
+            '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.',
+
+            '$offset' : 'Offset an entire server\'s reminders by a set time (helps account for daylight saving time)' }],
 
         ['''Management Commands''', {
             '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
