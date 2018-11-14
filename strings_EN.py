@@ -143,7 +143,7 @@ Make sure the time provided is less than 50 years in the future.''',
 
         'invalid_chars_2000' : '''Discord restrictions mean we can\'t send reminders 2000+ characters. Sorry.''',
 
-        'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and tell her/him to use the `{prefix}restrict` command to specify allowed roles.''',
+        'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
 
         'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del`.''',
     },
@@ -254,7 +254,16 @@ Make sure the interval provided is less than 50 years''',
     },
 
     'clock' : {
-        'time' : '''Current time is {}.''',
-    }
 
+        'time' : '''Current time is {}.''',
+
+    },
+
+    'offset' : {
+
+        'invalid_time' : '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d]''',
+
+        'success' : '''All reminders have been offset by {} seconds''',
+
+    },
 }
