@@ -15,7 +15,7 @@
 
     'help_raw' : [
         ['''提醒事项指令''', {
-            '$natural' : '一种设置提醒的更简单的方式。请运行这个指令来获取更多信息。',
+            '$natural' : '一种更简单的设置提醒的方式。请运行这个指令来获取更多信息。',
 
             '$del' : '删除服务器上的提醒事项或周期重复提醒。如果是私信提醒，请给bot私信发送这个指令。',
 
@@ -23,13 +23,15 @@
 
             '$remind [用户/频道] <提醒时间> <内容>' : '请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用<code>日/月/年-时:分:秒</code>的格式设置精确时间。',
 
-            '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '<strong><a href="https://patreon.com/jellywx/">仅Patron。</a></strong> 请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个从<code>提醒时间</code>开始的周期重复提醒。将时间设置成普通的格式，例如<code>$interval 0s 20m Hello World!</code>就会每20分钟向该频道发送一次\'Hello World!\'。',
+            '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '<strong><a href="https://patreon.com/jellywx/">仅限Patron。</a></strong> 请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个从<code>提醒时间</code>开始的周期重复提醒。将时间设置成普通的格式，例如<code>$interval 0s 20m Hello World!</code>就会每20分钟向该频道发送一次\'Hello World!\'。',
 
             '$todo' : '与待办事项列表有关的指令。使用<code>$todo help</code>来获取更多信息。',
 
             '$todos' : '和<code>$todo</code>一样，用于全服务器的任务管理。',
 
-            '$timezone' : '设置服务器的时区，来让设置提醒更加容易。' }],
+            '$timezone' : '设置服务器的时区，来让设置提醒更加容易。',
+
+            '$offset' : '将服务器内的所有提醒事项全部平移给定时长（来应对夏令时）' }],
 
         ['''管理指令''', {
             '$restrict [指定身份组]' : '允许/禁止指定身份组设置频道提醒事项和周期重复提醒。',
@@ -143,7 +145,7 @@ https://discord.gg/WQVaYmT
 
         'invalid_chars_2000' : '''Discord限制一条信息不能超过2000字符。抱歉。''',
 
-        'no_perms' : '''你必须拥有`管理信息`权限或可以向该频道发送提醒的身份组。请联系服务器的管理员，让他使用`{prefix}restrict`指令来指定允许设置提醒的身份组。''',
+        'no_perms' : '''你必须拥有`管理信息`权限或可以向该频道发送提醒的身份组。请联系服务器的管理员，让他们使用`{prefix}restrict`指令来指定允许设置提醒的身份组。''',
 
         'success' : '''发往 <{}{}> 的提醒将在{}秒后发出。如果你想删除这条提醒，输入`$del`。''',
     },
@@ -254,7 +256,16 @@ https://discord.gg/WQVaYmT
     },
 
     'clock' : {
-        'time' : '''当前时间为{}。''',
-    }
 
+        'time' : '''当前时间为{}。''',
+
+    },
+
+    'offset' : {
+
+        'invalid_time' : '''请以 [num][s/m/h/d][num][s/m/h/d] 的格式给出时间''',
+
+        'success' : '''已将所有提醒事项平移{}秒''',
+
+    },
 }
