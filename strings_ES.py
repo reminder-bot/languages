@@ -29,7 +29,9 @@
 
             '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
 
-            '$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.' }],
+            '$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.'
+        
+            '$offset' : 'Ajustar o compensar la hora de todos los recordatorios del servidor por un determinado tiempo (por horarios de verano, etc.) }],
 
         ['Comandos de administración', {
             '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
