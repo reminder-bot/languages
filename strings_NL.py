@@ -7,7 +7,7 @@
 
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
-    'help' : '''Ga voor meer informatie naar https://reminders.jellywx.com/help?lang=NL''',
+    'help' : '''Ga voor meer informatie naar https://reminder-bot.com/help?lang=NL''',
 
     'no_perms_webhook' : '''**Waarschuwing!**: Om reminders in te stellen heb ik de `Manage Webhooks` toestemming nodig.''',
 
