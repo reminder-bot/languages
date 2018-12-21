@@ -82,8 +82,9 @@ Aquí hay un poco más información:
 
 Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tu Patreon con Discord.
 Con tu nuevo rango, podrás:
-: usar comandos exclusivos como `interval`
+: usar el comando exclusivo `interval`
 : colocar recordatorios más largos (2000 caracteres)
+: colocar embeds con colores (disponible mediante el dashboard)
 
 Para quienes estén en Patreon, muchas gracias :D Haces que este bot pueda sostenerse.
 
