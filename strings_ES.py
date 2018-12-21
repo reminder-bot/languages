@@ -7,7 +7,7 @@
 
     'admin_required' : 'Necesitas permisos de administrador para usar este comando.',
 
-    'help' : '''Por favor visita https://reminders.jellywx.co.uk/help?lang=ES''',
+    'help' : '''Por favor visita https://reminders.jellywx.com/help?lang=ES''',
 
     'no_perms_webhook' : '''**AVISO**: Para colocar recordatorios necesito el permiso de `Administrar Webhooks`.''',
 

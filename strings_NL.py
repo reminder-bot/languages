@@ -7,7 +7,7 @@
 
     'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
 
-    'help' : '''Ga voor meer informatie naar https://reminders.jellywx.co.uk/help?lang=NL''',
+    'help' : '''Ga voor meer informatie naar https://reminders.jellywx.com/help?lang=NL''',
 
     'no_perms_webhook' : '''**Waarschuwing!**: Om reminders in te stellen heb ik de `Manage Webhooks` toestemming nodig.''',
 
@@ -29,8 +29,8 @@
 
             '$todos' : 'Identiek aan <code>$todo</code> maar voor server breed taakbeheer.',
 
-            '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere setup in de database.', 
-        
+            '$timezone' : 'Zet de tijdszone voor je server, voor makkelijkere setup in de database.',
+
              '$offset' : 'Verander de tijd in de volledige server bij een aangegeven tijd. (Handig om zomer/wintertijd aan te passen)'}],
 
         ['''Management Commando`s''', {
