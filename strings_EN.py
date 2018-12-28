@@ -213,6 +213,10 @@ Make sure the interval provided is less than 50 years''',
 
     'look' : {
         'listing' : '''Listing reminders on this channel...''',
+
+        'inter' : '''occurs next at''',
+        
+        'no_reminders' : '''No reminders on this channel.''',
     },
 
     'todo' : {
