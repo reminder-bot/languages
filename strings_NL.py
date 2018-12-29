@@ -3,7 +3,7 @@
 {
     '__full__': 'dutch',
 
-    '__maintainer__' : '@Mr Pleasant',
+    '__maintainer__' : '@Mr Pleasant#6165',
 
     'blacklisted' : ''':x: Dit kanaal is op de zwarte lijst :x''',
 
@@ -61,19 +61,18 @@ Standaard prefix: `$`
 Reset prefix: `@{user} prefix $`
 Help: `{prefix}help`
 
-**Welkom bij RemindMe!**
+**Welkom bij Reminder Bot!**
 
 Developer: <@203532103185465344>
-Coole gast die weet waar hij het over heeft: <@174243954487853056>
+Coole gast die weet waar hij het over heeft:
 Icon: <@253202252821430272>
 Nederlandse vertaling door: <@393139822044119051>
-
 Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
-Framework: `discord.py`
-Hosting provider: OVH
+
+Nodig de bot uit: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Gebruik het dashboard: https://reminder-bot.com/
 
 *Als je vragen hebt over nieuwe functies, graag een bericht in de discord server!*
-*Als je een vraag hebt over de ontwikkeling van de bot voor jou op je server, stuur mij een privé bericht!*
 ''',
 
     'donate' : '''
@@ -89,6 +88,7 @@ Met je nieuwe rank kan je:
 : Patreon-exclusieve commando `interval`
 : Mogelijkheid om langere reminders in te stellen (2000 chars)
 : Mogelijkheid om gekleurde embeds te gebruiken (In te stellen via het dashboard)
+: Mogelijkheid om custom avatars bij herinneringen te gebruiken (Beschikbaar via het dashboard)
 
 Aan iedereen die een Patron is: Bedankt :D Jullie zorgen er voor dat deze bot kan blijven voortbestaan.
 
@@ -268,6 +268,13 @@ Voorbeeld:
 
     'clock' : {
         'time' : '''De huidge tijd is {}.''',
-    }
+    },
+    
+    'offset' : {
 
+        'invalid_time' : '''Zorg dat je een tijd geeft die een format heeft als [num][s/m/h/d][num][s/m/h/d]''',
+
+        'success' : '''Alle reminders zijn verschoven met {} seconden''',
+
+    },
 }
