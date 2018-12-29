@@ -1,6 +1,8 @@
 #: español
 
 {
+    '__full__': 'español',
+
     '__maintainer__' : '@Giuh',
 
     'blacklisted' : ''':x: Este canal está en la blacklist :x:''',
@@ -128,12 +130,6 @@ Zona horaria actual: {timezone}''',
         'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.'''
     },
 
-    'clear' : {
-
-        'no_argument' : '''Por favor menciona los usuarios de los que deseas eliminar los mensajes.'''
-
-    },
-
     'remind' : {
         'no_argument' : '''
 Uso:
@@ -147,8 +143,6 @@ Ejemplo:
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
 
         Asegúrate de que el tiempo colocado es menor a 50 años''',
-
-        'invalid_count' : '''¡Demasiados recordatorios en el canal especificado! Utiliza `{prefix}del` para eliminar algunos, o utiliza `{prefix}donate` para aumentar el límite (tier de $5).''',
 
         'invalid_chars' : '''¡Recordatorio demasiado largo! (máx. 150, usaste {}). Utiliza `{prefix}donate` para aumentar el límite a 1900 caracteres (tier de $5).''',
 
@@ -211,12 +205,6 @@ Ejemplo:
 
     },
 
-    'autoclear' : {
-        'disable' : '''Autolimpieza desactivada en {}''',
-
-        'enable' : '''Autolimpieza de {} segundos activada.''',
-    },
-
     'del' : {
         'listing' : '''Listando recordatorios en este servidor... (puede haber un pequeño retraso, espera que el mensaje "Selecciona (1,2,3...)" aparezca).''',
 
@@ -255,25 +243,6 @@ Ejemplo:
         'cleared' : '''¡Limpiada la lista de tareas!'''
     },
 
-    'tags' : {
-
-        'deleted' : '''Eliminado el tag {}''',
-
-        'added' : '''Añadido el tag {}''',
-
-        'invalid_count' : '''Lo siento, para usuarios normales hay un límite de 6 tags. Por favor elimina algunos o considera donar con `{prefix}donate` (tier de 5$).''',
-
-        'invalid_chars' : '''Los tags están limitados a 80 caracteres. ¡Mantenlo conciso!''',
-
-        'colon' : '''Por favor añade dos puntos para separar el nombre del tag con el cuerpo.''',
-
-        'illegal' : '''Por favor no utilices palabras claves `add, new, remove, del` en el nombre de tus tags.''',
-
-        'unfound' : '''No se pudo encontrar el tag con el nombre que has especificado.''',
-
-        'help' : '''Utiliza `{prefix}tag add <nombre>: <mensaje>` para añadir nuevos tags. Utiliza `{prefix}tag remove <nombre>` para eliminar un tag. Utiliza `{prefix}tag <nombre>` para ver un tag. Utiliza `{prefix}tag` para ver todos los tags.'''
-    },
-
     'blacklist' : {
         'removed_from' : '''Removidas las blacklists de los canales especificados.''',
 
@@ -294,7 +263,6 @@ Ejemplo:
     },
 
     'clock' : {
-        
         'time' : '''La hora actual es {}.''',
     }
 
