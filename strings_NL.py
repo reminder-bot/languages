@@ -1,6 +1,8 @@
 #: dutch
 
 {
+    '__full__': 'dutch',
+
     '__maintainer__' : '@Mr Pleasant',
 
     'blacklisted' : ''':x: Dit kanaal is op de zwarte lijst :x''',
@@ -130,12 +132,6 @@ Huidige tijdszone: {timezone}''',
         'help' : '''Vermeld alstublieft de rollen waaarvan je de toestemmingen aan wil passen.'''
     },
 
-    'clear' : {
-
-        'no_argument' : '''Vermeld alstublieft de gebruikers van wie je de berichten wilt verwijderen.'''
-
-    },
-
     'remind' : {
         'no_argument' : '''
 Gebruik:
@@ -149,8 +145,6 @@ Voorbeeld:
         'invalid_time' : '''Zorg dat de tijd in het bericht als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. danwel `dag/maand/jaar-uur:minuut:seconde`.
 
         Zorg dat de tijd niet verder dan 50 jaar in de toekomst is!''',
-
-        'invalid_count' : '''Te veel herinneringen in het specifieke kanaal! Gebruik  `{prefix}del` om een aantal te verwijderen, of gebruik `{prefix}donate` om de maximale herinneringen te verhogen ($5 tier).''',
 
         'invalid_chars' : '''Herinnering bericht is te lang! (max 150, jij hebt er  {} gebruikt). Gebruik `{prefix}donate` om je karakter limiet te verhogen naar 1900 ($5 tier).''',
 
@@ -209,8 +203,6 @@ Voorbeeld:
         'donor' : '''Je moet een Patron zijn (donating 2$ of meer) om toegang tot dit commando te krijgen! Typ `{prefix}donate` om meer informatie te krijgen.''',
 
         'success' : '''Nieuw interval geregistreerd voor <{}{}> in {} seconden. Je kan het interval nu niet meer veranderen, dus je kan dit bericht nu verwijderen.''',
-
-        'success_new' : '''Nieuw interval geregistreerd voor {} in {} seconden. Als je dit interval wilt verwijderen, typ `$del`.''',
 
         'removed' : '''Het lijkt dat er geen patrons in je server zitten, dus het interval is gestopt.'''
 

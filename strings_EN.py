@@ -1,6 +1,8 @@
 #: english
 
 {
+    '__full__': 'english',
+    
     '__maintainer__' : '@JellyWX',
 
     'blacklisted' : ''':x: This channel is blacklisted :x:''',

@@ -1,6 +1,8 @@
 #: simplified chinese
 
 {
+    '__full__': 'simplified chinese',
+
     '__maintainer__' : '@Gourdyu',
 
     'blacklisted' : ''':x: 此频道已被禁止使用指令 :x:''',

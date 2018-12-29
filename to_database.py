@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, Text, Table, MetaData
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 import configparser
 import os
 
@@ -16,6 +17,7 @@ database = config.get('MYSQL', 'DATABASE')
 
 languages = {}
 strings = {}
+new_str = {}
 
 d = config.get('DEFAULT', 'strings_location')
 
@@ -28,7 +30,16 @@ for fn in os.listdir(d):
             languages[a.split('\n')[0].strip('#:\n ')] = fn[8:10]
 
 for language, s in strings.items():
-    pass
+    out = {}
+    for key, value in s.items():
+        if isinstance(value, str):
+            out[key] = value
+
+        elif isinstance(value, dict):
+            for key2, value2 in value.items():
+                out['{}/{}'.format(key, key2)] = value2
+
+    new_str[language] = out
 
 print('Languages enabled: ' + str(languages))
 
@@ -39,6 +50,8 @@ else:
     engine = create_engine('mysql+pymysql://{user}@{host}/{db}?charset=utf8mb4'.format(user=user, host=host, db=database))
 
 meta = MetaData(bind=engine)
+Session = sessionmaker(bind=engine)
+session = Session()
 
 strings_table = Table('strings', meta,
     Column('id', Integer, primary_key=True),
@@ -48,7 +61,21 @@ strings_table = Table('strings', meta,
     )
 )
 
-strings_table.drop()
+inserted = []
+
+try:
+    strings_table.drop()
+except:
+    pass
 strings_table.create()
 
-engine.execute()
+
+for lang, strings in new_str.items():
+    for key, value in strings.items():
+        if key in inserted:
+            session.execute('''UPDATE strings SET value_{} = :val WHERE name = :name'''.format(lang), {"name": key, "val": value})
+        else:
+            session.execute('''INSERT INTO strings (name, value_{}) VALUES (:name, :val)'''.format(lang), {"name": key, "val": value})
+            inserted.append(key)
+
+session.commit()
