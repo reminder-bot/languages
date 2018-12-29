@@ -59,17 +59,15 @@ Default prefix: `$`
 Reset prefix: `@{user} prefix $`
 Help: `{prefix}help`
 
-**Welcome to RemindMe!**
+**Welcome to Reminder Bot!**
 Developer: <@203532103185465344>
-Cool guy who knows what he's on about: <@174243954487853056>
 Icon: <@253202252821430272>
 Find me on https://discord.gg/WQVaYmT and on https://github.com/JellyWX :)
 
-Framework: `discord.py`
-Hosting provider: OVH
+Invite the bot: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Use our dashboard: https://reminder-bot.com/
 
 *If you have enquiries about new features, please send to the discord server*
-*If you have enquiries about bot development for you or your server, please DM me*
 ''',
 
     'donate' : '''
@@ -85,6 +83,7 @@ With your new rank, you'll be able to:
 : use the Patron-only command `interval`
 : set longer reminders (2000 chars)
 : set reminders in colored embeds (available via the dashboard)
+: use custom avatars on reminders (available via the dashboard)
 
 Anyone who is a Patron, thank you :D You make this bot sustainable
 
