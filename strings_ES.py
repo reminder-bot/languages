@@ -16,7 +16,7 @@
     'no_perms_general' : '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
 
     'help_raw' : [
-        ['Comandos de recordatorios', {
+        ['''Comandos de recordatorios''', {
             '$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
 
             '$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
@@ -35,12 +35,12 @@
 
             '$offset' : 'Ajustar o compensar la hora de todos los recordatorios del servidor por un determinado tiempo (por horarios de verano, etc.)', }],
 
-        ['Comandos de administración', {
+        ['''Comandos de administración''', {
             '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
             '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.' }],
 
-        ['Otros comandos', {
+        ['''Otros comandos''', {
             '$donate' : 'Muestra información sobre donaciones.',
 
             '$prefix <prefijo>' : 'Cambia el prefijo "$".',
@@ -63,15 +63,13 @@ Ayuda: `{prefix}help`
 
 **Bienvenido a RemindMe!**
 Desarrollador: <@203532103185465344>
-Un chico cool: <@174243954487853056>
 Ícono: <@253202252821430272>
 Encuéntrame en https://discord.gg/WQVaYmT y en https://github.com/JellyWX :)
 
-Framework: `discord.py` 
-Proveedor de host: OVH
+Invita este bot: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Usa nuestro dashboard: https://reminder-bot.com/
 
 *Si tienes consultas sobre nuevas caracterísicas, por favor envíalas a nuestro servidor de Discord*
-*Si tienes consultas sobre desarrollo de bot para tí y tu servidor, por favor envíame un mensaje directo*
 ''',
 
     'donate' : '''
@@ -86,7 +84,8 @@ Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de 
 Con tu nuevo rango, podrás:
 : usar el comando exclusivo `interval`
 : colocar recordatorios más largos (2000 caracteres)
-: colocar embeds con colores (disponible mediante el dashboard)
+: colocar embeds coloridos para los recordatorios (disponible mediante el dashboard)
+: usar avatares personalizados para los recordatorios (disponible mediante el dashboard)
 
 Para quienes estén en Patreon, muchas gracias :D Haces que este bot pueda sostenerse.
 
