@@ -19,7 +19,7 @@
 
             '$del' : 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
 
-            '$look' : 'Ver los recordatorios de un canal.',
+            '$look [canal]' : 'Ver los recordatorios de un canal.',
 
             '$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>' : 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
 
@@ -226,11 +226,11 @@ Ejemplo:
     },
 
     'look' : {
-        'listing' : '''Listando los recordatorios del canal...''',
+        'listing' : '''Listando los recordatorios del canal especificado...''',
 
         'inter' : '''será enviado el''',
 
-        'no_reminders' : '''No hay recordatorios en este canal.''',
+        'no_reminders' : '''No hay recordatorios en el canal especificado.''',
     },
 
     'todo' : {
