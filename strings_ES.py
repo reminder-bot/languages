@@ -228,7 +228,7 @@ Ejemplo:
     'look' : {
         'listing' : '''Listando los recordatorios del canal...''',
 
-        'inter' : '''será enviado en''',
+        'inter' : '''será enviado el''',
 
         'no_reminders' : '''No hay recordatorios en este canal.''',
     },
