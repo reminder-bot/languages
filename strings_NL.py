@@ -19,7 +19,7 @@
 
             '$del' : 'Verwijder de herinneringen en intervals op je server. Stuur een direct commando naar de bot als de herinneringen via DM`s zijn.',
 
-            '$look' : 'Bekijk de herinneringen in een kanaal.',
+            '$look [kanaal]' : 'Bekijk de herinneringen in een kanaal.',
 
             '$remind [gebruiker/kanaal] <tijd-tot-herinnering> <bericht>' : 'Gebruik alstublieft <code>$natural</code> in plaats van dit commando. Stel een herinnering in. Neemt de tijd in het formaat van [num][s/m/h/d], bijvoorbeeld 10s voor 10 seconden of 2s10m for 2 seconden en 10 minuten. Een precieze tijd kan gegeven worden als <code>dag/maand/jaar-uur:minuut:seconden</code>.',
 
@@ -225,7 +225,12 @@ Voorbeeld:
     },
 
         'look' : {
-        'listing' : '''De lijst met herinneringen voor dit kanaal wordt weergegeven...''',
+            
+        'listing' : '''De lijst met herinneringen voor het gespecificeerde kanaal worden weergegeven...''',
+            
+        'inter' : '''komt eerstvolgend voor op''',
+            
+        'no_reminders' : '''Geen herinneringen in het gespecificeerde kanaal.''',
     },
 
     'todo' : {
