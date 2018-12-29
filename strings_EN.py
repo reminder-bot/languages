@@ -19,7 +19,7 @@
 
             '$del' : 'Delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
 
-            '$look' : 'View reminders in a channel',
+            '$look [channel]' : 'View the reminders in a channel',
 
             '$remind [user/channel] <time-to-reminder> <message>' : 'Please consider <code>$natural</code> rather than using this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as <code>day/month/year-hour:minute:second</code>.',
 
@@ -212,11 +212,11 @@ Make sure the interval provided is less than 50 years''',
     },
 
     'look' : {
-        'listing' : '''Listing reminders on this channel...''',
+        'listing' : '''Listing reminders on specified channel...''',
 
         'inter' : '''occurs next at''',
         
-        'no_reminders' : '''No reminders on this channel.''',
+        'no_reminders' : '''No reminders on specified channel.''',
     },
 
     'todo' : {
