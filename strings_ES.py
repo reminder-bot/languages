@@ -65,7 +65,7 @@ Un chico cool: <@174243954487853056>
 Ícono: <@253202252821430272>
 Encuéntrame en https://discord.gg/WQVaYmT y en https://github.com/JellyWX :)
 
-Framework: `discord.py`
+Framework: `discord.py` 
 Proveedor de host: OVH
 
 *Si tienes consultas sobre nuevas caracterísicas, por favor envíalas a nuestro servidor de Discord*
