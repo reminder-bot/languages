@@ -263,9 +263,7 @@ Ejemplo:
 
     'clock' : {
         'time' : '''La hora actual es {}.''',
-    }
-
-},
+    },
 
     'offset' : {
 
