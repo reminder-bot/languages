@@ -61,17 +61,15 @@
 重设前缀：`@{user} prefix $`
 帮助：`{prefix}help`
 
-**欢迎来到RemindMe！**
+**欢迎来到Reminder Bot！**
 开发者：<@203532103185465344>
-这个人超屌的：<@174243954487853056>
 图标：<@253202252821430272>
 可以在 https://discord.gg/WQVaYmT 或 https://github.com/JellyWX 找到我 :)
 
-程序架构：`discord.py`
-主机提供：OVH
+邀请此bot： https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+使用控制台： https://reminder-bot.com/
 
 *如果你需要询问有关新功能的问题，请发往Discord服务器*
-*如果你需要为你或你的服务器询问有关bot开发的问题，请私信我*
 ''',
 
     'donate' : '''
@@ -86,7 +84,8 @@ https://discord.gg/WQVaYmT
 当你被标识出来后，你就可以：
 : 使用仅限Patron的指令`interval`
 : 设置更长的提醒事项（2000字符）
-: 设置带颜色嵌入块的提醒事项（可以从Dashboard中设置）
+: 设置带颜色嵌入块的提醒事项（可以在控制台中设置）
+: 使用自定义头像的提醒事项（可以在控制台中设置）
 
 感谢所有已经成为Patron的人 :D 是你们让这个bot得以维护。
 
