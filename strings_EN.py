@@ -83,9 +83,8 @@ Here's some more information:
 When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
 With your new rank, you'll be able to:
 : use the Patron-only command `interval`
-: set longer reminders (2000 chars)
 : set reminders in colored embeds (available via the dashboard)
-: use custom avatars on reminders (available via the dashboard)
+: use custom avatars on reminders (available via the dashboard, $5 only)
 
 Anyone who is a Patron, thank you :D You make this bot sustainable
 

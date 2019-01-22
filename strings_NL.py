@@ -86,7 +86,6 @@ Hier is wat meer informatie:
 Wanneer je een donatie doet zal Patreon jou automatisch een rankup geven in onze Discord server, als je je Discord en Patreon account al met elkaar gelinkt hebt.
 Met je nieuwe rank kan je:
 : Patreon-exclusieve commando `interval`
-: Mogelijkheid om langere reminders in te stellen (2000 chars)
 : Mogelijkheid om gekleurde embeds te gebruiken (In te stellen via het dashboard)
 : Mogelijkheid om custom avatars bij herinneringen te gebruiken (Beschikbaar via het dashboard)
 
