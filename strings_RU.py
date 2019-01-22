@@ -83,7 +83,6 @@ https://discord.gg/WQVaYmT
 
 Если ваш аккаунт в дискорде привязан к аккаунту Patreon, то вы автоматически получите привелегие описанные ниже:
 : допступ к `interval` (автоматизированные напоминания)
-: очень длинные сообщения напоминаний (2000 символов)
 : ставить напоминаниям красивые разноцветные рамки (доступно только в панели управления)
 : использовать разные аватарки для бота (доступно только в панели управления)
 
@@ -94,7 +93,7 @@ https://discord.gg/WQVaYmT
 
     'prefix' : {
         'no_argument' : '''
-Префикс не найдет. Используйте команду `mbprefix <prefix>`
+Префикс не найдет. Используйте команду `@reminder-bot prefix <prefix>`
 ''',
         'success' : '''
 Префикс изменён {prefix}
@@ -163,7 +162,7 @@ Examples:
 Keywords:
     `send` : после, идёт сообщение
     `every` : устанавливает период отправки сообщения (интервал)
-    `to` : адрессат (пользователь/канал)
+    `tp` : адрессат (пользователь/канал)
 Usage:
     ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
     ''',
@@ -190,7 +189,7 @@ Example:
     ```{prefix}interval #general 9:30 1d Доброе утро!```
     ```{prefix}interval 0s 10s Это будет очень интересно```''',
 
-        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.
+        'invalid_interval' : '''Убедитесь что вы указали время по маске [num][s/m/h/d][num][s/m/h/d] и т.д.. Без пробелов, Например: 10s для 10 секунд или 10s12m15h1d для 10 секунд, 12 минут, 15 часов и 1 дне.
 
 Убедитесь что интервал установлен не на 50 лет вперёд''',
 
@@ -215,7 +214,7 @@ Example:
     'look' : {
         'listing' : '''Список уведомлений на этом канале...''',
 
-        'inter' : '''смотрим на''',
+        'inter' : '''следующие оповещание: ''',
 
         'no_reminders' : '''На этом канале уведомлений не найдено.''',
     },
