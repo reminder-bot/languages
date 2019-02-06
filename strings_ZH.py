@@ -93,7 +93,7 @@ https://discord.gg/WQVaYmT
 
     'prefix' : {
         'no_argument' : '''
-请像这样使用这个指令 `mbprefix <前缀>`
+请像这样使用这个指令 `@reminder-bot prefix <前缀>`
 ''',
         'success' : '''
 前缀已更改为{prefix}

@@ -96,7 +96,7 @@ Let er op dat je met de Discord server verbonden moet zijn om de Patreon rewards
 
     'prefix' : {
         'no_argument' : '''
-Gebruik dit commando als `mbprefix <prefix>`
+Gebruik dit commando als `@reminder-bot prefix <prefix>`
 ''',
         'success' : '''
 Prefix veranderd naar {prefix}
