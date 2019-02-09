@@ -161,7 +161,7 @@ Examples:
     ```{prefix}natural now send 10 minutes has passed! every 10 minutes to #timer```
 Keywords:
     `send` : define the message
-    `every` : define an interval
+    `every` : define an interval (Patreon Only)
     `to` : define the location to send to
 Usage:
     ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
