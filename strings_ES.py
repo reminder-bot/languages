@@ -161,7 +161,7 @@ Ejemplos:
     ```{prefix}natural ahora enviar ¡Han pasado 10 minutos! cada 10 minutos para #timer```
 Palabras clave:
     `enviar` : define el mensaje
-    `cada` : define el intervalo
+    `cada` : define el intervalo (solo donadores Patreon)
     `para` : define el destino del mensaje
 Uso:
     ```{prefix}natural <tiempo para> enviar <mensaje> [cada intervalo] [para #canal/@usuario]```
