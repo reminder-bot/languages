@@ -73,22 +73,22 @@
 ''',
 
     'donate' : '''
-想要每个月贡献些什么？请点击下面的Patreon和官方bot服务器链接:D
+想要每个月贡献些什么？请点击下方我的Patreon页面和官方bot服务器链接:D
 https://www.patreon.com/jellywx
 
 https://discord.gg/WQVaYmT
 
 更多信息：
 
-如果你将你的Patreon和Discord账号连接，当你捐赠的时候，Patreon会自动将你从我们的Discord服务器上标识出来！
-当你被标识出来后，你就可以：
+请将你的Patreon和Discord账号连接，这样当你捐赠的时候，Patreon就会自动将你从我们的Discord服务器上标识出来！
+然后，你就可以：
 : 使用仅限Patron的指令`interval`
 : 设置带颜色嵌入块的提醒事项（可以在控制台中设置）
-: 使用自定义头像的提醒事项（可以在控制台中设置）
+: 使用自定义头像的提醒事项（可以在控制台中设置，限$5档）
 
 感谢所有已经成为Patron的人 :D 是你们让这个bot得以维护。
 
-请注意，务必将你的Patreon和Discord账号连接，这样才能得到Patreon提供的权限。
+请注意，务必将你的Patreon和Discord账号连接，这样才能获得Patreon的权限。
 ''',
 
     'prefix' : {
@@ -161,7 +161,7 @@ https://discord.gg/WQVaYmT
     ```{prefix}natural now send 10分钟过去了！ every 10 minutes to #timer```
 关键词：
     `send`：给出提醒内容
-    `every`：给出重复周期
+    `every`：给出重复周期（仅限Patreon）
     `to`：给出发往的对象
 用法：
     ```{prefix}natural <时间短语> send <内容> [every 重复周期短语] [to #频道/@用户]```
