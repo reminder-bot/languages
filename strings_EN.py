@@ -273,4 +273,28 @@ Make sure the interval provided is less than 50 years''',
         'success' : '''All reminders have been offset by {} seconds''',
 
     },
+
+    'timer' : {
+
+        'limit' : '''You already have 25 timers. Please delete some timers before creating a new one''',
+
+        'name_length' : '''Please name your timer something shorted (max. 32 characters, you used {})''',
+
+        'unique' : '''Please give your timer a unique name''',
+
+        'success' : '''Created a new timer''',
+
+        'not_found' : '''Could not find a timer by that name''',
+
+        'deleted' : '''Deleted a timer''',
+
+        'help' : '''**Timer Help**
+`timer list` - View all current timers in your server/user
+
+`timer start [name]` - Start a new timer (counts indefinitely)
+
+`timer delete <name>` - Delete a timer by name
+        ''',
+
+    },
 }
