@@ -27,18 +27,17 @@
 
             '$interval [user/channel] <time-to-reminder> <interval> <message>' : '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> Please consider <code>$natural</code> rather than using this command. Set a recurring reminder starting in the given <code>time-to-reminder</code>. Takes times in the normal formats, ex. <code>$interval 0s 20m Hello World!</code> will send \'Hello World!\' to your channel every 20 minutes.',
 
-            '$todo' : 'TODO list related commands. Use <code>$todo help</code> for more information.',
-
-            '$todos' : 'Identical to <code>$todo</code> but for server-wide task management.',
-
-            '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.',
-
             '$offset' : 'Offset an entire server\'s reminders by a set time (helps account for daylight saving time)' }],
 
         ['''Management Commands''', {
+            '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.',
+
             '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
 
-            '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.' }],
+            '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.' ,
+
+            '$lang <name>' : 'Change the language.',
+        }],
 
         ['''Other Commands''', {
             '$donate' : 'View information about donations.',
@@ -47,9 +46,13 @@
 
             '$info' : 'Get info on the bot.',
 
-            '$lang <name>' : 'Change the language.',
-
             '$clock' : 'Get current time in guild\'s timezone',
+
+            '$todo' : 'TODO list related commands. Use <code>$todo help</code> for more information.',
+
+            '$todos' : 'Identical to <code>$todo</code> but for server-wide task management.',
+
+            '$timer' : 'Set a timer that marks the current time. Do `$timer` for more information.',
 
             }
         ]
