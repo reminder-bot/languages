@@ -114,7 +114,7 @@ https://discord.gg/WQVaYmT
 
         'no_timezone' : '''Часовой пояс не распознан. Найдите название своего часового пояса тут: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
-        'success' : '''Часовой пояс {timezone} установлен. Теперь время сервера: {time}'''
+        'set' : '''Часовой пояс {timezone} установлен. Теперь время сервера: {time}''',
     },
 
     'restrict' : {

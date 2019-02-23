@@ -117,7 +117,7 @@ Huidige tijdszone: {timezone}''',
 
         'no_timezone' : '''Tijdszone is niet herkend. Een volledige lijst is beschikbaar op https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
-        'success' : '''Tijdszone is veranderd naar {timezone}. De huidige tijd zou {time} moeten zijn.'''
+        'set' : '''Tijdszone is veranderd naar {timezone}. De huidige tijd zou {time} moeten zijn.''',
     },
 
     'restrict' : {

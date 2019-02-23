@@ -117,7 +117,9 @@ Current timezone: {timezone}''',
 
         'no_timezone' : '''Timezone not recognized. A list is available at https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
-        'success' : '''Timezone has been set to {timezone}. Your current time should be {time}'''
+        'set' : '''Server timezone has been set to {timezone}. Your current time should be {time}''',
+
+        'set_p' : '''Personal timezone has been set to {timezone}. Your current time should be {time}''',
     },
 
     'restrict' : {
@@ -260,7 +262,9 @@ Make sure the interval provided is less than 50 years''',
         'invalid' : '''Languages:
 {}''',
 
-        'set' : '''Language set to English.''',
+        'set' : '''Server language set to English.''',
+
+        'set_p' : '''Personal language set to English.''',
     },
 
     'clock' : {
