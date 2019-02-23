@@ -117,7 +117,9 @@ https://discord.gg/WQVaYmT
 
         'no_timezone' : '''未知时区。可用的时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
-        'set' : '''时区已被设置为{timezone}。您当前的时间应为{time}''',
+        'set' : '''服务器时区已被设置为{timezone}。您当前的时间应为{time}''',
+
+        'set_p' : '''您个人的时区已被设置为{timezone}。您当前的时间应为{time}''',
     },
 
     'restrict' : {
@@ -145,13 +147,13 @@ https://discord.gg/WQVaYmT
 
 给出的时间不能超过未来50年。''',
 
-        'invalid_chars' : '''提醒内容太长了！（最大150字符，你输入了{}字符。）用`{prefix}donate`来把最大长度扩大到1900字符（5美元档）。''',
+        'invalid_chars' : '''提醒内容太长了！（最大150字符，而你输入了{}字符。）用`{prefix}donate`来把最大长度扩大到1900字符（5美元档）。''',
 
         'invalid_chars_2000' : '''Discord限制一条信息不能超过2000字符。抱歉。''',
 
         'no_perms' : '''你必须拥有`管理信息`权限或可以向该频道发送提醒的身份组。请联系服务器的管理员，让他们使用`{prefix}restrict`指令来指定允许设置提醒的身份组。''',
 
-        'success' : '''发往 <{}{}> 的提醒将在{}秒后发出。如果你想删除这条提醒，在发往的频道里输入`$del`。''',
+        'success' : '''发往 <{}{}> 的提醒将在{}秒后发出。如果想删除这条提醒，请在发往的频道里输入`$del`。''',
     },
 
     'natural' : {
@@ -170,7 +172,7 @@ https://discord.gg/WQVaYmT
     ```{prefix}natural <时间短语> send <内容> [every 重复周期短语] [to #频道/@用户]```
     ''',
 
-        'success' : '''发往 {} 的提醒将在{}秒后发出。如果你想删除这条提醒，在发往的频道里输入`$del`。''',
+        'success' : '''发往 {} 的提醒将在{}秒后发出。如果想删除这条提醒，请在发往的频道里输入`$del`。''',
 
         'bad_time' : '''未能成功处理给出的时间。请尽可能清楚地表述，比如`16th of july`或是`in 20 minutes`''',
 
@@ -200,7 +202,7 @@ https://discord.gg/WQVaYmT
 
         'donor' : '''你必须成为Patron（捐赠2美元或更多）才能使用这个指令！输入`{prefix}donate`来了解更多。''',
 
-        'success' : '''发往 <{}{}> 的周期重复提醒将在{}秒后开始。你还不能编辑提醒的内容，但你可以删除它。''',
+        'success' : '''发往 <{}{}> 的周期重复提醒将在{}秒后开始。现在提醒的内容还无法编辑，但你可以删除它。''',
 
         'removed' : '''这个服务器上没有Patron，所以设置的周期重复提醒已被删除。'''
 
@@ -223,7 +225,7 @@ https://discord.gg/WQVaYmT
     },
 
     'todo' : {
-        'server_only' : '''请用`{prefix}todo`来使用你的个人待办事项列表。`{prefix}todos`只能在服务器中使用。''',
+        'server_only' : '''请用`{prefix}todo`来使用你个人的待办事项列表。`{prefix}todos`只能在服务器中使用。''',
 
         'add' : '''*用`{prefix}{command} add <内容>`来向你的待办事项列表里添加事项，或输入`{prefix}{command} help`来查看更多指令！*''',
 
@@ -260,7 +262,9 @@ https://discord.gg/WQVaYmT
         'invalid' : '''语言：
 {}''',
 
-        'set' : '''语言已设置为中文。''',
+        'set' : '''服务器语言已设置为中文。''',
+
+        'set_p' : '''您个人的语言已设置为中文''',
     },
 
     'clock' : {
