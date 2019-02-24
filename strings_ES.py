@@ -115,7 +115,9 @@ Zona horaria actual: {timezone}''',
 
         'no_timezone' : '''Zona horaria no reconocida. Una lista está disponible en https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
-        'set' : '''La zona horaria ha sido cambiada a {timezone}. Tu hora actual debería ser {time}''',
+        'set' : '''La zona horaria del servidor ha sido cambiada a {timezone}. Tu hora actual debería ser {time}''',
+        
+        'set_p' : '''La zona horaria personal se ha establecido a {timezone}. Tu hora actual debería ser {time}''',
     },
 
     'restrict' : {
