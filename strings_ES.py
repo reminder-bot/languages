@@ -27,18 +27,17 @@
 
             '$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>' : '<strong><a href="https://patreon.com/jellywx/">Solo para donadores Patreon.</a></strong> Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio periódico iniciando desde el <code>tiempo-para-recordatorio</code> dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará "¡Hola Mundo!" a tu canal cada 20 minutos.',
 
-            '$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
-
-            '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
-
-            '$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.',
-
             '$offset' : 'Ajustar o compensar la hora de todos los recordatorios del servidor por un determinado tiempo (por horarios de verano, etc.)', }],
 
         ['''Comandos de administración''', {
+            '$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.',
+            
             '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
-            '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.' }],
+            '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
+            
+            '$lang <nombre>' : 'Cambia el idioma.',
+        }],
 
         ['''Otros comandos''', {
             '$donate' : 'Muestra información sobre donaciones.',
@@ -47,9 +46,11 @@
 
             '$info' : 'Obtén información sobre el bot.',
 
-            '$lang <nombre>' : 'Cambia el idioma.',
-
             '$clock' : 'Obtén la hora actual acorde a la zona horaria del servidor.',
+            
+            '$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
+
+            '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
 
             }
         ]
