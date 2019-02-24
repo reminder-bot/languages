@@ -260,7 +260,9 @@ Ejemplo:
         'invalid' : '''Idiomas:
 {}''',
 
-        'set' : '''Idioma cambiado a Español.''',
+        'set' : '''Idioma del servidor cambiado a Español.''',
+        
+        'set_p' : '''Idioma personal cambiado a Español.''',
     },
 
     'clock' : {
