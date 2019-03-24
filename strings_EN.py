@@ -32,11 +32,14 @@
         ['''Management Commands''', {
             '$timezone' : 'Set your server\'s timezone, for easier date-based reminders.',
 
+            '$lang <name>' : 'Change the language.',
+
+            '$nudge <time>' : 'Enable nudging on the current channel. This allows you to sync all future reminders by the second to things like in game clocks',
+
             '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
 
-            '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.' ,
+            '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.',
 
-            '$lang <name>' : 'Change the language.',
         }],
 
         ['''Other Commands''', {
