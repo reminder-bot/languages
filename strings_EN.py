@@ -281,6 +281,14 @@ Make sure the interval provided is less than 50 years''',
 
     },
 
+    'nudge' : {
+
+        'invalid_time' : '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d]''',
+
+        'success' : '''Future reminders will be nudged by {} seconds''',
+
+    },
+
     'timer' : {
 
         'limit' : '''You already have 25 timers. Please delete some timers before creating a new one''',
