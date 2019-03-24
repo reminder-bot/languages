@@ -37,9 +37,15 @@
 
         ['''Management Commando`s''', {
 
-            '$restrict [roles]' : 'Toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
+            '$lang <name>' : 'Verander de taal.',
 
-            '$blacklist [kanaal-naam]' : 'Blokkeer of deblokkeer de mogelijkheid voor commando`s in een specifiek kanaal.' }],
+            '$nudge <time>' : 'Sta nudging toe in het huidige kanaal. Dit maakt het mogelijk om alle toekomstige reminders tot de seconde te synchroniseren bij dingen zoals een in-game klok.',
+ 
+            '$restrict [rol benoeming]' : 'Toevoegen / verwijderen van rollen om kanaalherinneringen en -intervallen te kunnen verzenden.',
+
+            '$blacklist [kanaal-naam]' : 'Blokkeer of deblokkeer de mogelijkheid voor commando`s in een specifiek kanaal.',
+        
+        }],
 
         ['''Andere Commando`s''', {
             '$donate' : 'Toon informatie voor donaties.',
@@ -63,8 +69,7 @@ Help: `{prefix}help`
 
 **Welkom bij Reminder Bot!**
 
-Developer: <@203532103185465344>
-Coole gast die weet waar hij het over heeft:
+Ontwikkelaar: <@203532103185465344>
 Icon: <@253202252821430272>
 Nederlandse vertaling door: <@393139822044119051>
 Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
@@ -72,11 +77,12 @@ Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
 Nodig de bot uit: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
 Gebruik het dashboard: https://reminder-bot.com/
 
-*Als je vragen hebt over nieuwe functies, graag een bericht in de discord server!*
+*Als je vragen hebt over nieuwe functies, kom in de Discord server en stel hem!*
 ''',
 
     'donate' : '''
-Zit je er over te denken om een maandelijkse bijdrage te doen? Klik op het adres hierbeneden voor mijn patreon en voor mijn discord server :D
+Zit je er over te denken om een maandelijkse bijdrage te doen? 
+Klik op het adres hierbeneden voor mijn patreon en voor mijn discord server :D
 https://www.patreon.com/jellywx
 
 https://discord.gg/WQVaYmT
@@ -87,7 +93,7 @@ Wanneer je een donatie doet zal Patreon jou automatisch een rankup geven in onze
 Met je nieuwe rank kan je:
 : Patreon-exclusieve commando `interval`
 : Mogelijkheid om gekleurde embeds te gebruiken (In te stellen via het dashboard)
-: Mogelijkheid om custom avatars bij herinneringen te gebruiken (Beschikbaar via het dashboard)
+: Mogelijkheid om custom avatars bij herinneringen te gebruiken (Beschikbaar via het dashboard, $5 tier)
 
 Aan iedereen die een Patron is: Bedankt :D Jullie zorgen er voor dat deze bot kan blijven voortbestaan.
 
