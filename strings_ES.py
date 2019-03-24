@@ -34,7 +34,7 @@
             
             '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
-            '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.'
+            '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.',
             
             '$lang <nombre>' : 'Cambia el idioma.',
         }],

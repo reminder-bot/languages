@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, Text, Table, MetaData
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, Text, String, Table, MetaData
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import configparser
@@ -49,11 +50,22 @@ if passwd:
 else:
     engine = create_engine('mysql+pymysql://{user}@{host}/{db}?charset=utf8mb4'.format(user=user, host=host, db=database))
 
-meta = MetaData(bind=engine)
+Base = declarative_base()
+
+class Languages(Base):
+    __tablename__ = 'languages'
+
+    id = Column(Integer, primary_key=True)
+    name = Column( String(20), nullable=False )
+    code = Column( String(2), nullable=False )
+
+
+Base.metadata.bind = engine
+
 Session = sessionmaker(bind=engine)
 session = Session()
 
-strings_table = Table('strings', meta,
+strings_table = Table('strings', Base.metadata,
     Column('id', Integer, primary_key=True),
     Column('name', Text),
     *(
@@ -69,6 +81,9 @@ except:
     pass
 strings_table.create()
 
+
+lang_orms = [Languages(code=code, name=name) for name, code in languages.items()]
+[session.add(x) for x in lang_orms]
 
 for lang, strings in new_str.items():
     for key, value in strings.items():
