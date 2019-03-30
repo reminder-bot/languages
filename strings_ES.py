@@ -32,11 +32,14 @@
         ['''Comandos de administración''', {
             '$timezone' : 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.',
             
+            '$lang <nombre>' : 'Cambia el idioma.',
+            
+            '$nudge <time>' : 'Habilita empujes ("nudge") en el canal. Esto permite sincronizar todos los futuros recordatorios del canal a algo como el tiempo dentro de un juego.',
+            
             '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
 
             '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.',
-            
-            '$lang <nombre>' : 'Cambia el idioma.',
+
         }],
 
         ['''Otros comandos''', {
@@ -51,6 +54,8 @@
             '$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
 
             '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
+            
+            '$timer' : 'Configura un temporizador que marca el tiempo actual. Envía `$timer` para más información.',
 
             }
         ]
@@ -273,7 +278,37 @@ Ejemplo:
 
         'invalid_time' : '''Por favor asegurate que el tiempo que provees es en el formato [num][s/m/h/d][num][s/m/h/d]''',
 
-        'success' : '''Todos los recordatorios han sido ajustador por {} segundos''',
+        'success' : '''Todos los recordatorios han sido ajustados por {} segundos''',
+
+    },
+
+    'nudge' : {
+
+        'invalid_time' : '''Por favor asegurate que el tiempo que provees es en el formato [num][s/m/h/d][num][s/m/h/d]''',
+
+        'success' : '''Todos los recordatorios serán empujados por {} segundos''',
+
+    },
+
+    'timer' : {
+
+        'limit' : '''Ya tienes 25 temporizadores. Por favor elimina algunos antes de crear nuevos''',
+
+        'name_length' : '''Por favor nombra tu temporizador algo más corto (máx. 32 caracteres, utilizaste {})''',
+
+        'unique' : '''Por favor dale a tu temporizador un nombre único''',
+
+        'success' : '''Creado nuevo temporizador''',
+
+        'not_found' : '''No se pudo encontrar un temporizador con ese nombre''',
+
+        'deleted' : '''Deleted a timer''',
+
+        'help' : '''**Timer Help**
+`timer list` - View all current timers in your server/user
+`timer start [name]` - Start a new timer (counts indefinitely)
+`timer delete <name>` - Delete a timer by name
+        ''',
 
     },
 }
