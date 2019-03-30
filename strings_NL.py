@@ -160,37 +160,6 @@ Voorbeeld:
         'success' : '''Nieuwe herinnering geregistreerd voor <{}{}> in {} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },
 
-    'natural' : {
-        'no_argument' : '''
-**Nieuw** De optie om natuurlijke tekst te typen!
-Voorbeelden:
-    ```{prefix}natural in 10 minuten verstuur Hello World! naar #general```
-    ```{prefix}natural om 18:00 verstuur Het grote evenement is begonnen!```
-    ```{prefix}natural op 16 juli om 14:00 verstuur Subs De reset is vandaag! naar #subs```
-    ```{prefix}natural verstuur nu 10 minuten zijn voorbij! elke 10 minuten naar #timer```
-Trefwoorden:
-    `verstuur` : Definieer het bericht
-    `iedere` : Definieer het interval van het bericht, bijvoorbeeld iedere 10 minuten
-    `naar` : Definieer de locatie waar het bericht naar toe verzonden moet worden
-Gebruik:
-    ```{prefix}natural <tijdsverklaring> verstuur <bericht> [interval definitie] naar [#kanaal/@gebruiker]```
-    ''',
-
-        'success' : '''Nieuwe reminder geregistreert voor {} in {} seconden. Als je deze herinnering wilt verwijderen, typ `$del`.''',
-
-        'bad_time' : '''Het is niet gelukt om een correcte tijd te vinden. Probeer om het zo duidelijk mogelijk te maken, bijvoorbeeld `16 juli` of `in 20 minuten`''',
-
-        'long_time' : '''Dat is een lange tijd! Zorg dat je reminder binnen 50 jaar is.''',
-
-        'send' : ''' verstuur ''',
-
-        'to' : ''' naar ''',
-
-        'every' : ''' iedere '''
-
-    },
-
-
     'interval' : {
         'no_argument' : '''
 Gebruik:
@@ -210,6 +179,36 @@ Voorbeeld:
         'success' : '''Nieuw interval geregistreerd voor <{}{}> in {} seconden. Je kan het interval nu niet meer veranderen, dus je kan dit bericht nu verwijderen.''',
 
         'removed' : '''Het lijkt dat er geen patrons in je server zitten, dus het interval is gestopt.'''
+
+    },
+
+    'natural' : {
+        'no_argument' : '''
+**Nieuw** De optie om natuurlijke tekst te typen!
+Voorbeelden:
+    ```{prefix}natural in 10 minuten verstuur Hello World! naar #general```
+    ```{prefix}natural om 18:00 verstuur Het grote evenement is begonnen!```
+    ```{prefix}natural op 16 juli om 14:00 verstuur Subs De reset is vandaag! naar #subs```
+    ```{prefix}natural verstuur nu 10 minuten zijn voorbij! elke 10 minuten naar #timer```
+Trefwoorden:
+    `verstuur` : Definieer het bericht
+    `iedere` : Definieer het interval van het bericht, bijvoorbeeld iedere 10 minuten
+    `naar` : Definieer de locatie waar het bericht naar toe verzonden moet worden
+Gebruik:
+    ```{prefix}natural <tijdsverklaring> verstuur <bericht> [interval definitie] naar [#kanaal/@gebruiker]```
+    ''',
+
+        'success' : '''Nieuwe reminder geregistreert voor {} in {} seconden. Als je deze herinnering wilt verwijderen, typ `$del`.''',
+
+        'invalid_time' : '''Het is niet gelukt om een correcte tijd te vinden. Probeer om het zo duidelijk mogelijk te maken, bijvoorbeeld `16 juli` of `in 20 minuten`''',
+
+        'long_time' : '''Dat is een lange tijd! Zorg dat je reminder binnen 50 jaar is.''',
+
+        'send' : ''' verstuur ''',
+
+        'to' : ''' naar ''',
+
+        'every' : ''' iedere '''
 
     },
 

@@ -165,11 +165,11 @@ Ejemplo:
     ```{prefix}interval #general 9:30 1d ¡Buen día!```
     ```{prefix}interval 0s 10s Esto será muy irritante```''',
 
-        'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.
+        'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.''',
 
         'short_interval' : '''Por favor asegúrate que tu intervalo es mayor a 8 segundos.''',
 
-        'long_time' : Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
+        'long_time' : '''Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
 
         'donor' : '''¡Necesitas ser un Patreon (dona 2$ o más) para acceder a este comando! Escribe `{prefix}donate` para más información.''',
 
