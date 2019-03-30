@@ -146,17 +146,33 @@ Example:
 
         'invalid_tag' : '''Couldn't find a location by your tag present.''',
 
-        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.
+        'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.''',
 
-Make sure the time provided is less than 50 years in the future.''',
-
-        'invalid_chars' : '''Reminder message too long! (max 150, you used {}). Use `{prefix}donate` to increase your character limit to 1900 ($5 tier).''',
+        'long_time' : '''Make sure the time provided is less than 50 years in the future.''',
 
         'invalid_chars_2000' : '''Discord restrictions mean we can\'t send reminders 2000+ characters. Sorry.''',
 
         'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
 
-        'success' : '''New reminder registered for <{}{}> in {} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
+        'success' : '''New reminder registered for {location} in {offset} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
+    },
+
+    'interval' : {
+        'no_argument' : '''
+Usage:
+    ```{prefix}interval [channel mention or user mention] <time to or time at> <interval> <message>```
+Example:
+    ```{prefix}interval #general 9:30 1d Good morning!```
+    ```{prefix}interval 0s 10s This will be really irritating```''',
+
+        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.''',
+
+        'short_interval' : '''Please ensure the interval provided is longer than 8 seconds''',
+        
+        'long_interval' : '''Please ensure the interval provided is less than 50 years''',
+
+        'donor' : '''You need to be a Patron (donating 2$ or more) to access this command! Type `{prefix}donate` to find out more.''',
+
     },
 
     'natural' : {
@@ -177,37 +193,15 @@ Usage:
 
         'success' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
 
-        'bad_time' : '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
+        'invalid_time' : '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
 
-        'long_time' : '''That's a long time! Please ensure your reminder is younger than 50 years''',
+        'long_time' : '''Please ensure your reminder is younger than 50 years, or use a more specific time statement.''',
 
         'send' : ''' send ''',
 
         'to' : ''' to ''',
 
         'every' : ''' every '''
-
-    },
-
-    'interval' : {
-        'no_argument' : '''
-Usage:
-    ```{prefix}interval [channel mention or user mention] <time to or time at> <interval> <message>```
-Example:
-    ```{prefix}interval #general 9:30 1d Good morning!```
-    ```{prefix}interval 0s 10s This will be really irritating```''',
-
-        'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.
-
-Make sure the interval provided is less than 50 years''',
-
-        '8_seconds' : '''Please make sure your interval timer is longer than 8 seconds.''',
-
-        'donor' : '''You need to be a Patron (donating 2$ or more) to access this command! Type `{prefix}donate` to find out more.''',
-
-        'success' : '''New interval registered for <{}{}> in {} seconds . You can\'t edit the reminder now, so you are free to delete the message.''',
-
-        'removed' : '''There appears to be no patrons on your server, so the interval has been removed.'''
 
     },
 
