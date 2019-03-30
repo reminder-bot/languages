@@ -148,9 +148,7 @@ Ejemplo:
 
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
 
-        Asegúrate de que el tiempo colocado es menor a 50 años''',
-
-        'invalid_chars' : '''¡Recordatorio demasiado largo! (máx. 150, usaste {}). Utiliza `{prefix}donate` para aumentar el límite a 1900 caracteres (tier de $5).''',
+        'long_time' : Asegúrate de que el tiempo colocado es menor a 50 años''',
 
         'invalid_chars_2000' : '''Discord no permite colocar recordatorios con 2000+ caracteres. Lo siento,''',
 
@@ -158,6 +156,24 @@ Ejemplo:
 
         'success' : '''Nuevo recordatorio registrado para <{}{}> en {} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
+
+    'interval' : {
+        'no_argument' : '''
+Uso:
+    ```{prefix}interval [canal o usuario] <tiempo para/tiempo exacto> <intervalo> <mensaje>```
+Ejemplo:
+    ```{prefix}interval #general 9:30 1d ¡Buen día!```
+    ```{prefix}interval 0s 10s Esto será muy irritante```''',
+
+        'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.
+
+        'short_interval' : '''Por favor asegúrate que tu intervalo es mayor a 8 segundos.''',
+
+        'long_time' : Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
+
+        'donor' : '''¡Necesitas ser un Patreon (dona 2$ o más) para acceder a este comando! Escribe `{prefix}donate` para más información.''',
+
+    },    
 
     'natural' : {
         'no_argument' : '''
@@ -177,37 +193,15 @@ Uso:
 
         'success' : '''Nuevo recordatorio registrado para {} en {} segundos. Si quieres eliminar este recordatorio, escribe `$del`.''',
 
-        'bad_time' : '''Has fallado en colocar correctamente el tiempo. Por favor, colócalo claro, por ejemplo `16 de julio` o `en 20 minutos`''',
+        'invalid_time' : '''Has fallado en colocar correctamente el tiempo. Por favor, colócalo claro, por ejemplo `16 de julio` o `en 20 minutos`''',
 
-        'long_time' : '''¡Eso es un tiempo muy grande! Por favor, asegúrate que tu recordatorio es menor a 50 años.''',
+        'long_time' : '''¡Eso es un tiempo muy grande! Por favor, asegúrate que tu recordatorio es menor a 50 años, o utiliza algo más específico.''',
 
         'send' : ''' enviar''',
 
         'to' : ''' para ''',
 
         'every' : ''' cada '''
-
-    },
-
-    'interval' : {
-        'no_argument' : '''
-Uso:
-    ```{prefix}interval [canal o usuario] <tiempo para/tiempo exacto> <intervalo> <mensaje>```
-Ejemplo:
-    ```{prefix}interval #general 9:30 1d ¡Buen día!```
-    ```{prefix}interval 0s 10s Esto será muy irritante```''',
-
-        'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.
-
-        Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
-
-        '8_seconds' : '''Por favor asegúrate que tu intervalo es mayor a 8 segundos.''',
-
-        'donor' : '''¡Necesitas ser un Patreon (dona 2$ o más) para acceder a este comando! Escribe `{prefix}donate` para más información.''',
-
-        'success' : '''Nuevo intervalo registrado para <{}{}> en {} segundos . Ya no puedes editarlo, así que eres libre de eliminarlo.''',
-
-        'removed' : '''Parece que no hay Patreons en tu servidor, por lo tanto el intervalo se ha eliminado.'''
 
     },
 
