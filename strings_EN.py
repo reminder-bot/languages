@@ -177,7 +177,7 @@ Example:
 
     'natural' : {
         'no_argument' : '''
-**New** Natural language processing
+Natural language processing
 Examples:
     ```{prefix}natural in 10 minutes send Hello World! to #general```
     ```{prefix}natural at 18:00 send The big event has started!```
@@ -190,8 +190,6 @@ Keywords:
 Usage:
     ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
     ''',
-
-        'success' : '''New reminder registered for {} in {} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
 
         'invalid_time' : '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
 
