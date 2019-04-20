@@ -157,7 +157,7 @@ Voorbeeld:
 
         'no_perms' : '''Je moet de `Manage Messages`/`Berichten Beheren` hebben, ofwel een rol die reminders naar dat kanaal kan zenden. Bespreek dit met je server admin, en overleg met hem/haar om het `{prefix}restrict` commando te gebruiken om bepaalde rollen toe te staan.''',
 
-        'success' : '''Nieuwe herinnering geregistreerd voor <{}{}> in {} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
+        'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },
 
     'interval' : {
@@ -168,17 +168,13 @@ Voorbeeld:
     ```{prefix}interval #general 9:30 1d Goede morgen!```
     ```{prefix}interval 0s 10s Dit zal aardig vervelend worden!```''',
 
-        'invalid_interval' : '''Zorg dat het interval wat je gegeven hebt als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. met geen spaties, bijvoorbeeld 10s voor 10 seconden of 10s12m15h1d voor 10 seconden, 12 minuten, 15 uur en 1 dag.
+        'invalid_interval' : '''Zorg dat het interval wat je gegeven hebt als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. met geen spaties, bijvoorbeeld 10s voor 10 seconden of 10s12m15h1d voor 10 seconden, 12 minuten, 15 uur en 1 dag.''',
 
-        Zorg dat het interval gegeven niet langer is dan 50 jaar!''',
+        'long_interval' : '''Zorg dat het interval gegeven niet langer is dan 50 jaar!''',
 
-        '8_seconds' : '''Zorg dat je interval tijd langer is dan 8 seconden.''',
+        'short_interval' : '''Zorg dat je interval tijd langer is dan 8 seconden.''',
 
         'donor' : '''Je moet een Patron zijn (donating 2$ of meer) om toegang tot dit commando te krijgen! Typ `{prefix}donate` om meer informatie te krijgen.''',
-
-        'success' : '''Nieuw interval geregistreerd voor <{}{}> in {} seconden. Je kan het interval nu niet meer veranderen, dus je kan dit bericht nu verwijderen.''',
-
-        'removed' : '''Het lijkt dat er geen patrons in je server zitten, dus het interval is gestopt.'''
 
     },
 
@@ -197,8 +193,6 @@ Trefwoorden:
 Gebruik:
     ```{prefix}natural <tijdsverklaring> verstuur <bericht> [interval definitie] naar [#kanaal/@gebruiker]```
     ''',
-
-        'success' : '''Nieuwe reminder geregistreert voor {} in {} seconden. Als je deze herinnering wilt verwijderen, typ `$del`.''',
 
         'invalid_time' : '''Het is niet gelukt om een correcte tijd te vinden. Probeer om het zo duidelijk mogelijk te maken, bijvoorbeeld `16 juli` of `in 20 minuten`''',
 

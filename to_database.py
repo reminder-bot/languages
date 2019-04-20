@@ -81,6 +81,7 @@ except:
     pass
 strings_table.create()
 
+session.query(Languages).delete(synchronize_session='fetch')
 
 lang_orms = [Languages(code=code, name=name) for name, code in languages.items()]
 [session.add(x) for x in lang_orms]

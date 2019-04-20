@@ -165,11 +165,11 @@ https://discord.gg/WQVaYmT
     ```{prefix}interval #general 9:30 1d 早上好！```
     ```{prefix}interval 0s 10s 这能烦死人```''',
 
-        'invalid_interval' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式给出重复周期，不要空格，比如 10s 即10秒，或 10s12m15h1d 即1天15小时12分钟10秒。
+        'invalid_interval' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式给出重复周期，不要空格，比如 10s 即10秒，或 10s12m15h1d 即1天15小时12分钟10秒。''',
 
-给出的时间不能超过未来50年。''',
+        'long_interval' : '''给出的时间不能超过未来50年。''',
 
-        '8_seconds' : '''请让重复周期大于8秒。''',
+        'short_interval' : '''请让重复周期大于8秒。''',
 
         'donor' : '''你必须成为Patron（捐赠2美元或更多）才能使用这个指令！输入`{prefix}donate`来了解更多。''',
 
@@ -190,8 +190,6 @@ https://discord.gg/WQVaYmT
 用法：
     ```{prefix}natural <时间短语> send <内容> [every 重复周期短语] [to #频道/@用户]```
     ''',
-
-        'success' : '''发往 {} 的提醒将在{}秒后发出。如果想删除这条提醒，请在发往的频道里输入`$del`。''',
 
         'invalid_time' : '''未能成功处理给出的时间。请尽可能清楚地表述，比如`16th of july`或是`in 20 minutes`''',
 

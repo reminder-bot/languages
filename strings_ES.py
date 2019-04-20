@@ -154,7 +154,7 @@ Ejemplo:
 
         'no_perms' : '''Necesitas `Administrar Mensajes` tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
 
-        'success' : '''Nuevo recordatorio registrado para <{}{}> en {} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
+        'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
 
     'interval' : {
@@ -190,8 +190,6 @@ Palabras clave:
 Uso:
     ```{prefix}natural <tiempo para> enviar <mensaje> [cada intervalo] [para #canal/@usuario]```
     ''',
-
-        'success' : '''Nuevo recordatorio registrado para {} en {} segundos. Si quieres eliminar este recordatorio, escribe `$del`.''',
 
         'invalid_time' : '''Has fallado en colocar correctamente el tiempo. Por favor, colócalo claro, por ejemplo `16 de julio` o `en 20 minutos`''',
 
