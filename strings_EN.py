@@ -15,6 +15,10 @@
 
     'no_perms_general' : '''Action forbidden. Please ensure I have the correct permissions.''',
 
+    'no_perms_managed' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
+
+    'no_perms_restricted': '''You must have permission level `Manage Server` or greater to use this command.''',
+
     'help_raw' : [
         ['''Reminder Commands''', {
             '$natural' : 'Easier method to set reminders. Please run this command for more information.',
@@ -151,8 +155,6 @@ Example:
         'long_time' : '''Make sure the time provided is less than 50 years in the future.''',
 
         'invalid_chars_2000' : '''Discord restrictions mean we can\'t send reminders 2000+ characters. Sorry.''',
-
-        'no_perms' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
 
         'success' : '''New reminder registered for {location} in {offset} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
     },

@@ -15,6 +15,8 @@
 
     'no_perms_general' : '''Actie verboden. Zorg er alstublieft voor dat ik de juiste toestemmingen heb.''',
 
+    'no_perms_managed' : '''Je moet de `Manage Messages`/`Berichten Beheren` hebben, ofwel een rol die reminders naar dat kanaal kan zenden. Bespreek dit met je server admin, en overleg met hem/haar om het `{prefix}restrict` commando te gebruiken om bepaalde rollen toe te staan.''',
+
     'help_raw' : [
         ['''Herinnering Commando`s''', {
             '$natural' : 'Makkelijkere manier om reminders in te stellen. Gebruik het commando voor meer informatie.',
@@ -154,8 +156,6 @@ Voorbeeld:
         'invalid_chars' : '''Herinnering bericht is te lang! (max 150, jij hebt er  {} gebruikt). Gebruik `{prefix}donate` om je karakter limiet te verhogen naar 1900 ($5 tier).''',
 
         'invalid_chars_2000' : '''Discord staat geen berichten toe die langer dan 2000 karakters zijn. Sorry.''',
-
-        'no_perms' : '''Je moet de `Manage Messages`/`Berichten Beheren` hebben, ofwel een rol die reminders naar dat kanaal kan zenden. Bespreek dit met je server admin, en overleg met hem/haar om het `{prefix}restrict` commando te gebruiken om bepaalde rollen toe te staan.''',
 
         'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },

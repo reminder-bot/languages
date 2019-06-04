@@ -15,6 +15,8 @@
 
     'no_perms_general' : '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
 
+    'no_perms_managed' : '''Necesitas `Administrar Mensajes` tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
+
     'help_raw' : [
         ['''Comandos de recordatorios''', {
             '$natural' : 'Método más fácil para colocar recordatorios. Envía el comando para más información.',
@@ -151,8 +153,6 @@ Ejemplo:
         'long_time' : Asegúrate de que el tiempo colocado es menor a 50 años''',
 
         'invalid_chars_2000' : '''Discord no permite colocar recordatorios con 2000+ caracteres. Lo siento,''',
-
-        'no_perms' : '''Necesitas `Administrar Mensajes` tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
 
         'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
