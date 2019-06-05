@@ -17,6 +17,8 @@
 
     'no_perms_managed' : '''你必须拥有`管理信息`权限或可以向该频道发送提醒的身份组。请联系服务器的管理员，让他们使用`{prefix}restrict`指令来指定允许设置提醒的身份组。''',
 
+    'no_perms_restricted': '''你必须拥有`管理服务器`或更大的权限才能使用此指令。''',
+
     'help_raw' : [
         ['''提醒事项指令''', {
             '$natural' : '一种更简单的设置提醒的方式。请运行这个指令来获取更多信息。',
@@ -177,7 +179,7 @@ https://discord.gg/WQVaYmT
 
     'natural' : {
         'no_argument' : '''
-**新** 自然语言处理
+自然语言处理
 举例：
     ```{prefix}natural in 10 minutes send Hello World! to #general```
     ```{prefix}natural at 18:00 send 搞一波大操作！```
