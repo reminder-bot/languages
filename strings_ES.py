@@ -15,7 +15,9 @@
 
     'no_perms_general' : '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
 
-    'no_perms_managed' : '''Necesitas `Administrar Mensajes` tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
+    'no_perms_managed' : '''Necesitas el permiso `Gestionar mensajes` o tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
+    
+    'no_perms_restricted': '''Necesitas el permiso `Gestionar servidor` o uno más alto para utilizar este comando..''',
 
     'help_raw' : [
         ['''Comandos de recordatorios''', {
