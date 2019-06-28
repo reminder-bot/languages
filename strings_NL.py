@@ -7,8 +7,6 @@
 
     'blacklisted' : ''':x: Dit kanaal is op de zwarte lijst :x''',
 
-    'admin_required' : 'Je moet een admin zijn om dit commando te gebruiken.',
-
     'help' : '''Ga voor meer informatie naar https://reminder-bot.com/help?lang=NL''',
 
     'no_perms_webhook' : '''**Waarschuwing!**: Om reminders in te stellen heb ik de `Manage Webhooks` toestemming nodig.''',
@@ -149,13 +147,9 @@ Voorbeeld:
 
         'invalid_tag' : '''De locatie van de tag is niet gevonden.''',
 
-        'invalid_time' : '''Zorg dat de tijd in het bericht als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. danwel `dag/maand/jaar-uur:minuut:seconde`.
+        'invalid_time' : '''Zorg dat de tijd in het bericht als vorm heeft [num][s/m/h/d][num][s/m/h/d] etc. danwel `dag/maand/jaar-uur:minuut:seconde`.''',
 
-        Zorg dat de tijd niet verder dan 50 jaar in de toekomst is!''',
-
-        'invalid_chars' : '''Herinnering bericht is te lang! (max 150, jij hebt er  {} gebruikt). Gebruik `{prefix}donate` om je karakter limiet te verhogen naar 1900 ($5 tier).''',
-
-        'invalid_chars_2000' : '''Discord staat geen berichten toe die langer dan 2000 karakters zijn. Sorry.''',
+        'long_time' : '''Zorg dat de tijd niet verder dan 50 jaar in de toekomst is!''',
 
         'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },

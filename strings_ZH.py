@@ -7,8 +7,6 @@
 
     'blacklisted' : ''':x: 此频道已被禁止使用指令 :x:''',
 
-    'admin_required' : '你需要管理员权限才能使用此指令。',
-
     'help' : '''请查看 https://reminder-bot.com/help?lang=ZH''',
 
     'no_perms_webhook' : '''**警告**：我需要`管理Webhooks`权限才能设置提醒事项。''',
@@ -153,8 +151,6 @@ https://discord.gg/WQVaYmT
         'invalid_time' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式，或 `日/月/年-时:分:秒` 的格式给出时间。''',
 
         'long_time' : '''给出的时间不能超过未来50年。''',
-
-        'invalid_chars_2000' : '''Discord限制一条信息不能超过2000字符。抱歉。''',
 
         'success' : '''发往{location}的提醒将在{offset}秒后发出。如果想删除这条提醒，请在发往的频道里输入`$del`。''',
     },

@@ -7,8 +7,6 @@
 
     'blacklisted' : ''':x: Este canal está en la blacklist :x:''',
 
-    'admin_required' : 'Necesitas permisos de administrador para usar este comando.',
-
     'help' : '''Por favor visita https://reminder-bot.com/help?lang=ES''',
 
     'no_perms_webhook' : '''**AVISO**: Para colocar recordatorios necesito el permiso de `Administrar Webhooks`.''',
@@ -153,8 +151,6 @@ Ejemplo:
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
 
         'long_time' : Asegúrate de que el tiempo colocado es menor a 50 años''',
-
-        'invalid_chars_2000' : '''Discord no permite colocar recordatorios con 2000+ caracteres. Lo siento,''',
 
         'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },

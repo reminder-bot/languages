@@ -7,8 +7,6 @@
 
     'blacklisted' : ''':x: This channel is blacklisted :x:''',
 
-    'admin_required' : 'You need to be an admin to run this command.',
-
     'help' : '''Please visit https://reminder-bot.com/help?lang=EN''',
 
     'no_perms_webhook' : '''**WARNING**: To set reminders I need the `Manage Webhooks` permission.''',
@@ -83,7 +81,8 @@ Use our dashboard: https://reminder-bot.com/
 ''',
 
     'donate' : '''
-Thinking of adding a monthly contribution? Press below for my patreon and official bot server :D
+Thinking of adding a monthly contribution? Click below for my patreon and official bot server :D
+
 https://www.patreon.com/jellywx
 
 https://discord.gg/WQVaYmT
@@ -154,8 +153,6 @@ Example:
 
         'long_time' : '''Make sure the time provided is less than 50 years in the future.''',
 
-        'invalid_chars_2000' : '''Discord restrictions mean we can\'t send reminders 2000+ characters. Sorry.''',
-
         'success' : '''New reminder registered for {location} in {offset} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
     },
 
@@ -183,12 +180,12 @@ Natural language processing
 Examples:
     ```{prefix}natural in 10 minutes send Hello World! to #general```
     ```{prefix}natural at 18:00 send The big event has started!```
-    ```{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs```
+    ```{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @Sub1 @Sub2```
     ```{prefix}natural now send 10 minutes has passed! every 10 minutes to #timer```
 Keywords:
     `send` : define the message
     `every` : define an interval (Patreon Only)
-    `to` : define the location to send to
+    `to` : define the location to send to (can define multiple locations, like `@JellyWX #general @SomeUser` to send to all three)
 Usage:
     ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
     ''',
@@ -201,7 +198,9 @@ Usage:
 
         'to' : ''' to ''',
 
-        'every' : ''' every '''
+        'every' : ''' every ''',
+
+        'bulk_set' : ''' {} reminders set successfully''',
 
     },
 
@@ -210,7 +209,7 @@ Usage:
 
         'listed' : '''List (1,2,3...) the reminders you wish to delete, or type anything else to cancel.''',
 
-        'count' : '''Deleted {} reminders!'''
+        'count' : '''Deleted {} reminders!''',
     },
 
     'look' : {
@@ -240,7 +239,7 @@ Usage:
 
         'help' : '''To use the TODO commands, do `{prefix}{command} add <message>`, `{prefix}{command} remove <number>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
 
-        'cleared' : '''Cleared todo list!'''
+        'cleared' : '''Cleared todo list!''',
     },
 
     'blacklist' : {
@@ -250,7 +249,7 @@ Usage:
 
         'removed' : '''Removed current channel from blacklist.''',
 
-        'added' : '''Added current channel to blacklist.'''
+        'added' : '''Added current channel to blacklist.''',
 
     },
 
