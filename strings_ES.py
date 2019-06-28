@@ -175,16 +175,16 @@ Ejemplo:
 
     'natural' : {
         'no_argument' : '''
-**Nuevo** Procesamiento en lenguaje natural
+Procesamiento en lenguaje natural
 Ejemplos:
     ```{prefix}natural en 10 minutos enviar ¡Hola Mundo! para #general```
     ```{prefix}natural a las 18:00 enviar ¡El gran evento ha comenzado!```
-    ```{prefix}natural el 16 de julio a las 14:00 enviar ¡Hoy se reinician las subs! para #subs```
+    ```{prefix}natural el 16 de julio a las 14:00 enviar ¡Hoy se reinician las subs! para #subs @Sub1 @Sub2```
     ```{prefix}natural ahora enviar ¡Han pasado 10 minutos! cada 10 minutos para #timer```
 Palabras clave:
     `enviar` : define el mensaje
     `cada` : define el intervalo (solo donadores Patreon)
-    `para` : define el destino del mensaje
+    `para` : define el destino del mensaje (puedes definir múltiples destinos, como `@JellyWX #general @AlgunUser`para enviar a los tres)
 Uso:
     ```{prefix}natural <tiempo para> enviar <mensaje> [cada intervalo] [para #canal/@usuario]```
     ''',
