@@ -82,6 +82,7 @@
 
     'donate' : '''
 想要每个月贡献些什么？请点击下方我的Patreon页面和官方bot服务器链接:D
+
 https://www.patreon.com/jellywx
 
 https://discord.gg/WQVaYmT
@@ -179,12 +180,12 @@ https://discord.gg/WQVaYmT
 举例：
     ```{prefix}natural in 10 minutes send Hello World! to #general```
     ```{prefix}natural at 18:00 send 搞一波大操作！```
-    ```{prefix}natural on the 16th of july at 14:00 send 该交订阅费了！ to #subs```
+    ```{prefix}natural on the 16th of july at 14:00 send 该交订阅费了！ to #subs @Sub1 @Sub2```
     ```{prefix}natural now send 10分钟过去了！ every 10 minutes to #timer```
 关键词：
     `send`：给出提醒内容
     `every`：给出重复周期（仅限Patreon）
-    `to`：给出发往的对象
+    `to`：给出发往的对象（可以指定多个对象，如`@JellyWX #general @SomeUser`来同时发给这三个对象)
 用法：
     ```{prefix}natural <时间短语> send <内容> [every 重复周期短语] [to #频道/@用户]```
     ''',
@@ -197,7 +198,9 @@ https://discord.gg/WQVaYmT
 
         'to' : ''' to ''',
 
-        'every' : ''' every '''
+        'every' : ''' every ''',
+
+        'bulk_set' : ''' {} 提醒事项已成功设置''',
 
     },
 
@@ -206,7 +209,7 @@ https://discord.gg/WQVaYmT
 
         'listed' : '''列出事项的编号(1,2,3...)来删除提醒，或者发送任意其他内容来取消。''',
 
-        'count' : '''删除了{}条提醒！'''
+        'count' : '''删除了{}条提醒！''',
     },
 
     'look' : {
@@ -236,7 +239,7 @@ https://discord.gg/WQVaYmT
 
         'help' : '''待办事项列表指令有：用`{prefix}{command} add <内容>`来增加待办事项，用`{prefix}{command} remove <编号>`来移除待办事项，用`{prefix}{command} clear`来清空待办事项列表，用`{prefix}{command}`来查看待办事项列表。''',
 
-        'cleared' : '''待办事项列表已被清空！'''
+        'cleared' : '''待办事项列表已被清空！''',
     },
 
     'blacklist' : {
@@ -246,7 +249,7 @@ https://discord.gg/WQVaYmT
 
         'removed' : '''成功允许在此频道使用指令。''',
 
-        'added' : '''成功禁止在此频道使用指令。'''
+        'added' : '''成功禁止在此频道使用指令。''',
 
     },
 
