@@ -198,6 +198,8 @@ Uso:
         'to' : ''' para ''',
 
         'every' : ''' cada '''
+        
+        'bulk_set' : ''' {} recordatorios colocados satisfactoriamente''',
 
     },
 
