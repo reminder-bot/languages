@@ -197,7 +197,7 @@ Uso:
 
         'to' : ''' para ''',
 
-        'every' : ''' cada '''
+        'every' : ''' cada ''',
         
         'bulk_set' : ''' {} recordatorios colocados satisfactoriamente''',
 

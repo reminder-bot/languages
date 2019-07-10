@@ -1,7 +1,7 @@
-#: english
+#: n
 
 {
-    '__full__': 'english',
+    '__full__': 'n',
     
     '__maintainer__' : '@JellyWX',
 
