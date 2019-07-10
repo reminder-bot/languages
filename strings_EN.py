@@ -153,7 +153,7 @@ Example:
 
         'long_time' : '''Make sure the time provided is less than 50 years in the future.''',
 
-        'success' : '''New reminder registered for {location} in {offset} seconds. If you want to delete this reminder, type `$del` in the channel the reminder is set for.''',
+        'success' : '''New reminder registered for {location} in {offset} seconds.''',
     },
 
     'interval' : {

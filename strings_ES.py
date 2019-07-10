@@ -199,7 +199,7 @@ Uso:
 
         'every' : ''' cada ''',
         
-        'bulk_set' : ''' {} recordatorios colocados satisfactoriamente''',
+        'bulk_set' : '''{} recordatorios colocados satisfactoriamente''',
 
     },
 
