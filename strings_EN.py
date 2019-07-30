@@ -151,7 +151,7 @@ Example:
 
         'invalid_time' : '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.''',
 
-        'long_time' : '''Make sure the time provided is less than 50 years in the future.''',
+        'long_time' : '''Make sure the time provided is less than {max_time} days in the future.''',
 
         'success' : '''New reminder registered for {location} in {offset} seconds.''',
     },
@@ -166,9 +166,9 @@ Example:
 
         'invalid_interval' : '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.''',
 
-        'short_interval' : '''Please ensure the interval provided is longer than 8 seconds''',
+        'short_interval' : '''Please ensure the interval provided is longer than {min_interval} seconds''',
         
-        'long_interval' : '''Please ensure the interval provided is less than 50 years''',
+        'long_interval' : '''Please ensure the interval provided is less than {max_time} days''',
 
         'donor' : '''You need to be a Patron (donating 2$ or more) to access this command! Type `{prefix}donate` to find out more.''',
 
