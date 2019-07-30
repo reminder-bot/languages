@@ -82,6 +82,7 @@ Usa nuestro dashboard: https://reminder-bot.com/
 
     'donate' : '''
 ¿Pensando en aportar una contribución mensual? Presiona abajo para mi Patreon y el servidor oficial del bot :D
+
 https://www.patreon.com/jellywx
 
 https://discord.gg/WQVaYmT
@@ -150,7 +151,7 @@ Ejemplo:
 
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
 
-        'long_time' : Asegúrate de que el tiempo colocado es menor a 50 años''',
+        'long_time' : Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.''',
 
         'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
@@ -165,9 +166,9 @@ Ejemplo:
 
         'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.''',
 
-        'short_interval' : '''Por favor asegúrate que tu intervalo es mayor a 8 segundos.''',
+        'short_interval' : '''Por favor asegúrate que tu intervalo es mayor a {min_interval} segundos.''',
 
-        'long_time' : '''Asegúrate de que el tiempo del intervalo colocado es menor a 50 años''',
+        'long_time' : '''Asegúrate de que el tiempo del intervalo colocado es menor a {max_time} días.''',
 
         'donor' : '''¡Necesitas ser un Patreon (dona 2$ o más) para acceder a este comando! Escribe `{prefix}donate` para más información.''',
 
