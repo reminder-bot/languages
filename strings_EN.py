@@ -153,6 +153,8 @@ Example:
 
         'long_time' : '''Make sure the time provided is less than {max_time} days in the future.''',
 
+        'past_time' : '''Please ensure the time provided is in the future. If the time *is* in the future, please be more specific with the definition.''',
+
         'success' : '''New reminder registered for {location} in {offset} seconds.''',
     },
 
@@ -270,6 +272,8 @@ Usage:
     },
 
     'offset' : {
+
+        'help' : '''Usage: `{prefix}offset <time/s>`''',
 
         'invalid_time' : '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d]''',
 
