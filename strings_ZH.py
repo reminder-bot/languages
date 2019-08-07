@@ -27,7 +27,7 @@
 
             '$remind [用户/频道] <提醒时间> <内容>' : '请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用<code>日/月/年-时:分:秒</code>的格式设置精确时间。',
 
-            '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '<strong><a href="https://patreon.com/jellywx/">仅限Patron。</a></strong> 请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个从<code>提醒时间</code>开始的周期重复提醒。将时间设置成普通的格式，例如<code>$interval 0s 20m Hello World!</code>就会每20分钟向该频道发送一次\'Hello World!\'。',
+            '$interval [用户/频道] <提醒时间> <重复周期> <内容>' : '<strong><a href="https://patreon.com/jellywx/">仅限Patron。</a></strong> 请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个从<code>提醒时间</code>开始的周期重复提醒。将时间设置成普通的格式，例如<code>$interval 0s 20m Hello World!</code>就会每20分钟向该频道发送一次“Hello World!”。',
 
             '$offset' : '将服务器内的所有提醒事项全部平移指定时长（来应对夏令时）' }],
 
@@ -57,7 +57,7 @@
 
             '$todos' : '和<code>$todo</code>一样，用于全服务器的任务管理。',
 
-            '$timer' : '设置一个标记当前时间的计时器。 使用`$timer`来获取更多信息。',
+            '$timer' : '设置一个标记当前时间的计时器。 使用<code>$timer</code>来获取更多信息。',
 
             }
         ]
@@ -151,9 +151,9 @@ https://discord.gg/WQVaYmT
 
         'invalid_time' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式，或 `日/月/年-时:分:秒` 的格式给出时间。''',
 
-        'long_time' : '''给出的时间不能超过未来50年。''',
+        'long_time' : '''给出的时间不能超过未来{max_time}天。''',
 
-        'success' : '''发往{location}的提醒将在{offset}秒后发出。如果想删除这条提醒，请在发往的频道里输入`$del`。''',
+        'success' : '''发往{location}的提醒将在{offset}秒后发出。''',
     },
 
     'interval' : {
@@ -166,9 +166,9 @@ https://discord.gg/WQVaYmT
 
         'invalid_interval' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式给出重复周期，不要空格，比如 10s 即10秒，或 10s12m15h1d 即1天15小时12分钟10秒。''',
 
-        'long_interval' : '''给出的时间不能超过未来50年。''',
+        'short_interval' : '''请让重复周期大于{min_interval}秒。''',
 
-        'short_interval' : '''请让重复周期大于8秒。''',
+        'long_interval' : '''给出的时间不能超过未来{max_time}天。''',
 
         'donor' : '''你必须成为Patron（捐赠2美元或更多）才能使用这个指令！输入`{prefix}donate`来了解更多。''',
 
@@ -185,7 +185,7 @@ https://discord.gg/WQVaYmT
 关键词：
     `send`：给出提醒内容
     `every`：给出重复周期（仅限Patreon）
-    `to`：给出发往的对象（可以指定多个对象，如`@JellyWX #general @SomeUser`来同时发给这三个对象)
+    `to`：给出发往的对象（可以指定多个对象，如`@JellyWX #general @SomeUser`来同时发给这三个对象）
 用法：
     ```{prefix}natural <时间短语> send <内容> [every 重复周期短语] [to #频道/@用户]```
     ''',
