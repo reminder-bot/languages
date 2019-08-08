@@ -91,16 +91,19 @@ Here's some more information:
 
 When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
 With your new rank, you'll be able to:
-: use the Patron-only command `interval`
+: use the Patreon-only command `interval`
+: use Patreon-only features of SoundFX
 : set reminders in colored embeds (available via the dashboard)
 : use custom avatars on reminders (available via the dashboard, $5 only)
+: use Patreon-only features of Bot o'clock (available via the dashboard, $5 only)
 
-Anyone who is a Patron, thank you :D You make this bot sustainable
+Anyone who is a Patreon supporter, thank you :D You make this bot sustainable
 
 Please note, you must be connected to the Discord server to receive Patreon rewards.
 ''',
 
     'prefix' : {
+
         'no_argument' : '''
 Please use this command as `@reminder-bot prefix <prefix>`
 ''',
@@ -140,6 +143,7 @@ Current timezone: {timezone}''',
     },
 
     'remind' : {
+
         'no_argument' : '''
 Usage:
     ```{prefix}remind [channel mention or user mention] <time to or time at> <message>```
@@ -159,6 +163,7 @@ Example:
     },
 
     'interval' : {
+
         'no_argument' : '''
 Usage:
     ```{prefix}interval [channel mention or user mention] <time to or time at> <interval> <message>```
@@ -177,6 +182,7 @@ Example:
     },
 
     'natural' : {
+
         'no_argument' : '''
 Natural language processing
 Examples:
@@ -207,6 +213,7 @@ Usage:
     },
 
     'del' : {
+    
         'listing' : '''Listing reminders on this server... (there may be a small delay, please wait for the "List (1,2,3...)" message).''',
 
         'listed' : '''List (1,2,3...) the reminders you wish to delete, or type anything else to cancel.''',
@@ -215,6 +222,7 @@ Usage:
     },
 
     'look' : {
+    
         'listing' : '''Listing reminders on specified channel...''',
 
         'inter' : '''occurs next at''',
@@ -223,7 +231,6 @@ Usage:
     },
 
     'todo' : {
-        'server_only' : '''Please use `{prefix}todo` for your personal TODO list. `{prefix}todos` is only for server use.''',
 
         'add' : '''*Do `{prefix}{command} add <message>` to add an item to your TODO, or type `{prefix}{command} help` for more commands!*''',
 
