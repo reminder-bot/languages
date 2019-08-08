@@ -155,7 +155,7 @@ Ejemplo:
 
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
 
-        'long_time' : Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.'''
+        'long_time' : '''Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.'''
         
         'past_time' : '''Por favor asegúrate que el tiempo proveído es en el futuro. Si el tiempo *está* en el futuro, se más específico con la definición.''',
 
