@@ -57,7 +57,7 @@
 
             '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
             
-            '$timer' : 'Configura un temporizador que marca el tiempo actual. Envía `$timer` para más información.',
+            '$timer' : 'Configura un contador que marca desde el tiempo actual. Envía `$timer` para más información.',
 
             }
         ]
@@ -92,6 +92,8 @@ Aquí hay un poco más información:
 Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tu Patreon con Discord.
 Con tu nuevo rango, podrás:
 : usar el comando exclusivo `interval`
+: usar comandos exclusivos del bot SoundFX
+: usar comandos exclusivos del Bot O'Clock (disponible mediante el dashboard)
 : colocar embeds coloridos para los recordatorios (disponible mediante el dashboard)
 : usar avatares personalizados para los recordatorios (disponible mediante el dashboard)
 
@@ -101,6 +103,7 @@ Ten en cuenta que debes estar conectado a nuestro servidor de Discord para recib
 ''',
 
     'prefix' : {
+        
         'no_argument' : '''
 Por favor utiliza este comando como `@reminder-bot prefix <prefijo>`
 ''',
@@ -140,6 +143,7 @@ Zona horaria actual: {timezone}''',
     },
 
     'remind' : {
+        
         'no_argument' : '''
 Uso:
     ```{prefix}remind [canal o usuario] <tiempo para/tiempo exacto> <mensaje>```
@@ -151,19 +155,22 @@ Ejemplo:
 
         'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
 
-        'long_time' : Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.''',
+        'long_time' : Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.'''
+        
+        'past_time' : '''Por favor asegúrate que el tiempo proveído es en el futuro. Si el tiempo *está* en el futuro, se más específico con la definición.''',
 
         'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
     },
 
     'interval' : {
+        
         'no_argument' : '''
 Uso:
     ```{prefix}interval [canal o usuario] <tiempo para/tiempo exacto> <intervalo> <mensaje>```
 Ejemplo:
     ```{prefix}interval #general 9:30 1d ¡Buen día!```
     ```{prefix}interval 0s 10s Esto será muy irritante```''',
-
+        
         'invalid_interval' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. sin espacios, ej. 10s para 10 segundos o 10s12m15h1d for 10 segundos, 12 minutos, 15 horas y 1 día.''',
 
         'short_interval' : '''Por favor asegúrate que tu intervalo es mayor a {min_interval} segundos.''',
@@ -175,6 +182,7 @@ Ejemplo:
     },    
 
     'natural' : {
+        
         'no_argument' : '''
 Procesamiento en lenguaje natural
 Ejemplos:
@@ -205,6 +213,7 @@ Uso:
     },
 
     'del' : {
+        
         'listing' : '''Listando recordatorios en este servidor... (puede haber un pequeño retraso, espera que el mensaje "Selecciona (1,2,3...)" aparezca).''',
 
         'listed' : '''Selecciona (1,2,3...) el recordaorio que quieres eliminar, o escribe cualquier otra cosa para cancelar.''',
@@ -213,6 +222,7 @@ Uso:
     },
 
     'look' : {
+        
         'listing' : '''Listando los recordatorios del canal especificado...''',
 
         'inter' : '''será enviado el''',
@@ -221,8 +231,7 @@ Uso:
     },
 
     'todo' : {
-        'server_only' : '''Por favor utiliza `{prefix}todo` para tu lista de tareas personal. `{prefix}todos` es para las tareas del servidor entero.''',
-
+        
         'add' : '''*Pon `{prefix}{command} add <mensaje>` para añadir un ítem a tu TODO, o escribe `{prefix}{command} help` para más comandos*''',
 
         'too_long' : '''Disculpa, pero los ítems están limitados a 80 caracteres. Mantenlo conciso :)''',
@@ -264,10 +273,14 @@ Uso:
     },
 
     'clock' : {
+        
         'time' : '''La hora actual es {}.''',
+        
     },
 
     'offset' : {
+        
+        'help' : '''Uso: `{prefix}offset <tiempo/s>`''',
 
         'invalid_time' : '''Por favor asegurate que el tiempo que provees es en el formato [num][s/m/h/d][num][s/m/h/d]''',
 
@@ -285,22 +298,24 @@ Uso:
 
     'timer' : {
 
-        'limit' : '''Ya tienes 25 temporizadores. Por favor elimina algunos antes de crear nuevos''',
+        'limit' : '''Ya tienes 25 contadores. Por favor elimina algunos antes de crear nuevos''',
 
-        'name_length' : '''Por favor nombra tu temporizador algo más corto (máx. 32 caracteres, utilizaste {})''',
+        'name_length' : '''Por favor nombra tu contador algo más corto (máx. 32 caracteres, utilizaste {})''',
 
-        'unique' : '''Por favor dale a tu temporizador un nombre único''',
+        'unique' : '''Por favor dale a tu contador un nombre único''',
 
-        'success' : '''Creado nuevo temporizador''',
+        'success' : '''Creado nuevo contador''',
 
-        'not_found' : '''No se pudo encontrar un temporizador con ese nombre''',
+        'not_found' : '''No se pudo encontrar un contador con ese nombre''',
 
-        'deleted' : '''Deleted a timer''',
+        'deleted' : '''Eliminado un contador''',
 
-        'help' : '''**Timer Help**
-`timer list` - View all current timers in your server/user
-`timer start [name]` - Start a new timer (counts indefinitely)
-`timer delete <name>` - Delete a timer by name
+        'help' : '''**Ayuda del Contador**
+`timer list` - Ver todos los contadores actuales en tu servidor/usuario
+
+`timer start [nombre]` - Iniciar un nuevo contador (cuenta indefinidamente)
+
+`timer delete <nombre>` - Eliminar un contador por el nombre
         ''',
 
     },
