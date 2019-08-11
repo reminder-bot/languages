@@ -166,7 +166,7 @@ Voorbeeld:
 
         'long_interval' : '''Zorg dat het interval gegeven niet langer is dan 50 jaar!''',
 
-        'short_interval' : '''Zorg dat je interval tijd langer is dan 8 seconden.''',
+        'short_interval' : '''Zorg dat je interval tijd langer is dan {min_interval} seconden.''',
 
         'donor' : '''Je moet een Patron zijn (donating 2$ of meer) om toegang tot dit commando te krijgen! Typ `{prefix}donate` om meer informatie te krijgen.''',
 
