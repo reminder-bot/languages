@@ -153,13 +153,13 @@ Ejemplo:
 
         'invalid_tag' : '''No es posible encontrar la localización de tu tag.''',
 
-        'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.
+        'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.'''
 
-        'long_time' : '''Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.'''
+        'long_time' : '''Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.''',
         
         'past_time' : '''Por favor asegúrate que el tiempo proveído es en el futuro. Si el tiempo *está* en el futuro, se más específico con la definición.''',
 
-        'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.'''
+        'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.''',
     },
 
     'interval' : {
@@ -179,7 +179,7 @@ Ejemplo:
 
         'donor' : '''¡Necesitas ser un Patreon (dona 2$ o más) para acceder a este comando! Escribe `{prefix}donate` para más información.''',
 
-    },    
+    },
 
     'natural' : {
         
