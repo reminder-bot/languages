@@ -91,16 +91,19 @@ https://discord.gg/WQVaYmT
 
 请将你的Patreon和Discord账号连接，这样当你捐赠的时候，Patreon就会自动将你从我们的Discord服务器上标识出来！
 然后，你就可以：
-: 使用仅限Patron的指令`interval`
+: 使用仅限Patreon的指令`interval`
+: 使用SoundFX的仅限Patreon的指令
 : 设置带颜色嵌入块的提醒事项（可以在控制台中设置）
 : 使用自定义头像的提醒事项（可以在控制台中设置，限$5档）
+: 使用Bot o'clock的仅限Patreon的指令（可以在控制台中设置，限$5档）
 
-感谢所有已经成为Patron的人 :D 是你们让这个bot得以维护。
+感谢所有已经成为Patreon支持者的人 :D 是你们让这个bot得以维护。
 
 请注意，务必将你的Patreon和Discord账号连接，这样才能获得Patreon的权限。
 ''',
 
     'prefix' : {
+
         'no_argument' : '''
 请像这样使用这个指令 `@reminder-bot prefix <前缀>`
 ''',
@@ -140,6 +143,7 @@ https://discord.gg/WQVaYmT
     },
 
     'remind' : {
+
         'no_argument' : '''
 用法:
     ```{prefix}remind [发往的频道或用户] <剩余时间或时间点> <内容>```
@@ -154,9 +158,12 @@ https://discord.gg/WQVaYmT
         'long_time' : '''给出的时间不能超过未来{max_time}天。''',
 
         'success' : '''发往{location}的提醒将在{offset}秒后发出。''',
+
+        'past_time' : '''请确保给出的时间是未来的世界。如果该时间*确实是*未来的世界，请换一种更详细的说法。''',
     },
 
     'interval' : {
+
         'no_argument' : '''
 用法：
     ```{prefix}interval [指定频道或用户] <剩余时间或时间点> <重复周期> <内容>```
@@ -175,6 +182,7 @@ https://discord.gg/WQVaYmT
     },
 
     'natural' : {
+
         'no_argument' : '''
 自然语言处理
 举例：
@@ -205,6 +213,7 @@ https://discord.gg/WQVaYmT
     },
 
     'del' : {
+
         'listing' : '''正在列出此服务器上的提醒事项。（可能会有延迟，请等待“列出 (1,2,3...)”这条信息被发出。）''',
 
         'listed' : '''列出事项的编号(1,2,3...)来删除提醒，或者发送任意其他内容来取消。''',
@@ -213,6 +222,7 @@ https://discord.gg/WQVaYmT
     },
 
     'look' : {
+
         'listing' : '''正在列出指定频道上的提醒事项……''',
 
         'inter' : '''在''',
@@ -221,7 +231,6 @@ https://discord.gg/WQVaYmT
     },
 
     'todo' : {
-        'server_only' : '''请用`{prefix}todo`来使用你个人的待办事项列表。`{prefix}todos`只能在服务器中使用。''',
 
         'add' : '''*用`{prefix}{command} add <内容>`来向你的待办事项列表里添加事项，或输入`{prefix}{command} help`来查看更多指令！*''',
 
@@ -270,6 +279,8 @@ https://discord.gg/WQVaYmT
     },
 
     'offset' : {
+
+        'help' : '''用法：`{prefix}offset <时间/秒>`''',
 
         'invalid_time' : '''请以 [num][s/m/h/d][num][s/m/h/d] 的格式给出时间''',
 
