@@ -139,7 +139,7 @@ Zona horaria actual: {timezone}''',
 
         'allowed' : '''Roles permitidos: {}''',
 
-        'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.'''
+        'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.''',
     },
 
     'remind' : {
@@ -153,7 +153,7 @@ Ejemplo:
 
         'invalid_tag' : '''No es posible encontrar la localización de tu tag.''',
 
-        'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.'''
+        'invalid_time' : '''Asegúrate que la hora que colocaste es en el formato [num][s/m/h/d][num][s/m/h/d] etc. o `día/mes/año-hora:minuto:segundo`.''',
 
         'long_time' : '''Asegúrate de que el tiempo colocado es menor a {max_time} días en el futuro.''',
         
