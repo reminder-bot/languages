@@ -208,7 +208,7 @@ Gebruik:
         'count' : '''{} herinneringen zijn verwijderd!'''
     },
 
-        'look' : {
+    'look' : {
             
         'listing' : '''De lijst met herinneringen voor het gespecificeerde kanaal worden weergegeven...''',
             
@@ -218,13 +218,8 @@ Gebruik:
     },
 
     'todo' : {
-        'server_only' : '''Gebruik alstublieft `{prefix}todo` voor je persoonlijke TODO lijst. `{prefix}todos` is alleen voor server gebruik.''',
 
         'add' : '''*Gebruik `{prefix}{command} add <message>` om een item toe te voegen op je TODO lijst, of gebruik  `{prefix}{command} help` voor meer commando`s!*''',
-
-        'too_long' : '''Sorry, maar TODO berichten zijn gelimiteerd tot 80 karakters. Houd het kort :)''',
-
-        'too_long2' : '''Sorry, maar TODO lijsten zijn gelimiteerd tot 800 karakters. Misschien wordt het tijd om wat te doen? ;)''',
 
         'added' : ''' \'{name}\' is toegevoegd tot de TODO!''',
 

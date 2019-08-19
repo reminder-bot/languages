@@ -234,10 +234,6 @@ Uso:
         
         'add' : '''*Pon `{prefix}{command} add <mensaje>` para añadir un ítem a tu TODO, o escribe `{prefix}{command} help` para más comandos*''',
 
-        'too_long' : '''Disculpa, pero los ítems están limitados a 80 caracteres. Mantenlo conciso :)''',
-
-        'too_long2' : '''Disculpa, pero la lista no puede excederse de los 800 caracteres. ¿Tal vez completar algunas tareas?''',
-
         'added' : '''¡Añadido \'{name}\' a la lista de tareas!''',
 
         'removed' : '''¡Eliminado \'{}\' de la lista de tareas!''',

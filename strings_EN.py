@@ -11,6 +11,8 @@
 
     'no_perms_webhook' : '''**WARNING**: To set reminders I need the `Manage Webhooks` permission.''',
 
+    'no_perms_embed_links' : '''**WARNING**: To operate, I need the `Embed Links` permission.''',
+
     'no_perms_general' : '''Action forbidden. Please ensure I have the correct permissions.''',
 
     'no_perms_managed' : '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
@@ -233,10 +235,6 @@ Usage:
     'todo' : {
 
         'add' : '''*Do `{prefix}{command} add <message>` to add an item to your TODO, or type `{prefix}{command} help` for more commands!*''',
-
-        'too_long' : '''Sorry, but TODO message sizes are limited to 80 characters. Keep it concise :)''',
-
-        'too_long2' : '''Sorry, but TODO lists are capped at 800 characters. Maybe, get some things done?''',
 
         'added' : '''Added \'{name}\' to todo!''',
 
