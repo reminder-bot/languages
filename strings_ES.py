@@ -9,7 +9,9 @@
 
     'help' : '''Por favor visita https://reminder-bot.com/help?lang=ES''',
 
-    'no_perms_webhook' : '''**AVISO**: Para colocar recordatorios necesito el permiso de `Administrar Webhooks`.''',
+    'no_perms_webhook' : '''**AVISO**: Para colocar recordatorios necesito el permiso de `Gestionar webhooks`.''',
+    
+    'no_perms_embed_links' : '''**AVISO**: Parar operar necesito el permiso de `Insertar enlaces`.''',
 
     'no_perms_general' : '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
 
