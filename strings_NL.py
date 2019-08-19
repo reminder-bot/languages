@@ -72,7 +72,7 @@ Help: `{prefix}help`
 Ontwikkelaar: <@203532103185465344>
 Icon: <@253202252821430272>
 Nederlandse vertaling door: <@393139822044119051>
-Vind me op  https://discord.gg/WQVaYmT en op https://github.com/JellyWX :)
+Vind me op  https://discord.jellywx.com en op https://github.com/JellyWX :)
 
 Nodig de bot uit: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
 Gebruik het dashboard: https://reminder-bot.com/
@@ -85,7 +85,7 @@ Zit je er over te denken om een maandelijkse bijdrage te doen?
 Klik op het adres hierbeneden voor mijn patreon en voor mijn discord server :D
 https://www.patreon.com/jellywx
 
-https://discord.gg/WQVaYmT
+https://discord.jellywx.com
 
 Hier is wat meer informatie:
 

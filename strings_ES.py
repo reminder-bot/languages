@@ -72,7 +72,7 @@ Ayuda: `{prefix}help`
 **Bienvenido a RemindMe!**
 Desarrollador: <@203532103185465344>
 Ícono: <@253202252821430272>
-Encuéntrame en https://discord.gg/WQVaYmT y en https://github.com/JellyWX :)
+Encuéntrame en https://discord.jellywx.com y en https://github.com/JellyWX :)
 
 Invita este bot: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
 Usa nuestro dashboard: https://reminder-bot.com/
@@ -85,7 +85,7 @@ Usa nuestro dashboard: https://reminder-bot.com/
 
 https://www.patreon.com/jellywx
 
-https://discord.gg/WQVaYmT
+https://discord.jellywx.com
 
 Aquí hay un poco más información:
 

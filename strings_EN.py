@@ -74,7 +74,7 @@ Help: `{prefix}help`
 **Welcome to Reminder Bot!**
 Developer: <@203532103185465344>
 Icon: <@253202252821430272>
-Find me on https://discord.gg/WQVaYmT and on https://github.com/JellyWX :)
+Find me on https://discord.jellywx.com and on https://github.com/JellyWX :)
 
 Invite the bot: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
 Use our dashboard: https://reminder-bot.com/
@@ -87,7 +87,7 @@ Thinking of adding a monthly contribution? Click below for my patreon and offici
 
 https://www.patreon.com/jellywx
 
-https://discord.gg/WQVaYmT
+https://discord.jellywx.com
 
 Here's some more information:
 

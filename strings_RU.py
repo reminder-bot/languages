@@ -64,7 +64,7 @@
 **Встречайте, Reminder Bot!**
 Разработчик: <@203532103185465344>
 Иконка: <@253202252821430272>
-Меня можно найти тут https://discord.gg/WQVaYmT и тут https://github.com/JellyWX :)
+Меня можно найти тут https://discord.jellywx.com и тут https://github.com/JellyWX :)
 
 Пригласить бота: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
 Используйте нашу панель управления: https://reminder-bot.com/
@@ -76,7 +76,7 @@
 Хотите поддержать сервер (ежемесячная подписка)? Вот ссылка на Patreon и официальный дискорд сервер бота :D
 https://www.patreon.com/jellywx
 
-https://discord.gg/WQVaYmT
+https://discord.jellywx.com
 
 Немного информации:
 

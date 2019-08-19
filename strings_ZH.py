@@ -72,7 +72,7 @@
 **欢迎来到Reminder Bot！**
 开发者：<@203532103185465344>
 图标：<@253202252821430272>
-可以在 https://discord.gg/WQVaYmT 或 https://github.com/JellyWX 找到我 :)
+可以在 https://discord.jellywx.com 或 https://github.com/JellyWX 找到我 :)
 
 邀请此bot： https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
 使用控制台： https://reminder-bot.com/
@@ -85,7 +85,7 @@
 
 https://www.patreon.com/jellywx
 
-https://discord.gg/WQVaYmT
+https://discord.jellywx.com
 
 更多信息：
 
