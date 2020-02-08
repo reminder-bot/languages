@@ -40,7 +40,7 @@
 
             '$nudge <time>' : 'Enable nudging on the current channel. This allows you to sync all future reminders by the second to things like in game clocks',
 
-            '$restrict [role mentions]' : 'add/remove roles from being allowed to send channel reminders and intervals.',
+            '$restrict [role mention] [commands]' : 'Change which commands can be used by which roles',
 
             '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.',
 
@@ -135,13 +135,24 @@ Current timezone: {timezone}''',
 
     'restrict' : {
 
-        'disabled' : '''Disabled channel reminder permissions for roles.''',
+        'disabled' : '''Disabled restrictable command permissions for roles.''',
 
-        'enabled' : '''Enabled channel reminder permissions for roles.''',
+        'enabled' : '''Enabled command permissions for roles.''',
 
-        'allowed' : '''Allowed roles: {}''',
+        'allowed' : '''Rules: {}''',
 
-        'help' : '''Please mention roles you wish to change the reminder permissions for.'''
+        'failure' : '''Failed to assign permissions for command `{command}`. This command either doesn't exist, or only works on preset restrictions''',
+
+        'help' : '''Usage:
+**Reset Role**
+`$restrict @RoleName`
+
+**Permit Command (e.g `natural` and it's alias `n`)**
+`$restrict @RoleName natural n`
+
+**View Restrictions**
+`$restrict`
+'''
     },
 
     'remind' : {
