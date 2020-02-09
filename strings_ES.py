@@ -38,9 +38,9 @@
             
             '$lang <nombre>' : 'Cambia el idioma.',
             
-            '$nudge <time>' : 'Habilita empujes ("nudge") en el canal. Esto permite sincronizar todos los futuros recordatorios del canal a algo como el tiempo dentro de un juego.',
+            '$nudge <tiempo>' : 'Habilita empujes ("nudge") en el canal. Esto permite sincronizar todos los futuros recordatorios del canal a algo como el tiempo dentro de un juego.',
             
-            '$restrict [roles]' : 'Añade/remueve permiso a ciertos roles mencionados para colocar recordatorios e intervalos.',
+            '$restrict [@rol] [comandos]' : 'Cambia qué comandos puedes ser utilizados por qué rol',
 
             '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.',
 
@@ -134,14 +134,23 @@ Zona horaria actual: {timezone}''',
     },
 
     'restrict' : {
+        
+        'disabled' : '''Desactivados los permisos de restricción de comandos para roles.''',
 
-        'disabled' : '''Desactivados los permisos de recordatorios para el rol.''',
+        'enabled' : '''Activados los permisos de comandos para roles.''',
 
-        'enabled' : '''Activados los permisos de recordatorios para el rol.''',
+        'allowed' : '''Reglas: {}''',
 
-        'allowed' : '''Roles permitidos: {}''',
+        'failure' : '''Fallo al asignar permisos al comando `{command}`. Este comando no existe, o solo funciona en restricciones predefinidas.''',
 
-        'help' : '''Por favor menciona los roles a los cuales desees cambiarles los permisos de recordatorios.''',
+        'help' : '''Uso:
+**Reiniciar Rol**
+`$restrict @NombreRol`
+**Permitir Comando (ej. `natural` y su alias `n`)**
+`$restrict @NombreRol natural n`
+**Ver Restricciones**
+`$restrict`
+'''
     },
 
     'remind' : {
