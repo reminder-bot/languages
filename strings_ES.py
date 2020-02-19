@@ -68,7 +68,7 @@
 
     'info' : '''
 Prefijo por defecto: `$`
-Prefijo seleccionado: `@{user} prefix $`
+Reajustar prefijo: `@{user} prefix $`
 Ayuda: `{prefix}help`
 
 **Bienvenido a RemindMe!**
