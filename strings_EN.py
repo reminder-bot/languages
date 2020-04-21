@@ -301,7 +301,7 @@ Usage:
 
     'nudge' : {
 
-        'invalid_time' : '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d]''',
+        'invalid_time' : '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d], and is less than 30'000 seconds''',
 
         'success' : '''Future reminders will be nudged by {} seconds''',
 
