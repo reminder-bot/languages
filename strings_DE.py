@@ -11,9 +11,9 @@
 
     'no_perms_webhook' : '''**WARNUNG**: Um Erinnerungen zu setzte, benötige ich die `Webhooks verwalten` Permission.''',
 
-    'no_perms_embed_links' : '''**WARNUNG**: Zum arbeiten, bönötige ich die `Links einbetten` Permission.''',
+    'no_perms_embed_links' : '''**WARNUNG**: Zum arbeiten, benötige ich die `Links einbetten` Permission.''',
 
-    'no_perms_general' : '''Aktion verboten. Stelle bitte sicher, dass ich die korrekten Permissions habe.''',
+    'no_perms_general' : '''Aktion verboten! Stelle bitte sicher, dass ich die korrekten Permissions habe.''',
 
     'no_perms_managed' : '''Du benötigst die `Nachrichten verwalten` Permssions oder Rollen-Rechte um Erinnerungen zu diesem Channel hinzuzufügen. Bitte spreche mit deinem Administrator, und frage ihn, den `{prefix}restrict` Befehl zu nutzen und deine Rolle hinzuzufügen.''',
 
@@ -34,11 +34,11 @@
             '$offset' : 'Verschiebt alle Erinnerungen eines Server\'s um eine bestimmte Zeit. (Hilft u.a. bei der Zeitumstellung)' }],
 
         ['''Management Commands''', {
-            '$timezone' : 'Setzt die Server\'s Zeitzone, für einfache zeitbasierte Erinnerungen.',
+            '$timezone' : 'Setzt die Server Zeitzone, für einfache zeitbasierte Erinnerungen.',
 
             '$lang <name>' : 'Ändert die Sprache.',
 
-            '$nudge <time>' : 'Enable nudging on the current channel. This allows you to sync all future reminders by the second to things like in game clocks',
+            '$nudge <time>' : 'Aktiviert anstoßen für den derzeitigen Kanal. So können zukünftige Erinnerungen sekundengenau synchronisiert werden.',
 
             '$restrict [Rolle] [Befehl]' : 'Ändert, welche Rollen, welche Befehle verwenden dürfen.',
 
@@ -49,7 +49,7 @@
         ['''Other Commands''', {
             '$donate' : 'Zeige Informationen über die Spendemöglichkeiten.',
 
-            '$prefix <string>' : 'Ändere den Bot-Befehle Prefix (default: $).',
+            '$prefix <string>' : 'Ändere den Bot-Befehle Prefix (Standard: $).',
 
             '$info' : 'Zeige alle Informationen.',
 
@@ -59,7 +59,7 @@
 
             '$todos' : 'Ähnlich wie <code>$todo</code> allerings für serverweite Aufgaben.',
 
-            '$timer' : 'Startet einen timer. Nutze `$timer` für weitere Hilfe.',
+            '$timer' : 'Startet einen Timer. Nutze `$timer` für weitere Hilfe.',
 
             }
         ]
@@ -190,7 +190,7 @@ Beispiel:
         
         'long_interval' : '''Bitte stelle sicher, dass die Zeit kürzer als {max_time} Tage ist. Ein längeres Intervall ist nicht erlaubt.''',
 
-        'donor' : '''Du benötigst Patreon (gebe 2$ oder mehr) um diesen Command zu verwenden! Gebe `{prefix}donate` ein für mehr Informationen.''',
+        'donor' : '''Du benötigst Patreon (gebe 2$ oder mehr) um diesen Command zu verwenden! Gebe `{prefix}donate` für mehr Informationen ein.''',
 
     },
 
