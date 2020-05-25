@@ -144,11 +144,11 @@ Current timezone: {timezone}''',
         'failure' : '''Failed to assign permissions for command `{command}`. This command either doesn't exist, or only works on preset restrictions''',
 
         'help' : '''Usage:
-**Reset Role**
+**Reset Role Restrictions**
 `$restrict @RoleName`
 
 **Permit Command (e.g `natural` and it's alias `n`)**
-`$restrict @RoleName natural n`
+`$restrict @RoleName natural`
 
 **View Restrictions**
 `$restrict`
