@@ -25,7 +25,7 @@
 
             '$del' : '删除服务器上的提醒事项或周期重复提醒。如果是私信提醒，请给bot私信发送这个指令。',
 
-            '$look [n] [频道]' : '查看频道中的提醒事项。如果给出了<code>n</code>，将只显示接下来的指定n个提醒事项',
+            '$look [n] [频道] [enabled]' : '查看频道中的提醒事项。如果给出了<code>n</code>，将只显示接下来的指定n个提醒事项。如果写了<code>enabled</code>，则只显示启用的提醒事项。',
 
             '$remind [用户/频道] <提醒时间> <内容>' : '请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用<code>日/月/年-时:分:秒</code>的格式设置精确时间。',
 
@@ -144,11 +144,11 @@ https://discord.jellywx.com
         'failure' : '''未能成功设置`{command}`指令的使用权限。此指令可能不存在，或可能仅在预设的使用限制中才有效果''',
 
         'help' : '''用法：
-**重设身份组**
+**重设身份组限制**
 `$restrict @身份组`
 
 **允许使用指令（例如`natural`和它的简写`n`）**
-`$restrict @身份组 natural n`
+`$restrict @身份组 natural`
 
 **查看使用限制**
 `$restrict`
@@ -301,7 +301,7 @@ https://discord.jellywx.com
 
     'nudge' : {
 
-        'invalid_time' : '''请以 [num][s/m/h/d][num][s/m/h/d] 的格式给出时间''',
+        'invalid_time' : '''请以 [num][s/m/h/d][num][s/m/h/d] 的格式给出时间，并保证时间不超过3万秒。''',
 
         'success' : '''未来的提醒事项会全部推迟{}秒''',
 
