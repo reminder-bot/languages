@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 import configparser
 import os
 
-config = configparser.SafeConfigParser()
+config = configparser.ConfigParser()
 config.read('config.ini')
 user = config.get('MYSQL', 'USER')
 try:

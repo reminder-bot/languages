@@ -133,6 +133,21 @@ Current timezone: {timezone}''',
         'set_p' : '''Personal timezone has been set to {timezone}. Your current time should be {time}''',
     },
 
+    'alias' : {
+
+        'help' : '''Usage: 
+`{prefix}alias <name> <command>`: attach an alias to a command
+`{prefix}alias <name>`: recall a command attached to an alias
+`{prefix}alias list`: list aliases''',
+
+        'invalid_command' : '''Please use a command in the alias text. This command cannot be the alias command''',
+
+        'not_found' : '''No alias found with name `{name}`''',
+
+        'created' : '''New alias `{name}` created''',
+
+    },
+
     'restrict' : {
 
         'disabled' : '''Disabled restrictable command permissions for roles.''',
