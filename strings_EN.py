@@ -59,6 +59,10 @@
 
             '$todos' : 'Identical to <code>$todo</code> but for server-wide task management.',
 
+            '$alias' : 'Save a command to a shorter reusable name. Use <code>$alias name command</code> to setup, e.g <code>$alias rem natural in 10 minutes send hello</code>, then use <code>$alias name</code> to recall',
+
+            '$a' : 'Alias for <code>$alias</code>',
+
             '$timer' : 'Set a timer that marks the current time. Do `$timer` for more information.',
 
             }
