@@ -59,6 +59,10 @@
 
             '$todos' : '和<code>$todo</code>一样，用于全服务器的任务管理。',
 
+            '$alias' : '将指令保存为较短的可重复调用的名称。使用<code>$alias 名称 指令</code>来设置，例如<code>$alias rem natural in 10 minutes send hello</code>，然后使用<code>$alias 名称</code>来调用',
+
+            '$a' : '<code>$alias</code>的别名',
+
             '$timer' : '设置一个标记当前时间的计时器。 使用<code>$timer</code>来获取更多信息。',
 
             }
@@ -131,6 +135,23 @@ https://discord.jellywx.com
         'set' : '''服务器时区已被设置为{timezone}。您当前的时间应为{time}''',
 
         'set_p' : '''您个人的时区已被设置为{timezone}。您当前的时间应为{time}''',
+    },
+
+    'alias' : {
+
+        'help' : '''用法：
+`{prefix}alias <名称> <指令>`：将指令设置成别名
+`{prefix}alias <名称>`：重新调用一个已经设置成别名的指令
+`{prefix}alias list`：列出指令别名
+`{prefix}alias remove <名称>`：移除一个已经存在的指令别名''',
+
+        'invalid_command' : '''请在别名文字中使用指令。此指令不能作为别名指令。''',
+
+        'not_found' : '''未找到名为`{name}`的指令别名''',
+
+        'created' : '''已创建新指令别名`{name}`''',
+
+        'removed' : '''已删除{count}个指令别名。'''
     },
 
     'restrict' : {
