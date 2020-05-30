@@ -142,13 +142,16 @@ Zona horaria actual: {timezone}''',
         'help' : '''Uso: 
 `{prefix}alias <nombre> <comando>`: adjuntar un alias a un comando
 `{prefix}alias <nombre>`: reclamar un comando adjuntado a un alias
-`{prefix}alias list`: listar aliases''',
+`{prefix}alias list`: listar aliases,
+`{prefix}alias remove <nombre>`: eliminar un alias existente''',
 
         'invalid_command' : '''Por favor utilice un comando en el texto del alias. Este comando no puede ser el comando del alias''',
 
         'not_found' : '''No hubo alias encontrados con el nombre `{name}`''',
 
         'created' : '''Nuevo alias `{name}` creado''',
+        
+        'removed' : '''{count} alias eliminados.'''
 
     },
 
