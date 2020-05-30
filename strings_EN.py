@@ -142,7 +142,8 @@ Current timezone: {timezone}''',
         'help' : '''Usage: 
 `{prefix}alias <name> <command>`: attach an alias to a command
 `{prefix}alias <name>`: recall a command attached to an alias
-`{prefix}alias list`: list aliases''',
+`{prefix}alias list`: list aliases
+`{prefix}alias remove <name>`: remove an existing alias''',
 
         'invalid_command' : '''Please use a command in the alias text. This command cannot be the alias command''',
 
@@ -150,6 +151,7 @@ Current timezone: {timezone}''',
 
         'created' : '''New alias `{name}` created''',
 
+        'removed' : '''{count} alias deleted.'''
     },
 
     'restrict' : {
