@@ -59,6 +59,10 @@
 
             '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
             
+            '$alias' : 'Guarda un comando a un nombre reusable más corto. Utilice <code>$alias nombre comando</code> para configurar, ej. <code>$alias reco natural en 10 minutes enviar hola</code>, luego utilice <code>$alias reco</code> para reclamarlo',
+
+            '$a' : 'Alias para <code>$alias</code>',
+            
             '$timer' : 'Configura un contador que marca desde el tiempo actual. Envía `$timer` para más información.',
 
             }
@@ -131,6 +135,21 @@ Zona horaria actual: {timezone}''',
         'set' : '''La zona horaria del servidor ha sido cambiada a {timezone}. Tu hora actual debería ser {time}''',
         
         'set_p' : '''La zona horaria personal se ha establecido a {timezone}. Tu hora actual debería ser {time}''',
+    },
+
+    'alias' : {
+
+        'help' : '''Uso: 
+`{prefix}alias <nombre> <comando>`: adjuntar un alias a un comando
+`{prefix}alias <nombre>`: reclamar un comando adjuntado a un alias
+`{prefix}alias list`: listar aliases''',
+
+        'invalid_command' : '''Por favor utilice un comando en el texto del alias. Este comando no puede ser el comando del alias''',
+
+        'not_found' : '''No hubo alias encontrados con el nombre `{name}`''',
+
+        'created' : '''Nuevo alias `{name}` creado''',
+
     },
 
     'restrict' : {
