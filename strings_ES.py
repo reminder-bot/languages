@@ -192,7 +192,7 @@ Ejemplo:
         
         'past_time' : '''Por favor asegúrate que el tiempo proveído es en el futuro. Si el tiempo *está* en el futuro, se más específico con la definición.''',
 
-        'success' : '''Nuevo recordatorio registrado para {location} en {offset} segundos. Ya no puedes editarlo, así que eres libre de eliminarlo.''',
+        'success' : '''Nuevo recordatorio registrado para {location} en {offset}. Ya no puedes editarlo, así que eres libre de eliminarlo.''',
     },
 
     'interval' : {

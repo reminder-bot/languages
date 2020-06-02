@@ -151,7 +151,7 @@ Voorbeeld:
 
         'long_time' : '''Zorg dat de tijd niet verder dan 50 jaar in de toekomst is!''',
 
-        'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset} seconden. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
+        'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset}. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
     },
 
     'interval' : {

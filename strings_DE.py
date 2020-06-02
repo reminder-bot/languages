@@ -172,7 +172,7 @@ Beispiel:
 
         'past_time' : '''Bitte stelle sicher, dass die Zeit in der Zukunft liegt. Wenn die angegebene Zeit *in* der Zukunft liegt, sei bitte spezifischer in der Zeitangabe.''',
 
-        'success' : '''Neue Erinnerung in {location} wird in {offset} Sekunden gesendet.''',
+        'success' : '''Neue Erinnerung in {location} wird in {offset} gesendet.''',
     },
 
     'interval' : {

@@ -193,7 +193,7 @@ Example:
 
         'past_time' : '''Please ensure the time provided is in the future. If the time *is* in the future, please be more specific with the definition.''',
 
-        'success' : '''New reminder registered for {location} in {offset} seconds.''',
+        'success' : '''New reminder registered for {location} in {offset}.''',
     },
 
     'interval' : {
