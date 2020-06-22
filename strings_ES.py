@@ -40,7 +40,9 @@
             
             '$nudge <tiempo>' : 'Habilita empujes ("nudge") en el canal. Esto permite sincronizar todos los futuros recordatorios del canal a algo como el tiempo dentro de un juego.',
             
-            '$restrict [@rol] [comandos]' : 'Cambia qué comandos puedes ser utilizados por qué rol',
+            '$pause [tiempo]' : 'Silencia los recordatorios en el canal actual. Un tiempo puede ser proporcionado para esto, de lo contrario los recordatorios serán pausados indefinidamente. Puede deshabilitarse con el mismo comando.',
+            
+            '$restrict [@rol] [comandos]' : 'Cambia qué comandos puedes ser utilizados por qué rol.',
 
             '$blacklist [canal]' : 'Bloquea o desbloquea un canal de enviar comandos.',
 
@@ -347,5 +349,16 @@ Uso:
 `timer delete <nombre>` - Eliminar un contador por el nombre
         ''',
 
+    },
+
+    'pause' : {
+
+        'invalid_time' : '''Por favor asegurate que el tiempo proporcionado es del formato [num][s/m/h/d][num][s/m/h/d] etc...''',
+
+        'paused_until' : '''Los recordatorios en este canal han sido silenciados hasta **{}**''',
+
+        'paused_indefinite' : '''Los recordatorios en este canal han sido silenciados indefinidamente''',
+
+        'unpaused' : '''Los recordatorios en este canal han sido reanudados''',
     },
 }
