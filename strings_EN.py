@@ -40,6 +40,8 @@
 
             '$nudge <time>' : 'Enable nudging on the current channel. This allows you to sync all future reminders by the second to things like in game clocks',
 
+            '$pause [time]' : 'Silence reminders on the current channel. A timeout for this can be provided optionally, otherwise reminders are silenced indefinitely. Can be disabled with the same command',
+
             '$restrict [role mention] [commands]' : 'Change which commands can be used by which roles',
 
             '$blacklist [channel-name]' : 'Block or unblock a channel from sending commands.',
@@ -350,5 +352,16 @@ Usage:
 `timer delete <name>` - Delete a timer by name
         ''',
 
+    },
+
+    'pause' : {
+
+        'invalid_time' : '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc...''',
+
+        'paused_until' : '''Reminders in this channel have been silenced until **{}**''',
+
+        'paused_indefinite' : '''Reminders in this channel have been silenced indefinitely''',
+
+        'unpaused' : '''Reminders in this channel have been unsilenced''',
     },
 }
