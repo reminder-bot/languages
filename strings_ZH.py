@@ -25,7 +25,9 @@
 
             '$del' : '删除服务器上的提醒事项或周期重复提醒。如果是私信提醒，请给bot私信发送这个指令。',
 
-            '$look [n] [频道] [enabled]' : '查看频道中的提醒事项。如果给出了<code>n</code>，将只显示接下来的指定n个提醒事项。如果写了<code>enabled</code>，则只显示启用的提醒事项。',
+            '$look [n] [频道] [enabled]' : '查看频道中的提醒事项。如果给出了<code>n</code>，将只显示接下来的指定n个提醒事项。如果写了<code>enabled</code>，则只显示启用的提醒事项。如果给出了<code>time</code>，将显示每条提醒事项的精确时间而不是剩余时间',
+
+            '$look [n] [channel] [enabled] [time]' : 'View the reminders in a channel. If provided, <code>n</code> will limit to displaying the next n reminders. If <code>enabled</code> is written, only enabled reminders will be shown. If <code>time</code> is written, the exact time will be shown rather than the offset',
 
             '$remind [用户/频道] <提醒时间> <内容>' : '请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用<code>日/月/年-时:分:秒</code>的格式设置精确时间。',
 
@@ -39,6 +41,8 @@
             '$lang <语言名称>' : '更改语言。',
 
             '$nudge <时间>' : '在当前频道上启动推迟功能。这可以让将来的所有提醒事项都推迟指定秒数，可以用于游戏时钟等情况。',
+
+            '$pause [时间]' : '暂停发送当前频道的提醒事项。可以选择设置暂停时间，否则将无限期暂停发送。可以使用相同指令取消暂停。',
 
             '$restrict [指定身份组] [指令]' : '更改哪个身份组可以使用哪个指令',
 
@@ -191,9 +195,9 @@ https://discord.jellywx.com
 
         'long_time' : '''给出的时间不能超过未来{max_time}天。''',
 
-        'success' : '''发往{location}的提醒将在{offset}秒后发出。''',
+        'past_time' : '''请确保给出的时间是未来的时间。如果该时间*确实是*未来的时间，请换一种更具体的说法。''',
 
-        'past_time' : '''请确保给出的时间是未来的世界。如果该时间*确实是*未来的世界，请换一种更详细的说法。''',
+        'success' : '''发往{location}的提醒将在{offset}后发出。''',
     },
 
     'interval' : {
@@ -350,5 +354,16 @@ https://discord.jellywx.com
 `timer delete <名称>` - 删除指定名称的计时器
         ''',
 
+    },
+
+    'pause' : {
+
+        'invalid_time' : '''请以 [数字][s/m/h/d][数字][s/m/h/d]... 的格式给出时间。''',
+
+        'paused_until' : '''已暂停发送此频道的提醒事项直到 **{}**''',
+
+        'paused_indefinite' : '''已无限期暂停发送此频道的提醒事项''',
+
+        'unpaused' : '''已取消暂停发送此频道的提醒事项''',
     },
 }
