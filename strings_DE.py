@@ -76,7 +76,7 @@ Developer: <@203532103185465344>
 Icon: <@253202252821430272>
 Du findest mich unter https://discord.jellywx.com und auf https://github.com/JellyWX :)
 
-Lade den Bot zu deinem Server ein: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Lade den Bot zu deinem Server ein: https://invite.reminder-bot.com/
 Nutze unser Web-Dashboard: https://reminder-bot.com/
 
 *Wenn du Vorschläge hast, melde dich gerne auf dem oben genannten Discord*

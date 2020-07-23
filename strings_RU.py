@@ -66,7 +66,7 @@
 Иконка: <@253202252821430272>
 Меня можно найти тут https://discord.jellywx.com и тут https://github.com/JellyWX :)
 
-Пригласить бота: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Пригласить бота: https://invite.reminder-bot.com/
 Используйте нашу панель управления: https://reminder-bot.com/
 
 *Если у вас есть какие-то предложения о развитии бота, пожалуйста, пишите на сервере бота*

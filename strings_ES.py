@@ -82,7 +82,7 @@ Desarrollador: <@203532103185465344>
 Ícono: <@253202252821430272>
 Encuéntrame en https://discord.jellywx.com y en https://github.com/JellyWX :)
 
-Invita este bot: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Invita este bot: https://invite.reminder-bot.com/
 Usa nuestro dashboard: https://reminder-bot.com/
 
 *Si tienes consultas sobre nuevas caracterísicas, por favor envíalas a nuestro servidor de Discord*

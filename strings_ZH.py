@@ -80,7 +80,7 @@
 图标：<@253202252821430272>
 可以在 https://discord.jellywx.com 或 https://github.com/JellyWX 找到我 :)
 
-邀请此bot： https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+邀请此bot： https://invite.reminder-bot.com/
 使用控制台： https://reminder-bot.com/
 
 *如果你需要询问有关新功能的问题，请发往Discord服务器*

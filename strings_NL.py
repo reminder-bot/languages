@@ -74,7 +74,7 @@ Icon: <@253202252821430272>
 Nederlandse vertaling door: <@393139822044119051>
 Vind me op  https://discord.jellywx.com en op https://github.com/JellyWX :)
 
-Nodig de bot uit: https://discordapp.com/oauth2/authorize?client_id=349920059549941761&scope=bot&permissions=8
+Nodig de bot uit: https://invite.reminder-bot.com/
 Gebruik het dashboard: https://reminder-bot.com/
 
 *Als je vragen hebt over nieuwe functies, kom in de Discord server en stel hem!*
