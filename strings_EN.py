@@ -58,9 +58,11 @@
 
             '$clock': 'Get current time in guild\'s timezone',
 
-            '$todo': 'TODO list related commands. Use <code>$todo help</code> for more information.',
+            '$todo user': 'TODO list related commands. Use <code>$todo help</code> for more information.',
 
-            '$todos': 'Identical to <code>$todo</code> but for channel-based task management.',
+            '$todo channel': 'Identical to <code>$todo server</code> but for channel-based task management.',
+
+            '$todo server': 'Identical to <code>$todo channel</code> but for server-based task management.',
 
             '$alias': 'Save a command to a shorter reusable name. Use <code>$alias name command</code> to setup, e.g <code>$alias rem natural in 10 minutes send hello</code>, then use <code>$alias name</code> to recall',
 
