@@ -59,7 +59,9 @@
             
             '$todo' : 'Comandos relacionado a la lista TO-DO (lista de tareas). Utiliza <code>$todo help</code> para más información.',
 
-            '$todos' : 'Idéntico a <code>$todo<code> pero para tareas a nivel de servidor.',
+            '$todo channel' : 'Idéntico a <code>$todo server<code> pero para tareas a nivel de canal.',
+            
+            '$todo server' : 'Idéntico a <code>$todo channel<code> pero para tareas a nivel de servidor.',
             
             '$alias' : 'Guarda un comando a un nombre reusable más corto. Utilice <code>$alias nombre comando</code> para configurar, ej. <code>$alias reco natural en 10 minutes enviar hola</code>, luego utilice <code>$alias reco</code> para reclamarlo',
 
