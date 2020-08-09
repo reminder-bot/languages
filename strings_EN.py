@@ -98,11 +98,8 @@ Here's some more information:
 
 When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
 With your new rank, you'll be able to:
-: use the Patreon-only command `interval`
-: use Patreon-only features of SoundFX
-: set reminders in colored embeds (available via the dashboard)
-: use custom avatars on reminders (available via the dashboard, $5 only)
-: use Patreon-only features of Bot o'clock (available via the dashboard, $5 only)
+: set repeating reminders with `interval`, `natural` or the dashboard
+: use unlimited uploads on SoundFX
 
 Anyone who is a Patreon supporter, thank you :D You make this bot sustainable
 
