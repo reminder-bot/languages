@@ -99,13 +99,10 @@ https://discord.jellywx.com
 
 Aquí hay un poco más información:
 
-Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tu Patreon con Discord.
+Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tus cuentas de Patreon y Discord!
 Con tu nuevo rango, podrás:
-: usar el comando exclusivo `interval`
-: usar comandos exclusivos del bot SoundFX
-: usar comandos exclusivos del Bot O'Clock (disponible mediante el dashboard)
-: colocar embeds coloridos para los recordatorios (disponible mediante el dashboard)
-: usar avatares personalizados para los recordatorios (disponible mediante el dashboard)
+: crear recordatorios recurrentes con `interval`, `natural` y desde el dashboard
+: usar subidas ilimitadas con SoundFX
 
 Para quienes estén en Patreon, muchas gracias :D Haces que este bot pueda sostenerse.
 
