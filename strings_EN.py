@@ -279,6 +279,10 @@ Usage:
         'help': '''To use the TODO commands, do `{prefix}{command} add <message>`, `{prefix}{command} remove <number>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
 
         'cleared': '''Cleared todo list!''',
+
+        'confirm': '''You are about to delete **{} items** from your **{}** todo list. Are you sure? (type `yes` to confirm)''',
+
+        'canceled': '''Clear canceled''',
     },
 
     'blacklist': {
