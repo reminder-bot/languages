@@ -192,6 +192,8 @@ Example:
         'past_time': '''Please ensure the time provided is in the future. If the time *is* in the future, please be more specific with the definition.''',
 
         'success': '''New reminder registered for {location} in {offset}.''',
+
+        'no_webhook': '''This channel has too many webhooks. Please delete one and try again''',
     },
 
     'interval': {

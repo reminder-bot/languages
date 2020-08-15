@@ -8,7 +8,7 @@
 
     'blacklisted': ''': x: Cette chaîne est blacklistée: x:''',
 
-    'help': '''Veuillez visiter https://reminder-bot.com/help?lang=EN''',
+    'help': '''Veuillez visiter https://reminder-bot.com/help?lang=FR''',
 
     'no_perms_webhook': '''** AVERTISSEMENT **: Pour définir des rappels, j'ai besoin de l'autorisation `Gérer les webhooks`.''',
 
