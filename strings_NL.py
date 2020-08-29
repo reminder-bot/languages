@@ -87,7 +87,7 @@ Vind me op  https://discord.jellywx.com en op https://github.com/JellyWX :)
 Nodig de bot uit: https://invite.reminder-bot.com/
 Gebruik het dashboard: https://reminder-bot.com/
 
-*Als je vragen hebt over nieuwe functies, kom in de Discord server en stel hem!*
+*Als je vragen hebt over de bot, of suggesties voor nieuwe functies, join dan de Discord server :)*
 ''',
 
     'donate' : '''
@@ -193,7 +193,9 @@ Voorbeeld:
         
         'past_time': '''Zorg dat de tijd in de toekomst is. Als de tijd *wel* in de toekomst is, wees alstublieft wat specifieker met de defintie.''',
 
-        'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset}. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.'''
+        'success' : '''Nieuwe herinnering geregistreerd voor {location} in {offset}. Als je deze herinnering wilt verwijderen, gebruik dan `$del`.''',
+        
+        'no_webhook': '''Dit kanaal heeft te veel webhooks. Verwijder er alstublieft een en probeer het opnieuw.''',
     },
 
     'interval' : {

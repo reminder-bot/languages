@@ -1,6 +1,6 @@
 #: simplified chinese
 
-#
+# noinspection PyStatementEffect
 {
     '__full__': 'simplified chinese',
 
@@ -26,7 +26,7 @@
 
             '$del': '删除服务器上的提醒事项或周期重复提醒。如果是私信提醒，请给bot私信发送这个指令。',
 
-            '$look [n] [频道] [enabled]': '查看频道中的提醒事项。如果给出了<code>n</code>，将只显示接下来的指定n个提醒事项。如果写了<code>enabled</code>，则只显示启用的提醒事项。如果给出了<code>time</code>，将显示每条提醒事项的精确时间而不是剩余时间',
+            '$look [n] [频道] [enabled] [time]': '查看频道中的提醒事项。如果给出了<code>n</code>，将只显示接下来的指定n个提醒事项。如果写了<code>enabled</code>，则只显示启用的提醒事项。如果给出了<code>time</code>，将显示每条提醒事项的精确时间而不是剩余时间',
 
             '$remind [用户/频道] <提醒时间> <内容>': '请优先考虑使用<code>$natural</code>而不是用这个指令。设置一个提醒。将时间设置成 [数字][s/m/h/d] 的格式，比如 10s 即10秒， 2s10m 即10分钟2秒。也可用<code>日/月/年-时:分:秒</code>的格式设置精确时间。',
 
