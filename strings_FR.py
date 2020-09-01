@@ -299,9 +299,9 @@ Usage:
         'invalid': '''Langues:
 {} ''',
 
-        'set': '''La langue du serveur est définie sur l'anglais.''',
+        'set': '''La langue du serveur est définie sur le français.''',
 
-        'set_p': '''Langue personnelle définie sur l'anglais.''',
+        'set_p': '''Langue personnelle définie sur le français.''',
     },
 
     'clock': {
