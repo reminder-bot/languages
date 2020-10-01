@@ -12,17 +12,17 @@
 
     'no_perms_webhook': '''**WARNUNG**: Um Erinnerungen zu setzte, benötige ich die `Webhooks verwalten` Permission.''',
 
-    'no_perms_embed_links': '''**WARNUNG**: Zum arbeiten, benötige ich die `Links einbetten` Permission.''',
+    'no_perms_embed_links': '''**WARNUNG**: Zum arbeiten benötige ich die `Links einbetten` Permission.''',
 
     'no_perms_general': '''Aktion verboten! Stelle bitte sicher, dass ich die korrekten Permissions habe.''',
 
-    'no_perms_managed': '''Du benötigst die `Nachrichten verwalten` Permssions oder Rollen-Rechte um Erinnerungen zu diesem Channel hinzuzufügen. Bitte spreche mit deinem Administrator, und frage ihn, den `{prefix}restrict` Befehl zu nutzen und deine Rolle hinzuzufügen.''',
+    'no_perms_managed': '''Du benötigst die `Nachrichten verwalten` Permissions oder Rollen-Rechte, um Erinnerungen zu diesem Channel hinzuzufügen. Bitte spreche mit deinem Administrator und frage ihn, den `{prefix}restrict` Befehl zu nutzen und deine Rolle hinzuzufügen.''',
 
     'no_perms_restricted': '''Du benötigst mindestens das Permissions-Level `Server verwalten` um diesen Befehl zu verwenden.''',
 
     'help_raw': [
         ['''Reminder Commands''', {
-            '$natural': 'Einfache Methode um Erinnerungen hinzuzufügen. Führe diesen Befehl aus um weitere Hilfe zu erhalten.',
+            '$natural': 'Einfache Methode um Erinnerungen hinzuzufügen. Führe diesen Befehl aus, um weitere Hilfe zu erhalten.',
 
             '$del': 'Lösche Erinnerungen und Intervalle von deinem Server. Wenn Erinnerungen für PNs gesetzt sind, schreibe dies dem Bot direkt.',
 
@@ -41,7 +41,7 @@
 
             '$nudge <time>': 'Aktiviert anstoßen für den derzeitigen Kanal. So können zukünftige Erinnerungen sekundengenau synchronisiert werden.',
 
-            '$restrict [Rolle] [Befehl]': 'Ändert, welche Rollen, welche Befehle verwenden dürfen.',
+            '$restrict [Rolle] [Befehl]': 'Ändert, welche Rollen welche Befehle verwenden dürfen.',
 
             '$blacklist [Kanal]': 'Blockiert oder hebt die Blockierung eines Kanals auf. Wenn ein Kanal blockiert ist, können dort keine Befehle mehr verwendet werden.',
 
@@ -58,7 +58,7 @@
 
             '$todo': 'Befehle zur TODO-Liste. Nutze <code>$todo help</code> für weitere Hilfe.',
 
-            '$todos': 'Ähnlich wie <code>$todo</code> allerings für serverweite Aufgaben.',
+            '$todos': 'Ähnlich wie <code>$todo</code> , allerings für serverweite Aufgaben.',
 
             '$timer': 'Startet einen Timer. Nutze `$timer` für weitere Hilfe.',
 
@@ -101,7 +101,7 @@ Mit deinem Rang wirst du folgendes können:
 
 An jedem, der Patreon ist: Ein herzliches Danke! Du machst den Bot möglich!
 
-Bitte bedenke, du musst mit Discord verbunden sein um deine Patreon-Belohnungen  zu erhalten.
+Bitte bedenke, du musst mit Discord verbunden sein, um deine Patreon-Belohnungen  zu erhalten.
 ''',
 
     'prefix': {
@@ -144,7 +144,7 @@ Derzeitige Zeitzone: {timezone}''',
         'failure': '''Zuweisung von Berechtigungen für den Befehl `{command}` fehlgeschlagen. Dieser Befehl existiert entweder nicht oder funktioniert nur mit voreingestellten Einschränkungen''',
 
         'help': '''Benutze:
-**Rolle zurücksetzten**
+**Rolle zurücksetzen**
 `$restrict @RoleName`
 
 **Erlaube Befehl für eine Rolle (z.B. `natural` oder als Alias `n`)**
@@ -309,11 +309,11 @@ Benutze:
 
     'timer': {
 
-        'limit': '''Du hast bereits 25 Timer. Bitte lösche eine um eine eine neue zu erstellen.''',
+        'limit': '''Du hast bereits 25 Timer. Bitte lösche einen, um eine einen neuen zu erstellen.''',
 
         'name_length': '''Der Name des Timers ist zu lang (Maximal sind 32 Zeichen erlaubt, du verwendest aber {})''',
 
-        'unique': '''Bitte geben deinen Timer einen eindeutigen Namen''',
+        'unique': '''Bitte gib deinen Timer einen eindeutigen Namen''',
 
         'success': '''Neuer Timer erstellt''',
 
