@@ -234,13 +234,13 @@ https://discord.jellywx.com
 
         'long_time': '''提醒事项的时间不能超过未来50年。如果没有，请尝试使用更明确的时间表述。''',
 
-        'send': ''' send ''',
+        'send': '''send''',
 
-        'to': ''' to ''',
+        'to': '''to''',
 
-        'every': ''' every ''',
+        'every': '''every''',
 
-        'bulk_set': ''' {} 提醒事项已成功设置''',
+        'bulk_set': '''{} 提醒事项已成功设置''',
 
     },
 

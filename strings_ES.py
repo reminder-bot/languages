@@ -236,11 +236,11 @@ Uso:
 
         'long_time' : '''¡Eso es un tiempo muy grande! Por favor, asegúrate que tu recordatorio es menor a 50 años, o utiliza algo más específico.''',
 
-        'send' : ''' enviar''',
+        'send' : '''enviar''',
 
-        'to' : ''' para ''',
+        'to' : '''para''',
 
-        'every' : ''' cada ''',
+        'every' : '''cada''',
         
         'bulk_set' : '''{} recordatorios colocados satisfactoriamente''',
 

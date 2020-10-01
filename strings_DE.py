@@ -215,13 +215,13 @@ Benutze:
 
         'long_time': '''Bitte stelle sicher, dass die Zeit nicht später als 50 Jahre ist.''',
 
-        'send': ''' sende ''',
+        'send': '''sende''',
 
-        'to': ''' an ''',
+        'to': '''an''',
 
-        'every': ''' jede ''',
+        'every': '''jede''',
 
-        'bulk_set': ''' {} Erinnerungen wurden erfolgreich gesetzt''',
+        'bulk_set': '''{} Erinnerungen wurden erfolgreich gesetzt''',
 
     },
 

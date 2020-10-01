@@ -236,13 +236,13 @@ Usage:
 
         'long_time': '''Please ensure your reminder is younger than 50 years, or use a more specific time statement.''',
 
-        'send': ''' send ''',
+        'send': '''send''',
 
-        'to': ''' to ''',
+        'to': '''to''',
 
-        'every': ''' every ''',
+        'every': '''every''',
 
-        'bulk_set': ''' {} reminders set successfully''',
+        'bulk_set': '''{} reminders set successfully''',
 
     },
 

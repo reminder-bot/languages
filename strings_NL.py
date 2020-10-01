@@ -236,13 +236,13 @@ Gebruik:
 
         'long_time' : '''Dat is een lange tijd! Zorg dat je reminder binnen 50 jaar is.''',
 
-        'send' : ''' verstuur ''',
+        'send' : '''verstuur''',
 
-        'to' : ''' naar ''',
+        'to' : '''naar''',
 
-        'every' : ''' iedere ''',
+        'every' : '''iedere''',
         
-        'bulk_set': ''' {} herinneringen succesvol ingesteld.''',
+        'bulk_set': '''{} herinneringen succesvol ingesteld.''',
 
 
     },
