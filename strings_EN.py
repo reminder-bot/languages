@@ -125,10 +125,10 @@ Usage:
     ```{prefix}timezone <Name>```
 Example:
     ```{prefix}timezone Europe/London```
-All timezones: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
+All timezones: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
 Current timezone: {timezone}''',
 
-        'no_timezone': '''Timezone not recognized. A list is available at https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+        'no_timezone': '''Timezone not recognized. A list is available at https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568''',
 
         'set': '''Server timezone has been set to {timezone}. Your current time should be {time}''',
 
