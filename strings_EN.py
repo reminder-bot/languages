@@ -211,7 +211,7 @@ Example:
 
         'long_interval': '''Please ensure the interval provided is less than {max_time} days''',
 
-        'donor': '''You need to be a Patron (donating 2$ or more) to access this command! Type `{prefix}donate` to find out more.''',
+        'donor': '''You need to be subscribed to access this command! Type `{prefix}donate` to find out more.''',
 
     },
 
