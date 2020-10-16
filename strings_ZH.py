@@ -64,7 +64,7 @@
 
             '$todo server': '和<code>$todo channel</code>一样，用于服务器的任务管理。',
 
-            '$alias': '将指令保存为较短的可重复调用的名称。使用<code>$alias 名称 指令</code>来设置，例如<code>$alias rem natural in 10 minutes send hello</code>，然后使用<code>$alias 名称</code>来调用',
+            '$alias': '将指令保存为较短的可重复调用的名称。使用<code>$alias 名称 指令</code>来设置，例如<code>$alias rem natural in 10 minutes send hello</code>，然后使用<code>$alias rem</code>来调用',
 
             '$timer': '设置一个标记当前时间的计时器。 使用<code>$timer</code>来获取更多信息。',
 
@@ -192,6 +192,8 @@ https://discord.jellywx.com
         'past_time': '''请确保给出的时间是未来的时间。如果该时间*确实是*未来的时间，请换一种更具体的说法。''',
 
         'success': '''发往{location}的提醒将在{offset}后发出。''',
+
+        'no_webhook': '''此频道的可用webhooks数量已达到限额。请删除一个后重试''',
     },
 
     'interval': {
@@ -209,7 +211,7 @@ https://discord.jellywx.com
 
         'long_interval': '''给出的时间不能超过未来{max_time}天。''',
 
-        'donor': '''你必须成为Patron（捐赠2美元或更多）才能使用这个指令！输入`{prefix}donate`来了解更多。''',
+        'donor': '''你必须订阅才能使用这个指令！输入`{prefix}donate`来了解更多。''',
 
     },
 
