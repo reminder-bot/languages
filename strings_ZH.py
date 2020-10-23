@@ -72,8 +72,8 @@
     ],
 
     'info': '''
-默认前缀：`$`
-重设前缀：`@{user} prefix $`
+默认前缀：`{default_prefix}`
+重设前缀：`@{user} prefix {default_prefix}`
 帮助：`{prefix}help`
 
 **欢迎来到Reminder Bot！**

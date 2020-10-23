@@ -73,8 +73,8 @@
 
 
     'info' : '''
-Standaard prefix: `$`
-Reset prefix: `@{user} prefix $`
+Standaard prefix: `{default_prefix}`
+Reset prefix: `@{user} prefix {default_prefix}`
 Help: `{prefix}help`
 
 **Welkom bij Reminder Bot!**

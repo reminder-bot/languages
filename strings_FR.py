@@ -72,8 +72,8 @@
     ],
 
     'info': '''
-Préfixe par défaut: `$`
-Réinitialiser le préfixe: `@{user} prefix $`
+Préfixe par défaut: `{default_prefix}`
+Réinitialiser le préfixe: `@{user} prefix {default_prefix}`
 Aide: `{prefix}help`
 
 **Bienvenue dans Reminder Bot!**

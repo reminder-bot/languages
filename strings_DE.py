@@ -67,8 +67,8 @@
     ],
 
     'info': '''
-Standard prefix: `$`
-Prefix zurücksetzten: `@{user} prefix $`
+Standard prefix: `{default_prefix}`
+Prefix zurücksetzten: `@{user} prefix {default_prefix}`
 Hilfe: `{prefix}help`
 
 **Willkommen zum Reminder Bot!**
