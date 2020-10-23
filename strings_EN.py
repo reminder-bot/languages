@@ -10,11 +10,7 @@
 
     'help': '''Please visit https://reminder-bot.com/help?lang=EN''',
 
-    'no_perms_webhook': '''**WARNING**: To set reminders I need the `Manage Webhooks` permission.''',
-
-    'no_perms_embed_links': '''**WARNING**: To operate, I need the `Embed Links` permission.''',
-
-    'no_perms_general': '''Action forbidden. Please ensure I have the correct permissions.''',
+    'no_perms_general': '''Please ensure the bot has the correct permissions. It needs `Manage Webhooks` and `Embed Links` to function fully''',
 
     'no_perms_managed': '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
 
