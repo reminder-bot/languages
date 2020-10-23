@@ -211,7 +211,7 @@ Ejemplo:
 
         'long_time' : '''Asegúrate de que el tiempo del intervalo colocado es menor a {max_time} días.''',
 
-        'donor' : '''¡Necesitas ser un Patreon (dona 2$ o más) para acceder a este comando! Escribe `{prefix}donate` para más información.''',
+        'donor' : '''¡Necesitas estar suscrito para acceder a este comando! Escribe `{prefix}donate` para más información.''',
 
     },
 
