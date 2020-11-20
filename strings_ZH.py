@@ -1,5 +1,3 @@
-#: simplified chinese
-
 # noinspection PyStatementEffect
 {
     '__full__': 'simplified chinese',
@@ -129,8 +127,6 @@ https://discord.jellywx.com
 当前时区：{timezone}''',
 
         'no_timezone': '''未知时区。可用的时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
-
-        'set': '''服务器时区已被设置为{timezone}。您当前的时间应为{time}''',
 
         'set_p': '''您个人的时区已被设置为{timezone}。您当前的时间应为{time}''',
     },
@@ -302,8 +298,6 @@ https://discord.jellywx.com
 
         'invalid': '''语言：
 {}''',
-
-        'set': '''服务器语言已设置为中文。''',
 
         'set_p': '''您个人的语言已设置为中文''',
     },

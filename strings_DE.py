@@ -1,5 +1,3 @@
-#: deutsch
-
 # noinspection PyStatementEffect
 {
     '__full__': 'deutsch',
@@ -127,8 +125,6 @@ Alle Zeitzonen: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
 Derzeitige Zeitzone: {timezone}''',
 
         'no_timezone': '''Unbekannte Zeitzone. Eine Liste findest du hier https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
-
-        'set': '''Zeitzone zu {timezone} geändert. Die derzeitige Zeit sollte {time} sein''',
 
         'set_p': '''Deine persönliche Zeitzone wurde zu {timezone} geändert. Die derzeitige Zeit sollte {time} sein''',
     },
@@ -277,8 +273,6 @@ Benutze:
 
         'invalid': '''Sprachen:
 {}''',
-
-        'set': '''Serversprache wurde zu Deutsch gesetzt.''',
 
         'set_p': '''Persönliche Sprache zu Deutsch gesetzt.''',
     },

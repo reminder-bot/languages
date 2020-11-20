@@ -1,5 +1,3 @@
-#: Français
-
 # noinspection PyStatementEffect
 {
     '__full__': 'français',
@@ -125,9 +123,7 @@ Exemple:
 Tous les fuseaux horaires: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
 Fuseau horaire actuel: {timezone} ''',
 
-        'no_timezone': '''Fuseau horaire non reconnu. Une liste est disponible sur https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee ''',
-
-        'set': '''Le fuseau horaire du serveur a été défini sur {timezone}. Votre heure actuelle devrait être {time} ''',
+        'no_timezone': '''Fuseau horaire non reconnu. Une liste est disponible sur https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'set_p': '''Le fuseau horaire personnel a été défini sur {timezone}. Votre heure actuelle devrait être {time} ''',
     },
@@ -298,8 +294,6 @@ Usage:
 
         'invalid': '''Langues:
 {} ''',
-
-        'set': '''La langue du serveur est définie sur le français.''',
 
         'set_p': '''Langue personnelle définie sur le français.''',
     },

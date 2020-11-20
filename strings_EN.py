@@ -1,5 +1,3 @@
-#: english
-
 # noinspection PyStatementEffect
 {
     '__full__': 'english',
@@ -10,7 +8,12 @@
 
     'help': '''Please visit https://reminder-bot.com/help?lang=EN''',
 
-    'no_perms_general': '''Please ensure the bot has the correct permissions. It needs `Manage Webhooks` and `Embed Links` to function fully''',
+    'no_perms_general': '''Please ensure the bot has the correct permissions:
+
+✅     **Send Message**
+{embed_links}     **Embed Links**
+{manage_webhooks}     **Manage Webhooks**
+    ''',
 
     'no_perms_managed': '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
 
@@ -22,7 +25,7 @@
 
             '$del': 'Delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
 
-            '$look [n] [channel] [enabled] [time]': 'View the reminders in a channel. If provided, <code>n</code> will limit to displaying the next n reminders. If <code>enabled</code> is written, only enabled reminders will be shown. If <code>time</code> is written, the exact time will be shown rather than the offset',
+            '$look [n] [channel/all] [enabled] [time]': 'View the reminders in a channel. If provided, <code>n</code> will limit to displaying the next n reminders. If <code>enabled</code> is written, only enabled reminders will be shown. If <code>time</code> is written, the exact time will be shown rather than the offset',
 
             '$remind [user/channel] <time-to-reminder> <message>': 'Command deprecated. Use <code>$natural</code> instead of this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as <code>day/month/year-hour:minute:second</code>.',
 
@@ -84,22 +87,22 @@ Use our dashboard: https://reminder-bot.com/
 ''',
 
     'donate': '''
-Thinking of adding a monthly contribution? Click below for my patreon and official bot server :D
+Thinking of adding a monthly contribution? Click below for my Patreon and official bot server :D
 
 https://www.patreon.com/jellywx
+
+https://www.subscribestar.com/jellywx (beta)
 
 https://discord.jellywx.com
 
 Here's some more information:
 
-When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
+When you donate, Patreon/SubscribeStar will automatically rank you up on our Discord server, supposing you have properly linked your Patreon/SubscribeStar and Discord accounts!
 With your new rank, you'll be able to:
 : set repeating reminders with `interval`, `natural` or the dashboard
 : use unlimited uploads on SoundFX
 
-Anyone who is a Patreon supporter, thank you :D You make this bot sustainable
-
-Please note, you must be connected to the Discord server to receive Patreon rewards.
+Please note, you must be connected to the Discord server to receive Patreon/SubscribeStar rewards.
 ''',
 
     'prefix': {
@@ -125,8 +128,6 @@ All timezones: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
 Current timezone: {timezone}''',
 
         'no_timezone': '''Timezone not recognized. A list is available at https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
-
-        'set': '''Server timezone has been set to {timezone}. Your current time should be {time}''',
 
         'set_p': '''Personal timezone has been set to {timezone}. Your current time should be {time}''',
     },
@@ -298,8 +299,6 @@ Usage:
 
         'invalid': '''Languages:
 {}''',
-
-        'set': '''Server language set to English.''',
 
         'set_p': '''Personal language set to English.''',
     },
