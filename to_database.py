@@ -26,9 +26,12 @@ for fn in os.listdir(d):
     if fn.startswith('strings_'):
         with open(d + fn, 'r', encoding='utf-8') as f:
             a = f.read()
-            strings[fn[8:10]] = eval(a)
 
-            languages[a.split('\n')[0].strip('#:\n ')] = fn[8:10]
+            lang_strings = eval(a)
+
+            strings[fn[8:10]] = lang_strings
+
+            languages[lang_strings['__full__']] = fn[8:10]
 
 for language, s in strings.items():
     out = {}
