@@ -8,7 +8,12 @@
 
     'help': '''Por favor visita https://reminder-bot.com/help?lang=ES''',
 
-    'no_perms_general' : '''Por favor asegúrese que el bot tenga los permisos necesarios. Necesita `Gestionar webhooks` e `Insertar enlaces` para funcionar completamente.''',
+    'no_perms_general' : '''Por favor asegúrese que el bot tenga los permisos necesarios:
+    
+    ✅     **Send Message**
+    {embed_links}     **Embed Links**
+    {manage_webhooks}     **Manage Webhooks**
+    ''',
 
     'no_perms_managed': '''Necesitas el permiso `Gestionar mensajes` o tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
 
@@ -20,13 +25,14 @@
 
             '$del': 'Elimina recordatorios e intervalos en tu servidor. Si los recordatorios fueron colocados para un usuario específico, deberá enviar un mensaje directo al bot con el comando.',
 
-            '$look [n] [canal]': 'Ver los recordatorios de un canal. Si se provee, <code>n</code> lo limitará a mostrar los siguientes n recordatorios',
+            '$look [n] [canal/all] [enabled] [time]': 'Ver los recordatorios de un canal. Si se provee <code>n</code> lo limitará a mostrar los siguientes n recordatorios. Si  se provee <code>enabled</code>, solo los recordatorios no pausados se mostrarán. Si se provee <code>time</code>, el tiempo exacto se mostrará, en lugar de cuánto falta.',
 
             '$remind [usuario/canal] <tiempo-para-recordatorio> <mensaje>': 'Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio. El tiempo debe ponerse como [num][s/m/h/d], por ejemplo 10s para 10 segundos o 2s10m para 2 segundos 10 minutos. Un tiempo exacto puede ser colocado como <code>día/mes/año-hora:minuto:segundo</code>.',
 
             '$interval [usuario/canal] <tiempo-para-recordatorio> <intervalo> <mensaje>': '<strong><a href="https://patreon.com/jellywx/">Solo para donadores Patreon.</a></strong> Considere utilizar el comando <code>$natural</code> en lugar de este. Coloca un recordatorio periódico iniciando desde el <code>tiempo-para-recordatorio</code> dado. El tiempo se coloca como dice arriba. Ej. `$interval 0s 20m ¡Hola Mundo!` enviará "¡Hola Mundo!" a tu canal cada 20 minutos.',
 
-            '$offset': 'Ajustar o compensar la hora de todos los recordatorios del servidor por un determinado tiempo (por horarios de verano, etc.)', }],
+            '$offset': 'Ajustar o compensar la hora de todos los recordatorios del servidor por un determinado tiempo (por horarios de verano, etc.)',
+        }],
 
         ['''Comandos de administración''', {
             '$timezone': 'Configura la zona horaria del servidor, para facilitar los recordatorios basados en tiempo.',
@@ -40,7 +46,6 @@
             '$restrict [@rol] [comandos]': 'Cambia qué comandos puedes ser utilizados por qué rol.',
 
             '$blacklist [canal]': 'Bloquea o desbloquea un canal de enviar comandos.',
-
         }],
 
         ['''Otros comandos''', {
@@ -60,12 +65,9 @@
 
             '$alias': 'Guarda un comando a un nombre reusable más corto. Utilice <code>$alias nombre comando</code> para configurar, ej. <code>$alias reco natural en 10 minutes enviar hola</code>, luego utilice <code>$alias reco</code> para reclamarlo',
 
-            '$a': 'Alias para <code>$alias</code>',
-
             '$timer': 'Configura un contador que marca desde el tiempo actual. Envía `$timer` para más información.',
 
-        }
-         ]
+        }]
     ],
 
     'info': '''
@@ -89,18 +91,18 @@ Usa nuestro dashboard: https://reminder-bot.com/
 
 https://www.patreon.com/jellywx
 
+https://www.subscribestar.com/jellywx (beta)
+
 https://discord.jellywx.com
 
 Aquí hay un poco más información:
 
-Cuando donas, Patreon automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tus cuentas de Patreon y Discord!
+Cuando donas, Patreon/Suscribestar automáticamente te dará el rango en nuestro servidor de Discord, siempre y cuando hayas vinculado tus cuentas de Patreon y Discord!
 Con tu nuevo rango, podrás:
 : crear recordatorios recurrentes con `interval`, `natural` y desde el dashboard
 : usar subidas ilimitadas con SoundFX
 
-Para quienes estén en Patreon, muchas gracias :D Haces que este bot pueda sostenerse.
-
-Ten en cuenta que debes estar conectado a nuestro servidor de Discord para recibir las recompenzas de Patreon.
+Ten en cuenta que debes estar conectado a nuestro servidor de Discord para recibir las recompenzas de Patreon/Suscribestar.
 ''',
 
     'prefix': {
@@ -145,7 +147,6 @@ Zona horaria actual: {timezone}''',
         'created': '''Nuevo alias `{name}` creado''',
 
         'removed': '''{count} alias eliminados.'''
-
     },
 
     'restrict': {
@@ -161,8 +162,10 @@ Zona horaria actual: {timezone}''',
         'help': '''Uso:
 **Reiniciar Rol**
 `$restrict @NombreRol`
+
 **Permitir Comando (ej. `natural` y su alias `n`)**
 `$restrict @NombreRol natural n`
+
 **Ver Restricciones**
 `$restrict`
 '''
@@ -186,6 +189,8 @@ Ejemplo:
         'past_time': '''Por favor asegúrate que el tiempo proveído es en el futuro. Si el tiempo *está* en el futuro, se más específico con la definición.''',
 
         'success': '''Nuevo recordatorio registrado para {location} en {offset}. Ya no puedes editarlo, así que eres libre de eliminarlo.''',
+        
+        'no_webhook': '''Este canal tiene demasiados webhooks. Por favor elimina uno e intenta de nuevo.''',
     },
 
     'interval': {
@@ -250,6 +255,8 @@ Uso:
     'look': {
 
         'listing': '''Listando los recordatorios del canal especificado...''',
+        
+        'listing_limited': '''Listando los siguientes {} recordatorios en el canal especificado...''',
 
         'inter': '''será enviado el''',
 
@@ -271,6 +278,10 @@ Uso:
         'help': '''Para usar comandos de la lista de tareas (TODO), pon `{prefix}{command} add <mensaje>`, `{prefix}{command} remove <número>`, `{prefix}{command} clear` y `{prefix}{command}` para añadir, remover, limpiar o mirar tu lista de tareas.''',
 
         'cleared': '''¡Limpiada la lista de tareas!'''
+        
+        'confirm': '''Estas a punto de eliminar **{} ítems** de tu **{}** lista de tareas. ¿Estás seguro? (escribe `yes` para confirmar)''',
+
+        'canceled': '''Limpieza cancelada.''',
     },
 
     'blacklist': {
@@ -309,9 +320,11 @@ Uso:
     },
 
     'nudge': {
+        
+        'no_argument': '''Uso: `$nudge <tiempo>`. Empuje horario (nudge) actual: {nudge}''',
 
-        'invalid_time': '''Por favor asegurate que el tiempo que provees es en el formato [num][s/m/h/d][num][s/m/h/d]''',
-
+        'invalid_time': '''Por favor asegurate que el tiempo que provees es en el formato [num][s/m/h/d][num][s/m/h/d], y es menor a 30'000 segundos.''',
+        
         'success': '''Todos los recordatorios serán empujados por {} segundos''',
 
     },
