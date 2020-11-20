@@ -8,11 +8,7 @@
 
     'help': '''Por favor visita https://reminder-bot.com/help?lang=ES''',
 
-    'no_perms_webhook': '''**AVISO**: Para colocar recordatorios necesito el permiso de `Gestionar webhooks`.''',
-
-    'no_perms_embed_links': '''**AVISO**: Parar operar necesito el permiso de `Insertar enlaces`.''',
-
-    'no_perms_general': '''Acción imposible. Asegúrese que tengo los permisos correctos.''',
+    'no_perms_general' : '''Por favor asegúrese que el bot tenga los permisos necesarios. Necesita `Gestionar webhooks` e `Insertar enlaces` para funcionar completamente.''',
 
     'no_perms_managed': '''Necesitas el permiso `Gestionar mensajes` o tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
 
