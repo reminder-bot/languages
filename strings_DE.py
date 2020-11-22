@@ -118,13 +118,14 @@ Prefix erfolgreich zu {prefix} geändert
 
         'no_argument': '''
 Benutze:
-    ```{prefix}timezone <Name>```
+```{prefix}timezone <Name>```
 Beispiel:
-    ```{prefix}timezone Europe/Berlin```
-Alle Zeitzonen: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
-Derzeitige Zeitzone: {timezone}''',
+```{prefix}timezone Europe/Berlin```
+Alle Zeitzonen: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'no_timezone': '''Unbekannte Zeitzone. Eine Liste findest du hier https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+
+        'footer': '''Derzeitige Zeitzone: {timezone}''',
 
         'set_p': '''Deine persönliche Zeitzone wurde zu {timezone} geändert. Die derzeitige Zeit sollte {time} sein''',
     },

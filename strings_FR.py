@@ -117,13 +117,14 @@ Le préfixe a été remplacé par {prefix}
 
         'no_argument': '''
 Usage:
-    ```{prefix}timezone <Nom>```
+```{prefix}timezone <Nom>```
 Exemple:
-    ```{prefix}timezone Europe/Paris```
-Tous les fuseaux horaires: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
-Fuseau horaire actuel: {timezone} ''',
+```{prefix}timezone Europe/Paris```
+Tous les fuseaux horaires: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'no_timezone': '''Fuseau horaire non reconnu. Une liste est disponible sur https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+
+        'footer': '''Fuseau horaire actuel: {timezone}''',
 
         'set_p': '''Le fuseau horaire personnel a été défini sur {timezone}. Votre heure actuelle devrait être {time} ''',
     },

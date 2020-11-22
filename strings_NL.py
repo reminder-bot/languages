@@ -124,13 +124,14 @@ Prefix veranderd naar {prefix}
 
         'no_argument': '''
 Gebruik:
-    ```{prefix}timezone <naam>```
+```{prefix}timezone <naam>```
 Example:
-    ```{prefix}timezone Europe/London```
-Alle ondersteunde tijdszones: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
-Huidige tijdszone: {timezone}''',
+```{prefix}timezone Europe/London```
+Alle ondersteunde tijdszones: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'no_timezone': '''Tijdszone is niet herkend. Een volledige lijst is beschikbaar op https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+
+        'footer': '''Huidige tijdszone: {timezone}''',
 
         'set_p': '''Persoonlijke tijdszone is veranderd naar {timezone}. Je huidige tijd zou {time} moeten zijn.''',
     },

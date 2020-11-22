@@ -123,10 +123,11 @@ https://discord.jellywx.com
     ```{prefix}timezone <时区名>```
 举例：
     ```{prefix}timezone Europe/London```
-时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
-当前时区：{timezone}''',
+时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'no_timezone': '''未知时区。可用的时区列表： https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+
+        'footer': '''当前时区：{timezone}''',
 
         'set_p': '''您个人的时区已被设置为{timezone}。您当前的时间应为{time}''',
     },

@@ -121,13 +121,14 @@ Prefijo cambiado a {prefix}
 
         'no_argument': '''
 Uso:
-    ```{prefix}timezone <nombre>```
+```{prefix}timezone <nombre>```
 Ejemplo:
-    ```{prefix}timezone Europe/London```
-Todas las zonas horarias: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
-Zona horaria actual: {timezone}''',
+```{prefix}timezone Europe/London```
+Todas las zonas horarias: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
 
         'no_timezone': '''Zona horaria no reconocida. Una lista está disponible en https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+
+        'footer': '''Zona horaria actual: {timezone}''',
 
         'set_p': '''La zona horaria personal se ha establecido a {timezone}. Tu hora actual debería ser {time}''',
     },
