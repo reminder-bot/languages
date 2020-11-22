@@ -10,9 +10,9 @@
 
     'no_perms_general' : '''Por favor asegúrese que el bot tenga los permisos necesarios:
     
-    ✅     **Send Message**
-    {embed_links}     **Embed Links**
-    {manage_webhooks}     **Manage Webhooks**
+✅     **Send Message**
+{embed_links}     **Embed Links**
+{manage_webhooks}     **Manage Webhooks**
     ''',
 
     'no_perms_managed': '''Necesitas el permiso `Gestionar mensajes` o tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
@@ -277,7 +277,7 @@ Uso:
 
         'help': '''Para usar comandos de la lista de tareas (TODO), pon `{prefix}{command} add <mensaje>`, `{prefix}{command} remove <número>`, `{prefix}{command} clear` y `{prefix}{command}` para añadir, remover, limpiar o mirar tu lista de tareas.''',
 
-        'cleared': '''¡Limpiada la lista de tareas!'''
+        'cleared': '''¡Limpiada la lista de tareas!''',
         
         'confirm': '''Estas a punto de eliminar **{} ítems** de tu **{}** lista de tareas. ¿Estás seguro? (escribe `yes` para confirmar)''',
 

@@ -35,7 +35,7 @@
         }],
 
         ['''Management Commands''', {
-            '$timezone': 'Set your server\'s timezone, for easier date-based reminders.',
+            '$timezone': 'Set your timezone, for easier date-based reminders.',
 
             '$lang <name>': 'Change the language.',
 
@@ -55,7 +55,7 @@
 
             '$info': 'Get info on the bot.',
 
-            '$clock': 'Get current time in guild\'s timezone',
+            '$clock': 'Get current time in your timezone',
 
             '$todo user': 'TODO list related commands. Use <code>$todo help</code> for more information.',
 
@@ -119,15 +119,20 @@ Prefix changed to {prefix}
 
     'timezone': {
 
-        'no_argument': '''
-Usage:
-    ```{prefix}timezone <Name>```
-Example:
-    ```{prefix}timezone Europe/London```
-All timezones: https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee
-Current timezone: {timezone}''',
+        'no_argument_title': '''Timezone Usage''',
 
-        'no_timezone': '''Timezone not recognized. A list is available at https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee''',
+        'no_argument': '''
+**Usage:**
+```{prefix}timezone <Name>```
+**Example:**
+```{prefix}timezone Europe/London```
+You may want to use one of the popular timezones below, otherwise click [here](https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee):''',
+
+        'no_timezone_title': '''Timezone Not Recognized''',
+
+        'no_timezone': '''Possibly you meant one of the following timezones, otherwise click [here](https://gist.github.com/JellyWX/913dfc8b63d45192ad6cb54c829324ee):''',
+
+        'footer': '''Current timezone: {timezone}''',
 
         'set_p': '''Personal timezone has been set to {timezone}. Your current time should be {time}''',
     },
