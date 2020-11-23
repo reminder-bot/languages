@@ -306,10 +306,17 @@ Usage:
 
     'lang': {
 
-        'invalid': '''Languages:
-{}''',
+        'select_title': '''Select Language''',
 
-        'set_p': '''Personal language set to English.''',
+        'select': '''Use one of the commands or add a reaction below:''',
+
+        'invalid_title': '''Invalid Language''',
+
+        'invalid': '''Please select one from below:''',
+
+        'set_p_title': '''Language Set''',
+
+        'set_p': '''Language set to **English.**''',
     },
 
     'clock': {
