@@ -4,6 +4,8 @@
 
     '__maintainer__': '@Giuh',
 
+    'flag': '🇪🇸',
+
     'blacklisted': ''':x: Este canal está en la blacklist :x:''',
 
     'help': '''Por favor visita https://reminder-bot.com/help?lang=ES''',

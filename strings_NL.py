@@ -4,13 +4,11 @@
 
     '__maintainer__': '@Mr Pleasant#1571',
 
+    'flag': '🇳🇱',
+
     'blacklisted': ''':x: Dit kanaal is op de zwarte lijst :x''',
 
     'help': '''Ga voor meer informatie naar https://reminder-bot.com/help?lang=NL''',
-
-    'no_perms_webhook': '''**Waarschuwing!**: Om te werken heb ik de `Manage Webhooks` toestemming nodig.''',
-
-    'no_perms_embed_links': '''**WARNING**: Om te werken heb ik de 'Embed Links' toestemming nodig.''',
 
     'no_perms_general': '''Actie verboden. Zorg er alstublieft voor dat ik de juiste toestemmingen heb.''',
 

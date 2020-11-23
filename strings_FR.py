@@ -4,6 +4,8 @@
 
     '__maintainer__': '@Matheo_33',
 
+    'flag': '🇫🇷',
+
     'blacklisted': ''': x: Cette chaîne est blacklistée: x:''',
 
     'help': '''Veuillez visiter https://reminder-bot.com/help?lang=FR''',

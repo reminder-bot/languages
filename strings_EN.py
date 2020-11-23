@@ -4,6 +4,8 @@
 
     '__maintainer__': '@JellyWX',
 
+    'flag': '🇬🇧',
+
     'blacklisted': ''':x: This channel is blacklisted :x:''',
 
     'help': '''Please visit https://reminder-bot.com/help?lang=EN''',

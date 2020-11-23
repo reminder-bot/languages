@@ -4,13 +4,11 @@
 
     '__maintainer__': '@TebosBrime',
 
+    'flag': '🇩🇪',
+
     'blacklisted': ''':x: Dieser Channel ist geblockt :x:''',
 
     'help': '''Bitte besuche https://reminder-bot.com/help?lang=DE''',
-
-    'no_perms_webhook': '''**WARNUNG**: Um Erinnerungen zu setzte, benötige ich die `Webhooks verwalten` Permission.''',
-
-    'no_perms_embed_links': '''**WARNUNG**: Zum arbeiten benötige ich die `Links einbetten` Permission.''',
 
     'no_perms_general': '''Aktion verboten! Stelle bitte sicher, dass ich die korrekten Permissions habe.''',
 
