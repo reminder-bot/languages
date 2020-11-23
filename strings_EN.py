@@ -134,7 +134,9 @@ You may want to use one of the popular timezones below, otherwise click [here](h
 
         'footer': '''Current timezone: {timezone}''',
 
-        'set_p': '''Personal timezone has been set to {timezone}. Your current time should be {time}''',
+        'set_p_title': '''Timezone Set''',
+
+        'set_p': '''Timezone has been set to **{timezone}**. Your current time should be `{time}`''',
     },
 
     'alias': {
