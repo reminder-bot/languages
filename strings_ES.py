@@ -12,9 +12,13 @@
 
     'no_perms_general' : '''Por favor asegúrese que el bot tenga los permisos necesarios:
     
-✅     **Send Message**
-{embed_links}     **Embed Links**
-{manage_webhooks}     **Manage Webhooks**
+✅     **Enviar mensajes**
+{embed_links}     **Adjuntar archivos**
+{manage_webhooks}     **Gestionar webhooks**
+
+**Permisos opcionales (pueden mejorar la funcionalidad pero no necesarios para operar):**
+{add_reactions}     **Add Reactions**
+{manage_messages}     **Manage Messages**
     ''',
 
     'no_perms_managed': '''Necesitas el permiso `Gestionar mensajes` o tener un rol con el cual puedas colocar recordaorios a ese canal. Contacta al admnistrador de tu servidor y dile que utilice el comando `{prefix}restrict` para especificar roles permitidos.''',
