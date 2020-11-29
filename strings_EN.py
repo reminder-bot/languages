@@ -214,9 +214,13 @@ Example:
 
         'success': '''Reminder for {location} set for {offset}''',
 
-        'success_bulk': '''Reminders for {location} set for {offset}''',
+        'success_bulk': '''Reminders for {location} ({number}) set for {offset}''',
 
-        'issue_bulk': '''Errors occurred setting reminders for {location}:''',
+        'issue': '''Error occurred setting reminder for {location}:''',
+
+        'issue_bulk': '''Errors occurred setting reminders for {location} ({number}):''',
+
+        'title': '''{number} Reminders Set''',
 
         'no_webhook': '''A Discord error occurred. This either means a) the bot does not have enough permissions or b) there are 10+ webhooks on the channel.
 Please resolve this in the server/channel settings, and then retry the command''',
