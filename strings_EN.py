@@ -8,8 +8,6 @@
 
     'blacklisted': ''':x: This channel is blacklisted :x:''',
 
-    'help': '''Please visit https://reminder-bot.com/help?lang=EN''',
-
     'no_perms_general': '''Please ensure the bot has the correct permissions:
 
 ✅     **Send Message**
@@ -24,6 +22,18 @@
     'no_perms_managed': '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
 
     'no_perms_restricted': '''You must have permission level `Manage Server` or greater to use this command.''',
+
+    'help': {
+        'setup_title': 'Setup Commands',
+
+        'reminder_title': 'Reminder Commands',
+
+        'info_title': 'Info Commands',
+
+        'todo_title': 'Todo Commands',
+
+        'other_title': 'Other Commands',
+    },
 
     'help_raw': [
         ['''Reminder Commands''', {
@@ -188,12 +198,13 @@ You may want to use one of the popular timezones below, otherwise click [here](h
 
         'no_argument': '''
 Usage:
-    ```{prefix}remind [channel mention or user mention] <time to or time at> <message>```
+    ```{prefix}remind [channel mentions or user mentions] <time to or time at> <message>```
 Example:
     ```{prefix}remind #general 10s Hello world```
-    ```{prefix}remind 10:30 It\'s now 10:30```''',
+    ```{prefix}remind #general @user 10s This will DM you too, in case you aren't checking general```
+    ```{prefix}remind 10:30 It's now 10:30```''',
 
-        'invalid_tag': '''Couldn't find a location by your tag present.''',
+        'invalid_tag': '''Couldn't find a location by your tag. Your tag must be either a channel or a user (not a role)''',
 
         'invalid_time': '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.''',
 
@@ -201,9 +212,14 @@ Example:
 
         'past_time': '''Please ensure the time provided is in the future. If the time *is* in the future, please be more specific with the definition.''',
 
-        'success': '''New reminder registered for {location} in {offset}.''',
+        'success': '''Reminder for {location} set for {offset}''',
 
-        'no_webhook': '''This channel has too many webhooks. Please delete one and try again''',
+        'success_bulk': '''Reminders for {locations} set for {offset}''',
+
+        'issue_bulk': '''Errors occurred setting reminders for {locations}:''',
+
+        'no_webhook': '''A Discord error occurred. This either means a) the bot does not have enough permissions or b) there are 10+ webhooks on the channel.
+Please resolve this in the server/channel settings, and then retry the command''',
     },
 
     'interval': {
@@ -251,8 +267,6 @@ Usage:
         'to': '''to''',
 
         'every': '''every''',
-
-        'bulk_set': '''{} reminders set successfully''',
 
     },
 
