@@ -24,67 +24,429 @@
     'no_perms_restricted': '''You must have permission level `Manage Server` or greater to use this command.''',
 
     'help': {
+        'desc': '''Type `{prefix}help command` to learn more about a command''',
+
         'setup_title': 'Setup Commands',
 
+        'mod_title': 'Moderator Commands',
+
         'reminder_title': 'Reminder Commands',
+
+        'reminder_mod_title': 'Management Commands',
 
         'info_title': 'Info Commands',
 
         'todo_title': 'Todo Commands',
 
         'other_title': 'Other Commands',
+
+        'lang': '''**Overview**
+*Use this command to:*
+• View available translations for the bot
+• Change the language to see translated messages from the bot
+
+**Arguments**
+• `language` [optional] - the supported language you want to change the bot to
+
+**Examples**
+View all supported languages:
+• `{prefix}lang`
+
+Change the language to Spanish:
+• `{prefix}lang ES`
+
+Change the language to English:
+• `{prefix}lang EN`''',
+
+        'timezone': '''**Overview**
+*Use this command to:*
+• View available timezones for the bot
+• Change the timezone to your own timezone to ensure reminders are set correctly
+
+**Arguments**
+• `timezone` [optional] - the name of the timezone you want to change the bot to
+
+**Examples**
+View timezones:
+• `{prefix}timezone`
+
+Set the timezone if you're in the UK:
+• `{prefix}timezone Europe/London`
+
+Set the timezone if you're in Japan:
+• `{prefix}timezone Asia/Tokyo`
+
+Set the timezone if you're in East-coast America:
+• `{prefix}timezone America/New_York`''',
+
+        'prefix': '''**Overview**
+*Use this command to:*
+• Change your server's prefix when using the bot
+
+**Arguments**
+• `new prefix` - the new prefix to use (maximum 5 characters long)
+
+**Examples**
+Reset the prefix:
+• `{prefix}prefix $`
+
+Change the prefix to `r.`:
+• `{prefix}prefix r.`''',
+
+        'blacklist': '''**Overview**
+*Use this command to:*
+• Block channels from sending commands
+• Unblock previously blocked channels from sending commands
+
+**Arguments**
+• `channel mention` [optional] - the mention of the channel to change the blacklist on. If not provided, will change the current channel
+
+**Examples**
+Blacklist/unblacklist `#general`:
+• `{prefix}blacklist #general`''',
+
+        'restrict': '''**Overview**
+*Use this command to:*
+• Allow users with certain roles to use specific commands
+• Remove permissions from roles to use commands
+• View role restrictions that are in place
+
+**Arguments**
+• `role mention` [optional] - the role that you wish to change permissions on
+• `command names` [optional] - the commands to allow the role to use
+
+**Examples**
+View restrictions in place:
+• `{prefix}restrict`
+
+Allow users with the role `@Reminders` to use reminder commands:
+• `{prefix}restrict @Reminders remind natural interval`
+
+Reset the permissions on users with the role `@Reminders` to the default:
+• `{prefix}restrict @Reminders`''',
+
+        'alias': '''**Alias**
+`a`
+        
+**Overview**
+*Use this command to:*
+• Save a long command to be reused quickly
+
+**Usages**
+• `{prefix}alias list` - view all saved commands and names
+• `{prefix}alias remove name` - delete the alias named "name"
+• `{prefix}alias name command..` - save `command` to "name"
+• `{prefix}alias name` - run the command saved under "name" 
+
+**Examples**
+View all aliases on the server:
+• `{prefix}alias list`
+
+Save the command `{prefix}remind 10m Go for a walk!` to the name "walk":
+• `{prefix}alias walk remind 10m Go for a walk!`
+
+Recall the command saved in "walk", setting a reminder for 10 minutes' time:
+• `{prefix}alias walk`
+
+Remove the alias "walk":
+• `{prefix}alias remove walk`''',
+
+        'remind': '''**Alias**
+`r`
+        
+**Overview**
+*Use this command to:*
+• Create a reminder quickly for one or more users or channels
+
+**Arguments**
+• `channel or user mentions` [optional] - mentions of channels or users to send the reminder to. Defaults to the current channel
+• `time of reminder` - the time for the reminder, either in a displacement format (`A`s`B`m`C`h`D`d for `A` seconds, `B` minutes, `C` hours and `D` days) or a direct format (`DD/MM/YYYY-HH:MM:SS`)
+• `message of reminder` - the message to send as the reminder
+
+**Examples**
+Set a reminder of "Finished" for 10 minutes' time:
+• `{prefix}remind 10m Finished`
+
+Set a reminder of "TV show starting!" for 6pm:
+• `{prefix}remind 18:00 TV show starting!`
+
+Set a reminder of "Raid beginning soon" for 9:30am on the 18th of October:
+• `{prefix}remind 18/11-09:30 Raid beginning soon`
+
+Set a reminder of "Check the logs" for 3 users in 1 hour:
+• `{prefix}remind @JellyWX @kokobop @ENKeY 1h Check the logs`''',
+
+        'interval': '''**Alias**
+`i`
+
+**Overview**
+*Use this command to:*
+• Create a repeating reminder quickly for one or more users or channels (Patreon/SubscribeStar only)
+
+**Arguments**
+• `channel or user mentions` [optional] - mentions of channels or users to send the reminder to. Defaults to the current channel
+• `time of reminder` - the time for the reminder, either in a relative format (`A`s`B`m`C`h`D`d for `A` seconds, `B` minutes, `C` hours and `D` days) or a direct format (`DD/MM/YYYY-HH:MM:SS`)
+• `repeat interval` - the time for the reminder, in a relative format (`A`s`B`m`C`h`D`d for `A` seconds, `B` minutes, `C` hours and `D` days)
+• `message of reminder` - the message to send as the reminder
+
+**Examples**
+Set a reminder of "Refresh now!" every 10 minutes:
+• `{prefix}interval 0s 10m Refresh now!`
+
+Set a reminder of "TV show starting!" for 6pm every day:
+• `{prefix}interval 18:00 1d TV show starting!`
+
+Set a reminder of "Check the logs" for 3 users every hour:
+• `{prefix}interval @JellyWX @kokobop @ENKeY 0s 1h Check the logs`''',
+
+        'natural': '''**Alias**
+`n`
+        
+**Overview**
+*Use this command to:*
+• Create normal or repeating reminders easily for one or more users or channels
+
+**Usage**
+• `{prefix}natural "time" send "message" every "repetition" to "channels/users"` - general structure of command. Please see examples below
+
+**Examples**
+Create a reminder saying "Make some food" for 10 minutes' time:
+• `{prefix}natural in 10 minutes send Make some food`
+
+Create a reminder saying "Shops reset" to `#notifs` for 6pm on Monday:
+• `{prefix}natural at 6pm on monday send Shops reset to #notifs`
+
+Create a reminder saying "The match starts in 15 minutes" for 7pm every Tuesday (Patreon/SubscribeStar only):
+• `{prefix}natural at 7pm on Tuesday send The match starts in 15 minutes every 7 days`
+
+Create a reminder saying "Subs reset today!" for 2pm on the 16th of July, sending to `#subs` and the users `@MrPleasant` and `@Giuh`   
+• `{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @MrPleasant @Giuh''',
+
+        'look': '''**Overview**
+*Use this command to:*
+• View reminders you have set
+
+**Arguments**
+• `number` [optional] - the number of reminders to view. Defaults to show all
+• `channel` [optional] - the channel to view reminders from. Defaults to your current channel
+• `time` [optional] - show reminders with their direct time rather than their relative time
+
+**Examples**
+View all reminders on the current channel:
+• `{prefix}look`
+
+View the next reminder on the current channel:
+• `{prefix}look 1`
+
+View all the reminders on `#general`:
+• `{prefix}look #general`
+
+View all reminders on `#general` with their direct times:
+• `{prefix}look #general time`''',
+
+        'del': '''**Overview**
+*Use this command to:*
+• Delete reminders
+• View reminders on the entire server
+
+**Usage**
+• Type `{prefix}del` in any channel
+• Wait for the bot to list the reminders on the server
+• Reply with a number or a list of numbers for which reminders to delete
+
+**Examples**
+Delete the first reminder:
+`>` `{prefix}del`
+`<` Listing reminders on this server...
+`>` `1`
+`<` Deleted 1 reminders!
+
+Delete 3 reminders:
+`>` `{prefix}del`
+`<` Listing reminders on this server...
+`>` `1,2,3`
+`<` Deleted 3 reminders!
+''',
+
+        'offset': '''**Overview**
+*Use this command to:*
+• Move all reminders by a certain time
+• Account for daylight savings time
+
+**Arguments**
+• `time to move` - the relative time (`A`s`B`m`C`h`D`d for `A` seconds, `B` minutes, `C` hours and `D` days) to move the reminders by. Use a minus sign to move them backwards
+
+**Examples**
+Move all reminders forward by 1 hour:
+• `{prefix}offset 1h`
+
+Move all reminders backward by 1 hour:
+• `{prefix}offset -1h`''',
+
+        'pause': '''**Overview**
+*Use this command to:*
+• Silence any upcoming reminders for a certain amount of time
+• Block reminders from sending in a channel
+• Unsilence a previously silenced channel
+
+**Arguments**
+• `time to silence` [optional] - the relative time (`A`s`B`m`C`h`D`d for `A` seconds, `B` minutes, `C` hours and `D` days) or direct time (`DD/MM/YYYY-HH:MM:SS`) to silence reminders until. Defaults to forever
+
+**Examples**
+Block reminders forever/unblock reminders:
+• `{prefix}pause`
+
+Block reminders for 7 days:
+• `{prefix}pause 7d`''',
+
+        'nudge': '''**Overview**
+*Use this command to:*
+• Offset all future reminders on a channel by a certain amount when they are created
+• Sync up the timings on a channel with the time in a game
+• View if the current channel is nudged
+
+**Arguments**
+• `time to move` [optional] - the relative time (`A`s`B`m`C`h`D`d for `A` seconds, `B` minutes, `C` hours and `D` days) to move reminders by. Use a minus sign to move them backwards. If not provided, the current nudge will be displayed
+
+**Examples**
+Offset all future reminders by 2 seconds:
+• `{prefix}nudge 2s`
+
+Offset all future reminders backwards by 30 seconds:
+• `{prefix}nudge -30s`
+''',
+
+        'info': '''**Alias**
+`invite`
+        
+**Overview**
+*Use this command to:*
+• View more information about the bot
+• Get an invite link to add the bot to more servers
+
+**Examples**
+View the info page:
+• `{prefix}info`''',
+
+        'help': '''**Overview**
+*Use this command to:*
+• View a list of commands
+• Get help about specific commands
+
+**Arguments**
+• `command` [optional] - get help about a specific command
+
+**Examples**
+View all commands:
+• `{prefix}help`
+
+View help about the todo command:
+• `{prefix}help todo`''',
+
+        'donate': '''**Overview**
+*Use this command to:*
+• View information about subscribing to the bot
+• Get a link to the Patreon/SubscribeStar page for the bot
+
+**Examples**
+View the Patreon/SubscribeStar info page:
+• `{prefix}donate`''',
+
+        'clock': '''**Overview**
+*Use this command to:*
+• View the time in the timezone you have set 
+
+**Arguments**
+• `12` [optional] - output the time in 12 hour format rather than 24 hour format
+
+**Examples**
+View the time in your timezone:
+• `{prefix}clock`
+
+View the time in your timezone in 12 hour format:
+• `{prefix}clock 12`''',
+
+        'todo': '''**Overview**
+*Use this command to:*
+• Manage your personal todo list
+
+**Usages**
+• `{prefix}todo` - view your todo list
+• `{prefix}todo add item` - add "item" to your todo list
+• `{prefix}todo remove n` - remove the `n`th item from your todo list
+• `{prefix}todo clear` - remove all items from your todo list
+
+**Examples**
+View your todo list:
+• `{prefix}todo`
+
+Add "Do washing" to todo list:
+• `{prefix}todo add Do washing`
+
+Remove the first item on the todo list:
+• `{prefix}todo remove 1`''',
+
+        'todos': '''**Overview**
+*Use this command to:*
+• Manage the server's todo list
+
+**Usages**
+• `{prefix}todos` - view the server's todo list
+• `{prefix}todos add item` - add "item" to the server's todo list
+• `{prefix}todos remove n` - remove the `n`th item from the server's todo list
+• `{prefix}todos clear` - remove all items from the server's todo list
+
+**Examples**
+View the server's todo list:
+• `{prefix}todos`
+
+Add "Update rules" to todo list:
+• `{prefix}todos add Update rules`
+
+Remove the first item on the todo list:
+• `{prefix}todos remove 1`''',
+
+        'todoc': '''**Overview**
+*Use this command to:*
+• Manage the channel's todo list
+
+**Usages**
+• `{prefix}todoc` - view the channel's todo list
+• `{prefix}todoc add item` - add "item" to the channel's todo list
+• `{prefix}todoc remove n` - remove the `n`th item from the channel's todo list
+• `{prefix}todoc clear` - remove all items from the channel's todo list
+
+**Examples**
+View the channel's todo list:
+• `{prefix}todoc`
+
+Add "Collect redeemer" to todo list:
+• `{prefix}todoc add Collect redeemer`
+
+Remove the first item on the todo list:
+• `{prefix}todoc remove 1`''',
+
+        'timer': '''**Overview**
+*Use this command to:*
+• Create timers that count upwards
+• Check on previously set timers
+• Delete previously set timers
+
+**Usages**
+• `{prefix}timer start name` - start a new timer under the name "name"
+• `{prefix}timer list` - view all timers on this server
+• `{prefix}timer delete name` - delete a timer of the name "name"
+
+**Examples**
+Create a timer called 'Run started':
+• `{prefix}timer start Run started`
+
+Check how much time has passed since the timer was started:
+• `{prefix}timer list`
+
+Remove the timer:
+• `{prefix}timer delete Run started`''',
     },
-
-    'help_raw': [
-        ['''Reminder Commands''', {
-            '$natural': 'Easier method to set reminders. Please run this command for more information.',
-
-            '$del': 'Delete reminders and intervals on your server. If the reminders are set up for DMs, direct message this command to the bot.',
-
-            '$look [n] [channel/all] [enabled] [time]': 'View the reminders in a channel. If provided, <code>n</code> will limit to displaying the next n reminders. If <code>enabled</code> is written, only enabled reminders will be shown. If <code>time</code> is written, the exact time will be shown rather than the offset',
-
-            '$remind [user/channel] <time-to-reminder> <message>': 'Command deprecated. Use <code>$natural</code> instead of this command. Set up a reminder. Takes times in the format of [num][s/m/h/d], for example 10s for 10 seconds or 2s10m for 2 seconds 10 minutes. An exact time can be provided as <code>day/month/year-hour:minute:second</code>.',
-
-            '$interval [user/channel] <time-to-reminder> <interval> <message>': '<strong><a href="https://patreon.com/jellywx/">Patron Only.</a></strong> Command deprecated. Use <code>$natural</code> instead of this command. Set a recurring reminder starting in the given <code>time-to-reminder</code>. Takes times in the normal formats, ex. <code>$interval 0s 20m Hello World!</code> will send \'Hello World!\' to your channel every 20 minutes.',
-
-            '$offset': 'Offset an entire server\'s reminders by a set time (helps account for daylight saving time)',
-        }],
-
-        ['''Management Commands''', {
-            '$timezone': 'Set your timezone, for easier date-based reminders.',
-
-            '$lang <name>': 'Change the language.',
-
-            '$nudge <time>': 'Enable nudging on the current channel. This allows you to sync all future reminders by the second to things like in game clocks',
-
-            '$pause [time]': 'Silence reminders on the current channel. A timeout for this can be provided optionally, otherwise reminders are silenced indefinitely. Can be disabled with the same command',
-
-            '$restrict [role mention] [commands]': 'Change which commands can be used by which roles',
-
-            '$blacklist [channel-name]': 'Block or unblock a channel from sending commands.',
-        }],
-
-        ['''Other Commands''', {
-            '$donate': 'View information about donations.',
-
-            '$prefix <string>': 'Change the prefix from $.',
-
-            '$info': 'Get info on the bot.',
-
-            '$clock': 'Get current time in your timezone',
-
-            '$todo user': 'TODO list related commands. Use <code>$todo help</code> for more information.',
-
-            '$todo channel': 'Identical to <code>$todo server</code> but for channel-based task management.',
-
-            '$todo server': 'Identical to <code>$todo channel</code> but for server-based task management.',
-
-            '$alias': 'Save a command to a shorter reusable name. Use <code>$alias name command</code> to setup, e.g <code>$alias rem natural in 10 minutes send hello</code>, then use <code>$alias rem</code> to recall',
-
-            '$timer': 'Set a timer that marks the current time. Do `$timer` for more information.',
-
-        }]
-    ],
 
     'info': '''
 Default prefix: `{default_prefix}`
@@ -122,19 +484,14 @@ Please note, you must be connected to the Discord server to receive Patreon/Subs
 ''',
 
     'prefix': {
+        'no_argument': '''Please use this command as `@reminder-bot prefix <prefix>`''',
 
-        'no_argument': '''
-Please use this command as `@reminder-bot prefix <prefix>`
-''',
-        'success': '''
-Prefix changed to {prefix}
-''',
+        'success': '''Prefix changed to {prefix}''',
 
         'too_long': '''Please select a prefix under 5 characters'''
     },
 
     'timezone': {
-
         'no_argument_title': '''Timezone Usage''',
 
         'no_argument': '''
@@ -156,13 +513,6 @@ You may want to use one of the popular timezones below, otherwise click [here](h
     },
 
     'alias': {
-
-        'help': '''Usage: 
-`{prefix}alias <name> <command>`: attach an alias to a command
-`{prefix}alias <name>`: recall a command attached to an alias
-`{prefix}alias list`: list aliases
-`{prefix}alias remove <name>`: remove an existing alias''',
-
         'invalid_command': '''Please use a command in the alias text. This command cannot be the alias command''',
 
         'not_found': '''No alias found with name `{name}`''',
@@ -181,29 +531,9 @@ You may want to use one of the popular timezones below, otherwise click [here](h
         'allowed': '''Rules: {}''',
 
         'failure': '''Failed to assign permissions for command `{command}`. This command either doesn't exist, or only works on preset restrictions''',
-
-        'help': '''Usage:
-**Reset Role Restrictions**
-`$restrict @RoleName`
-
-**Permit Command (e.g `natural` and it's alias `n`)**
-`$restrict @RoleName natural`
-
-**View Restrictions**
-`$restrict`
-'''
     },
 
     'remind': {
-
-        'no_argument': '''
-Usage:
-    ```{prefix}remind [channel mentions or user mentions] <time to or time at> <message>```
-Example:
-    ```{prefix}remind #general 10s Hello world```
-    ```{prefix}remind #general @user 10s This will DM you too, in case you aren't checking general```
-    ```{prefix}remind 10:30 It's now 10:30```''',
-
         'invalid_tag': '''Couldn't find a location by your tag. Your tag must be either a channel or a user (not a role)''',
 
         'invalid_time': '''Make sure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.''',
@@ -227,14 +557,6 @@ Please resolve this in the server/channel settings, and then retry the command''
     },
 
     'interval': {
-
-        'no_argument': '''
-Usage:
-    ```{prefix}interval [channel mention or user mention] <time to or time at> <interval> <message>```
-Example:
-    ```{prefix}interval #general 9:30 1d Good morning!```
-    ```{prefix}interval 0s 10s This will be really irritating```''',
-
         'invalid_interval': '''Make sure the interval you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. with no spaces, eg. 10s for 10 seconds or 10s12m15h1d for 10 seconds, 12 minutes, 15 hours and 1 day.''',
 
         'short_interval': '''Please ensure the interval provided is longer than {min_interval} seconds''',
@@ -246,7 +568,6 @@ Example:
     },
 
     'natural': {
-
         'no_argument': '''
 Natural language processing
 Examples:
@@ -275,7 +596,6 @@ Usage:
     },
 
     'del': {
-
         'listing': '''Listing reminders on this server... (there may be a small delay, please wait for the "List (1,2,3...)" message).''',
 
         'listed': '''List (1,2,3...) the reminders you wish to delete, or type anything else to cancel.''',
@@ -284,7 +604,6 @@ Usage:
     },
 
     'look': {
-
         'listing': '''Listing reminders on specified channel...''',
 
         'listing_limited': '''Listing the next {} reminders on specified channel...''',
@@ -295,8 +614,7 @@ Usage:
     },
 
     'todo': {
-
-        'add': '''*Do `{prefix}{command} add <message>` to add an item to your TODO, or type `{prefix}{command} help` for more commands!*''',
+        'add': '''*Do `{prefix}{command} add <message>` to add an item to your TODO, or type `{prefix}help {command}` for more commands!*''',
 
         'added': '''Added \'{name}\' to todo!''',
 
@@ -305,8 +623,6 @@ Usage:
         'error_value': '''Removal item must be a number. View the numbered TODOs using `{prefix}{command}`''',
 
         'error_index': '''Couldn\'t find item by that number. Are you in the correct todo list?''',
-
-        'help': '''To use the TODO commands, do `{prefix}{command} add <message>`, `{prefix}{command} remove <number>`, `{prefix}{command} clear` and `{prefix}{command}` to add to, remove from, clear or view your todo list.''',
 
         'cleared': '''Cleared todo list!''',
 
@@ -327,7 +643,6 @@ Usage:
     },
 
     'lang': {
-
         'select_title': '''Select Language''',
 
         'select': '''Use one of the commands or add a reaction below:''',
@@ -341,34 +656,23 @@ Usage:
         'set_p': '''Language set to **English.**''',
     },
 
-    'clock': {
-
-        'time': '''Current time is {}.''',
-
-    },
+    'clock/time': '''Current time is {}.''',
 
     'offset': {
-
-        'help': '''Usage: `{prefix}offset <time/s>`''',
-
         'invalid_time': '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d]''',
 
         'success': '''All reminders have been offset by {} seconds''',
-
     },
 
     'nudge': {
-
         'no_argument': '''Usage: `$nudge <time statement>`. Current nudge: {nudge}''',
 
         'invalid_time': '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d], and is less than 30'000 seconds''',
 
         'success': '''Future reminders will be nudged by {} seconds''',
-
     },
 
     'timer': {
-
         'limit': '''You already have 25 timers. Please delete some timers before creating a new one''',
 
         'name_length': '''Please name your timer something shorted (max. 32 characters, you used {})''',
@@ -380,19 +684,9 @@ Usage:
         'not_found': '''Could not find a timer by that name''',
 
         'deleted': '''Deleted a timer''',
-
-        'help': '''**Timer Help**
-`timer list` - View all current timers in your server/user
-
-`timer start [name]` - Start a new timer (counts indefinitely)
-
-`timer delete <name>` - Delete a timer by name
-        ''',
-
     },
 
     'pause': {
-
         'invalid_time': '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc...''',
 
         'paused_until': '''Reminders in this channel have been silenced until **{}**''',
