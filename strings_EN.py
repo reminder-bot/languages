@@ -58,6 +58,23 @@ Change the language to Spanish:
 Change the language to English:
 • `{prefix}lang EN`''',
 
+        'meridian': '''**Overview**
+*Use this command to:*
+• Change times to display in 12 hour format
+• Revert times to display in 24 hour format
+
+**Arguments**
+• `12` - change to 12 hour format
+• `24` - change to 24 hour format
+
+**Examples**
+Change to 12 hour format:
+• `{prefix}meridian 12`
+
+Revert to 24 hour format:        
+• `{prefix}meridian 24`      
+        ''',
+
         'timezone': '''**Overview**
 *Use this command to:*
 • View available timezones for the bot
@@ -177,7 +194,7 @@ Set a reminder of "Check the logs" for 3 users in 1 hour:
 • `{prefix}remind @JellyWX @kokobop @ENKeY 1h Check the logs`
 
 **Extra Information**
- • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
+• You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
 
         'interval': '''**Alias**
 `i`
@@ -203,7 +220,7 @@ Set a reminder of "Check the logs" for 3 users every hour:
 • `{prefix}interval @JellyWX @kokobop @ENKeY 0s 1h Check the logs`
 
 **Extra Information**
- • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
+• You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
 
         'natural': '''**Alias**
 `n`
@@ -229,7 +246,7 @@ Create a reminder saying "Subs reset today!" for 2pm on the 16th of July, sendin
 • `{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @MrPleasant @Giuh
 
 **Extra Information**
- • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
+• You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
 
         'look': '''**Overview**
 *Use this command to:*
@@ -519,6 +536,14 @@ You may want to use one of the popular timezones below, otherwise click [here](h
         'set_p_title': '''Timezone Set''',
 
         'set_p': '''Timezone has been set to **{timezone}**. Your current time should be `{time}`''',
+    },
+
+    'meridian': {
+        'title': '''Display Changed''',
+
+        '12': '''Time display changed to **12 hour mode**''',
+
+        '24': '''Time display changed to **24 hour mode**''',
     },
 
     'alias': {
