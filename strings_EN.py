@@ -174,7 +174,10 @@ Set a reminder of "Raid beginning soon" for 9:30am on the 18th of October:
 • `{prefix}remind 18/11-09:30 Raid beginning soon`
 
 Set a reminder of "Check the logs" for 3 users in 1 hour:
-• `{prefix}remind @JellyWX @kokobop @ENKeY 1h Check the logs`''',
+• `{prefix}remind @JellyWX @kokobop @ENKeY 1h Check the logs`
+
+**Extra Information**
+ • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
 
         'interval': '''**Alias**
 `i`
@@ -197,7 +200,10 @@ Set a reminder of "TV show starting!" for 6pm every day:
 • `{prefix}interval 18:00 1d TV show starting!`
 
 Set a reminder of "Check the logs" for 3 users every hour:
-• `{prefix}interval @JellyWX @kokobop @ENKeY 0s 1h Check the logs`''',
+• `{prefix}interval @JellyWX @kokobop @ENKeY 0s 1h Check the logs`
+
+**Extra Information**
+ • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
 
         'natural': '''**Alias**
 `n`
@@ -220,7 +226,10 @@ Create a reminder saying "The match starts in 15 minutes" for 7pm every Tuesday 
 • `{prefix}natural at 7pm on Tuesday send The match starts in 15 minutes every 7 days`
 
 Create a reminder saying "Subs reset today!" for 2pm on the 16th of July, sending to `#subs` and the users `@MrPleasant` and `@Giuh`   
-• `{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @MrPleasant @Giuh''',
+• `{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @MrPleasant @Giuh
+
+**Extra Information**
+ • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder''',
 
         'look': '''**Overview**
 *Use this command to:*
@@ -552,8 +561,7 @@ You may want to use one of the popular timezones below, otherwise click [here](h
 
         'title': '''{number} Reminders Set''',
 
-        'no_webhook': '''A Discord error occurred. This either means a) the bot does not have enough permissions or b) there are 10+ webhooks on the channel.
-Please resolve this in the server/channel settings, and then retry the command''',
+        'generic_error': '''A Discord error occurred: **{error}**''',
     },
 
     'interval': {
@@ -564,7 +572,6 @@ Please resolve this in the server/channel settings, and then retry the command''
         'long_interval': '''Please ensure the interval provided is less than {max_time} days''',
 
         'donor': '''You need to be subscribed to access this command! Type `{prefix}donate` to find out more.''',
-
     },
 
     'natural': {
