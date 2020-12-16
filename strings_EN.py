@@ -382,15 +382,9 @@ View the Patreon/SubscribeStar info page:
 *Use this command to:*
 • View the time in the timezone you have set 
 
-**Arguments**
-• `12` [optional] - output the time in 12 hour format rather than 24 hour format
-
 **Examples**
 View the time in your timezone:
-• `{prefix}clock`
-
-View the time in your timezone in 12 hour format:
-• `{prefix}clock 12`''',
+• `{prefix}clock`''',
 
         'todo': '''**Overview**
 *Use this command to:*
@@ -688,7 +682,7 @@ Usage:
         'set_p': '''Language set to **English.**''',
     },
 
-    'clock/time': '''Current time is {}.''',
+    'clock/time': '''Current time is **{}**''',
 
     'offset': {
         'invalid_time': '''Please ensure the time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d]''',
