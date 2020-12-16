@@ -580,6 +580,12 @@ You may want to use one of the popular timezones below, otherwise click [here](h
 
         'title': '''{number} Reminders Set''',
 
+        'attachment_too_large': '''Your attachment is too large to be sent. Please upload an attachment of 8MB or less''',
+
+        'too_many_attachments': '''Too many attachments provided. Please only attach 1 file''',
+
+        'attachment_download_failed': '''The attachment failed to download. Discord CDN could be down. Please retry later.''',
+
         'generic_error': '''A Discord error occurred: **{error}**''',
     },
 
