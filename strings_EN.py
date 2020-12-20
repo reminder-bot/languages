@@ -556,7 +556,7 @@ You may want to use one of the popular timezones below, otherwise click [here](h
 
         'enabled': '''Enabled command permissions for roles.''',
 
-        'allowed': '''Rules: {}''',
+        'title': '''Command Rules''',
 
         'failure': '''Failed to assign permissions for command `{command}`. This command either doesn't exist, or only works on preset restrictions''',
     },
