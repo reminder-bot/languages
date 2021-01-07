@@ -256,6 +256,7 @@ Create a reminder saying "Subs reset today!" for 2pm on the 16th of July, sendin
 • `number` [optional] - the number of reminders to view. Defaults to show all
 • `channel` [optional] - the channel to view reminders from. Defaults to your current channel
 • `time` [optional] - show reminders with their direct time rather than their relative time
+• `enabled` [optional] - only show enabled reminders
 
 **Examples**
 View all reminders on the current channel:
@@ -594,6 +595,8 @@ You may want to use one of the popular timezones below, otherwise click [here](h
 
         'short_interval': '''Please ensure the interval provided is longer than {min_interval} seconds''',
 
+        'invalid_expiration': '''Make sure the expiration time you have provided is in the format of [num][s/m/h/d][num][s/m/h/d] etc. or `day/month/year-hour:minute:second`.''',
+
         'long_interval': '''Please ensure the interval provided is less than {max_time} days''',
 
         'donor': '''You need to be subscribed to access this command! Type `{prefix}donate` to find out more.''',
@@ -624,7 +627,6 @@ Usage:
         'to': '''to''',
 
         'every': '''every''',
-
     },
 
     'del': {
