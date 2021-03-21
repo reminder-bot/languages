@@ -203,7 +203,7 @@ Set a reminder of "Check the logs" for 3 users in 1 hour:
 
 **Overview**
 *Use this command to:*
-• Create a repeating reminder quickly for one or more users or channels (Patreon/SubscribeStar only)
+• Create a repeating reminder quickly for one or more users or channels (Patreon only)
 
 **Arguments**
 • `channel or user mentions` [optional] - mentions of channels or users to send the reminder to. Defaults to the current channel
@@ -243,11 +243,11 @@ Create a reminder saying "Make some food" for 10 minutes' time:
 Create a reminder saying "Shops reset" to `#notifs` for 6pm on Monday:
 • `{prefix}natural at 6pm on monday send Shops reset to #notifs`
 
-Create a reminder saying "The match starts in 15 minutes" for 7pm every Tuesday (Patreon/SubscribeStar only):
+Create a reminder saying "The match starts in 15 minutes" for 7pm every Tuesday (Patreon only):
 • `{prefix}natural at 7pm on Tuesday send The match starts in 15 minutes every 7 days`
 
 Create a reminder saying "Subs reset today!" for 2pm on the 16th of July, sending to `#subs` and the users `@MrPleasant` and `@Giuh`   
-• `{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @MrPleasant @Giuh
+• `{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @MrPleasant @Giuh`
 
 **Extra Information**
 • You can silent mention roles, users, everyone and here by using `<<everyone>>`, `<<here>>`, `<<role name>>` and `<<user id>>` in your reminder
@@ -396,10 +396,10 @@ View help about the todo command:
         'donate': '''**Overview**
 *Use this command to:*
 • View information about subscribing to the bot
-• Get a link to the Patreon/SubscribeStar page for the bot
+• Get a link to the Patreon page for the bot
 
 **Examples**
-View the Patreon/SubscribeStar info page:
+View the Patreon info page:
 • `{prefix}donate`''',
 
         'clock': '''**Overview**
@@ -513,18 +513,16 @@ Thinking of adding a monthly contribution? Click below for my Patreon and offici
 
 https://www.patreon.com/jellywx
 
-https://www.subscribestar.com/jellywx (beta)
-
 https://discord.jellywx.com
 
 Here's some more information:
 
-When you donate, Patreon/SubscribeStar will automatically rank you up on our Discord server, supposing you have properly linked your Patreon/SubscribeStar and Discord accounts!
+When you donate, Patreon will automatically rank you up on our Discord server, supposing you have properly linked your Patreon and Discord accounts!
 With your new rank, you'll be able to:
 : set repeating reminders with `interval`, `natural` or the dashboard
 : use unlimited uploads on SoundFX
 
-Please note, you must be connected to the Discord server to receive Patreon/SubscribeStar rewards.
+Please note, you must be connected to the Discord server to receive Patreon rewards.
 ''',
 
     'prefix': {
@@ -626,21 +624,6 @@ You may want to use one of the popular timezones below, otherwise click [here](h
     },
 
     'natural': {
-        'no_argument': '''
-Natural language processing
-Examples:
-    ```{prefix}natural in 10 minutes send Hello World! to #general```
-    ```{prefix}natural at 18:00 send The big event has started!```
-    ```{prefix}natural on the 16th of july at 14:00 send Subs reset today! to #subs @Sub1 @Sub2```
-    ```{prefix}natural now send 10 minutes has passed! every 10 minutes to #timer```
-Keywords:
-    `send` : define the message
-    `every` : define an interval (Patreon Only)
-    `to` : define the location to send to (can define multiple locations, like `@JellyWX #general @SomeUser` to send to all three)
-Usage:
-    ```{prefix}natural <time statement> send <message> [every interval statement] [to #channel/@user]```
-    ''',
-
         'invalid_time': '''Your time failed to process. Please make it as clear as possible, for example `16th of july` or `in 20 minutes`''',
 
         'long_time': '''Please ensure your reminder is younger than 50 years, or use a more specific time statement.''',
