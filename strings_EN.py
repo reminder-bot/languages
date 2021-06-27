@@ -13,10 +13,6 @@
 ✅     **Send Message**
 {embed_links}     **Embed Links**
 {manage_webhooks}     **Manage Webhooks**
-
-**Optional Permissions (may improve functionality but not necessary to operate):**
-{add_reactions}     **Add Reactions**
-{manage_messages}     **Manage Messages**
     ''',
 
     'no_perms_managed': '''You must have `Manage Messages` or have a role capable of sending reminders to that channel. Please talk to your server admin, and ask them to use the `{prefix}restrict` command to specify allowed roles.''',
@@ -24,7 +20,7 @@
     'no_perms_restricted': '''You must have permission level `Manage Server` or greater to use this command.''',
 
     'help': {
-        'desc': '''Type `{prefix}help command` to learn more about a command''',
+        'desc': '''Type `{prefix}help command` to learn more about a command. Some commands are only available in servers''',
 
         'setup_title': 'Setup Commands',
 
@@ -685,7 +681,7 @@ You may want to use one of the popular timezones below, otherwise click [here](h
     'lang': {
         'select_title': '''Select Language''',
 
-        'select': '''Use one of the commands or add a reaction below:''',
+        'select': '''Use one of the commands or press a button below:''',
 
         'invalid_title': '''Invalid Language''',
 
